@@ -1,0 +1,19 @@
+temp/kvrocks-small-files-case.md
+  s_8b4d6b907a9eb7::t_60bf18d02126e3 230,232-262,266-282
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "c6add87e5e6cc11487badb8fee243f4ac820561c",
+  "prompts": {},
+  "sessions": {
+    "s_8b4d6b907a9eb7": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a11ff1-a812-7941-9ce9-1cb7a1e781f9",
+        "model": "unknown"
+      },
+      "human_author": "sryan yuan <sryan@qq.com>"
+    }
+  }
+}
