@@ -1,0 +1,15 @@
+temp/kvrocks-small-files-case.md
+  h_ddc670f27902b2 175,181,183,185,187,189-200,202-209,211
+  h_ddc670f27902b2 177,179
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "f4a11ba33cd07b027b2da8837a671c16b50a11f5",
+  "prompts": {},
+  "humans": {
+    "h_ddc670f27902b2": {
+      "author": "sryan yuan <sryan@qq.com>"
+    }
+  }
+}

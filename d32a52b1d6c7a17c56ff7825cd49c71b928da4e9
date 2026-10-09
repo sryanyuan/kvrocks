@@ -1,0 +1,99 @@
+temp/l6-small-files-20261007/slot-distribution-analysis.md
+  s_e7e159f3b3302d::t_9c4f7927e74cf7 1-122
+temp/l6-small-files-20261007/request-analysis.md
+  s_e7e159f3b3302d::t_a902b25979011a 1-130
+temp/db-log-analysis-20261009/metrics.json
+  s_e7e159f3b3302d::t_c89ab58ae3d82e 1-485
+temp/l6-small-files-20261007/diagrams/01-l6-fragmentation-timeline.svg
+  s_e7e159f3b3302d::t_fc45a270c43783 1-120
+temp/l6-small-files-20261007/analysis.md
+  s_e7e159f3b3302d::t_4289a59894f2cd 1-130
+temp/db-log-analysis-20261009/timeline.svg
+  s_e7e159f3b3302d::t_d7dc4d9bedb29e 1-128
+temp/db-log-analysis-20261009/analysis.md
+  s_e7e159f3b3302d::t_5a67abd8bef7a2 45,136
+  s_e7e159f3b3302d::t_753c872e1b739c 1-44,46-135,137-214
+temp/l6-small-files-20261007/diagrams/05-file-count-and-write-stall.svg
+  s_e7e159f3b3302d::t_13338df78db1d9 1-128
+temp/db-log-analysis-20261009/timeline.csv
+  s_e7e159f3b3302d::t_c89ab58ae3d82e 1-16
+temp/l6-small-files-20261007/stored-expiry-evidence.json
+  s_e7e159f3b3302d::t_0409540264a99f 1-9
+temp/l6-small-files-20261007/slot-distribution-evidence.json
+  s_e7e159f3b3302d::t_c7b6f9c63a50a1 1-790
+temp/l6-small-files-20261007/distribution-causality-summary.md
+  s_e7e159f3b3302d::t_427ed4038a5f2a 1-173
+temp/db-log-analysis-20261009/analyze_logs.py
+  s_e7e159f3b3302d::t_ce2be6c26a33b4 1-27,33-45,48-51,53-58,60-71,73-83,86,90-111,113-119,121-139,141-156,160,163-168,170-179,182-187,192,195
+  s_e7e159f3b3302d::t_275a341e899698 28-32,46-47,52,59,72,84-85,87-89,112,120,140,157-159,161-162,169,180-181,188-191,193-194
+temp/db-log-analysis-20261009/analyze_move_latency.py
+  s_e7e159f3b3302d::t_e3077b618e4ea1 1-17,19-21,23-24,26-30,32-44,46,49
+  s_e7e159f3b3302d::t_3a3c5952ed6c90 18,22,25,31,45,47-48
+temp/l6-small-files-20261007/request-evidence.json
+  s_e7e159f3b3302d::t_46ff270a992405 1-389
+temp/kvrocks-l6-small-files-case-study.md
+  s_e7e159f3b3302d::t_657425fe6ccbd9 1,7,9,11-12,234-305,307,309-364,389,412-414,420,426-427,435-436,443-445,449-453,456
+  s_e7e159f3b3302d::t_12241480039782 2-6,8,10,13-233,306,308,365-388,390-411,415-419,421-425,428-434,437-442,446-448,454-455
+temp/l6-small-files-20261007/diagrams/03-request-vs-small-files.svg
+  s_e7e159f3b3302d::t_debc30527cb4a5 1-6,8-67
+  s_e7e159f3b3302d::t_56765c21832853 7
+temp/l6-small-files-20261007/evidence.json
+  s_e7e159f3b3302d::t_154a16b64b5cea 1-609
+temp/db-log-analysis-20261009/cleanup-evidence.json
+  s_e7e159f3b3302d::t_072532afeebcb5 1-4662
+temp/l6-small-files-20261007/diagrams/02-l4-l5-early-split.svg
+  s_e7e159f3b3302d::t_fc45a270c43783 1-104
+temp/kvrocks-small-files-case.md
+  h_ddc670f27902b2 1-197
+temp/l6-small-files-20261007/diagrams/04-periodic-compaction-ttl.svg
+  s_e7e159f3b3302d::t_debc30527cb4a5 1-53
+temp/key-encoding/kvrocks-cluster-key-encoding.svg
+  s_acaee4acd6295e::t_ad897dba8aa845 1-110
+temp/pics/kvrocks-dynamic-level-capacity.svg
+  s_e7e159f3b3302d::t_c16dba34e12627 1-15,17-22,24-30,32-37,39-44,46-52,54-59,61-86
+  s_e7e159f3b3302d::t_ca291472bf1f42 87
+  s_e7e159f3b3302d::t_e257a0a377324b 16,23,31,38,45,53,60
+temp/db-log-analysis-20261009/hourly-states.json
+  s_e7e159f3b3302d::t_77a5b6a4a4c03c 1-7184
+temp/db-log-analysis-20261009/jobs.csv
+  s_e7e159f3b3302d::t_81f6866bb98abe 1-115462
+temp/db-log-analysis-20261009/known-live-files.jsonl
+  s_e7e159f3b3302d::t_69c2d1c67aaf82 1-1153
+temp/db-log-analysis-20261009/move-latency.json
+  s_e7e159f3b3302d::t_d5a253982ad92d 1-366
+temp/db-log-analysis-20261009/stall-events.json
+  s_e7e159f3b3302d::t_96fe052dace6ca 1-632982
+temp/db-log-analysis-20261009/stats-snapshots.json
+  s_e7e159f3b3302d::t_b988ad92402bf6 1-2786
+temp/db-log-analysis-20261009/summary.json
+  s_e7e159f3b3302d::t_512664826cbb8f 1-5555
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "d32a52b1d6c7a17c56ff7825cd49c71b928da4e9",
+  "prompts": {},
+  "humans": {
+    "h_ddc670f27902b2": {
+      "author": "sryan yuan <sryan@qq.com>"
+    }
+  },
+  "sessions": {
+    "s_acaee4acd6295e": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a11acf-b391-7183-afde-cde793161b77",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "sryan yuan <sryan@qq.com>"
+    },
+    "s_e7e159f3b3302d": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a11415-641e-7ae2-acb6-bc746741dba2",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "sryan yuan <sryan@qq.com>"
+    }
+  }
+}
