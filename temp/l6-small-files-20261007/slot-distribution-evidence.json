@@ -1,0 +1,790 @@
+{
+  "anchor_logs": {
+    "73132": {
+      "creation": {
+        "cf_name": "metadata",
+        "file_number": 73132,
+        "file_size": 1867276,
+        "job": 21156
+      },
+      "lines": [
+        [
+          1079185,
+          "2026/09/30-19:09:00.060879 140104777590528 [db/compaction/compaction_job.cc:2093] [metadata] [JOB 21156] Compacting 1@5 + 5@6 files to L6, score 10.10"
+        ],
+        [
+          1079187,
+          "2026/09/30-19:09:00.060900 140104777590528 EVENT_LOG_v1 {\"time_micros\": 1790766540060892, \"job\": 21156, \"event\": \"compaction_started\", \"compaction_reason\": \"LevelMaxLevelSize\", \"files_L5\": [73117], \"files_L6\": [72024, 72025, 72026, 72027, 72028], \"score\": 10.1019, \"input_data_size\": 798676538, \"oldest_snapshot_seqno\": -1}"
+        ],
+        [
+          1079188,
+          "2026/09/30-19:09:00.256931 140104777590528 [db/compaction/compaction_job.cc:1663] [metadata] [JOB 21156] Generated table #73127: 6513 keys, 134366409 bytes, temperature: kUnknown"
+        ],
+        [
+          1079190,
+          "2026/09/30-19:09:00.450286 140104777590528 [db/compaction/compaction_job.cc:1663] [metadata] [JOB 21156] Generated table #73128: 6559 keys, 134373116 bytes, temperature: kUnknown"
+        ],
+        [
+          1079192,
+          "2026/09/30-19:09:00.641180 140104777590528 [db/compaction/compaction_job.cc:1663] [metadata] [JOB 21156] Generated table #73129: 6601 keys, 134364983 bytes, temperature: kUnknown"
+        ],
+        [
+          1079194,
+          "2026/09/30-19:09:00.830356 140104777590528 [db/compaction/compaction_job.cc:1663] [metadata] [JOB 21156] Generated table #73130: 6510 keys, 134397386 bytes, temperature: kUnknown"
+        ],
+        [
+          1079196,
+          "2026/09/30-19:09:01.020735 140104777590528 [db/compaction/compaction_job.cc:1663] [metadata] [JOB 21156] Generated table #73131: 6638 keys, 134414051 bytes, temperature: kUnknown"
+        ],
+        [
+          1079198,
+          "2026/09/30-19:09:01.023999 140104777590528 [db/compaction/compaction_job.cc:1663] [metadata] [JOB 21156] Generated table #73132: 80 keys, 1867276 bytes, temperature: kUnknown"
+        ],
+        [
+          1079200,
+          "2026/09/30-19:09:01.026183 140104777590528 (Original Log Time 2026/09/30-19:09:01.025549) [db/compaction/compaction_job.cc:1739] [metadata] [JOB 21156] Compacted 1@5 + 5@6 files to L6 => 673783221 bytes"
+        ],
+        [
+          1079202,
+          "2026/09/30-19:09:01.026202 140104777590528 (Original Log Time 2026/09/30-19:09:01.026083) EVENT_LOG_v1 {\"time_micros\": 1790766541026068, \"job\": 21156, \"event\": \"compaction_finished\", \"compaction_time_micros\": 963190, \"compaction_time_cpu_micros\": 920297, \"output_level\": 6, \"num_output_files\": 6, \"total_output_size\": 673783221, \"num_input_records\": 40029, \"num_output_records\": 32901, \"num_subcompactions\": 1, \"output_compression\": \"NoCompression\", \"num_single_delete_mismatches\": 0, \"num_single_delete_fallthrough\": 0, \"lsm_state\": [0, 0, 0, 3, 4, 43, 313]}"
+        ]
+      ],
+      "properties": {
+        "compression": "NoCompression",
+        "creation_time": 1789955584,
+        "file_creation_time": 1790766541,
+        "num_deletions": 0,
+        "num_entries": 80
+      },
+      "source": [
+        "LOG.old.1790790947818659",
+        1079199
+      ]
+    },
+    "90521": {
+      "creation": {
+        "cf_name": "metadata",
+        "file_number": 90521,
+        "file_size": 3109364,
+        "job": 25795
+      },
+      "lines": [
+        [
+          717902,
+          "2026/10/02-00:59:34.503848 140104785983232 [db/compaction/compaction_job.cc:2093] [metadata] [JOB 25795] Compacting 1@5 + 5@6 files to L6, score 10.54"
+        ],
+        [
+          717904,
+          "2026/10/02-00:59:34.503867 140104785983232 EVENT_LOG_v1 {\"time_micros\": 1790873974503860, \"job\": 25795, \"event\": \"compaction_started\", \"compaction_reason\": \"LevelMaxLevelSize\", \"files_L5\": [90454], \"files_L6\": [88866, 88867, 88868, 88869, 88870], \"score\": 10.5377, \"input_data_size\": 818932104, \"oldest_snapshot_seqno\": -1}"
+        ],
+        [
+          717905,
+          "2026/10/02-00:59:34.703771 140104785983232 [db/compaction/compaction_job.cc:1663] [metadata] [JOB 25795] Generated table #90516: 6263 keys, 134424857 bytes, temperature: kUnknown"
+        ],
+        [
+          717907,
+          "2026/10/02-00:59:34.897428 140104785983232 [db/compaction/compaction_job.cc:1663] [metadata] [JOB 25795] Generated table #90517: 6259 keys, 134464143 bytes, temperature: kUnknown"
+        ],
+        [
+          717909,
+          "2026/10/02-00:59:35.088092 140104785983232 [db/compaction/compaction_job.cc:1663] [metadata] [JOB 25795] Generated table #90518: 6311 keys, 134419620 bytes, temperature: kUnknown"
+        ],
+        [
+          717911,
+          "2026/10/02-00:59:35.277622 140104785983232 [db/compaction/compaction_job.cc:1663] [metadata] [JOB 25795] Generated table #90519: 6115 keys, 134435200 bytes, temperature: kUnknown"
+        ],
+        [
+          717913,
+          "2026/10/02-00:59:35.466633 140104785983232 [db/compaction/compaction_job.cc:1663] [metadata] [JOB 25795] Generated table #90520: 6117 keys, 134396487 bytes, temperature: kUnknown"
+        ],
+        [
+          717915,
+          "2026/10/02-00:59:35.471577 140104785983232 [db/compaction/compaction_job.cc:1663] [metadata] [JOB 25795] Generated table #90521: 140 keys, 3109364 bytes, temperature: kUnknown"
+        ],
+        [
+          717917,
+          "2026/10/02-00:59:35.473868 140104785983232 (Original Log Time 2026/10/02-00:59:35.473124) [db/compaction/compaction_job.cc:1739] [metadata] [JOB 25795] Compacted 1@5 + 5@6 files to L6 => 675249671 bytes"
+        ],
+        [
+          717919,
+          "2026/10/02-00:59:35.473886 140104785983232 (Original Log Time 2026/10/02-00:59:35.473748) EVENT_LOG_v1 {\"time_micros\": 1790873975473733, \"job\": 25795, \"event\": \"compaction_finished\", \"compaction_time_micros\": 967801, \"compaction_time_cpu_micros\": 925931, \"output_level\": 6, \"num_output_files\": 6, \"total_output_size\": 675249671, \"num_input_records\": 38253, \"num_output_records\": 31205, \"num_subcompactions\": 1, \"output_compression\": \"NoCompression\", \"num_single_delete_mismatches\": 0, \"num_single_delete_fallthrough\": 0, \"lsm_state\": [0, 0, 0, 2, 3, 57, 401]}"
+        ]
+      ],
+      "properties": {
+        "compression": "NoCompression",
+        "creation_time": 1789955584,
+        "file_creation_time": 1790873975,
+        "num_deletions": 0,
+        "num_entries": 140
+      },
+      "source": [
+        "LOG.old.1791021971379807",
+        717916
+      ]
+    }
+  },
+  "before_after_files": [
+    {
+      "file": 72028,
+      "size": 134382892,
+      "slot_end": 1089,
+      "slot_start": 1077
+    },
+    {
+      "file": 73131,
+      "size": 134414051,
+      "slot_end": 1089,
+      "slot_start": 1077
+    },
+    {
+      "file": 73132,
+      "size": 1867276,
+      "slot_end": 1089,
+      "slot_start": 1089
+    },
+    {
+      "file": 72029,
+      "size": 82258294,
+      "slot_end": 1096,
+      "slot_start": 1089
+    },
+    {
+      "file": 88870,
+      "size": 134415151,
+      "slot_end": 499,
+      "slot_start": 488
+    },
+    {
+      "file": 90520,
+      "size": 134396487,
+      "slot_end": 499,
+      "slot_start": 488
+    },
+    {
+      "file": 90521,
+      "size": 3109364,
+      "slot_end": 499,
+      "slot_start": 499
+    },
+    {
+      "file": 90464,
+      "size": 134413395,
+      "slot_end": 510,
+      "slot_start": 499
+    }
+  ],
+  "daily_additions": [
+    {
+      "count": 1,
+      "day": "2026-09-30",
+      "less_than_1MiB": false,
+      "slot": 1088
+    },
+    {
+      "count": 7,
+      "day": "2026-10-01",
+      "less_than_1MiB": false,
+      "slot": 1088
+    },
+    {
+      "count": 3,
+      "day": "2026-10-01",
+      "less_than_1MiB": true,
+      "slot": 1088
+    },
+    {
+      "count": 3,
+      "day": "2026-10-02",
+      "less_than_1MiB": false,
+      "slot": 498
+    },
+    {
+      "count": 7,
+      "day": "2026-10-02",
+      "less_than_1MiB": true,
+      "slot": 498
+    },
+    {
+      "count": 3,
+      "day": "2026-10-02",
+      "less_than_1MiB": false,
+      "slot": 1088
+    },
+    {
+      "count": 61,
+      "day": "2026-10-02",
+      "less_than_1MiB": true,
+      "slot": 1088
+    },
+    {
+      "count": 2,
+      "day": "2026-10-03",
+      "less_than_1MiB": false,
+      "slot": 498
+    },
+    {
+      "count": 14,
+      "day": "2026-10-03",
+      "less_than_1MiB": true,
+      "slot": 498
+    },
+    {
+      "count": 78,
+      "day": "2026-10-03",
+      "less_than_1MiB": true,
+      "slot": 1088
+    },
+    {
+      "count": 9,
+      "day": "2026-10-04",
+      "less_than_1MiB": false,
+      "slot": 498
+    },
+    {
+      "count": 16,
+      "day": "2026-10-04",
+      "less_than_1MiB": true,
+      "slot": 498
+    },
+    {
+      "count": 76,
+      "day": "2026-10-04",
+      "less_than_1MiB": true,
+      "slot": 1088
+    },
+    {
+      "count": 2,
+      "day": "2026-10-05",
+      "less_than_1MiB": false,
+      "slot": 498
+    },
+    {
+      "count": 80,
+      "day": "2026-10-05",
+      "less_than_1MiB": true,
+      "slot": 498
+    },
+    {
+      "count": 84,
+      "day": "2026-10-05",
+      "less_than_1MiB": true,
+      "slot": 1088
+    },
+    {
+      "count": 81,
+      "day": "2026-10-06",
+      "less_than_1MiB": true,
+      "slot": 498
+    },
+    {
+      "count": 1,
+      "day": "2026-10-06",
+      "less_than_1MiB": false,
+      "slot": 1088
+    },
+    {
+      "count": 78,
+      "day": "2026-10-06",
+      "less_than_1MiB": true,
+      "slot": 1088
+    },
+    {
+      "count": 1,
+      "day": "2026-10-07",
+      "less_than_1MiB": false,
+      "slot": 498
+    },
+    {
+      "count": 49,
+      "day": "2026-10-07",
+      "less_than_1MiB": true,
+      "slot": 498
+    },
+    {
+      "count": 48,
+      "day": "2026-10-07",
+      "less_than_1MiB": true,
+      "slot": 1088
+    }
+  ],
+  "date": "2026-10-07",
+  "early_splits": {
+    "77119": {
+      "created_epoch": 1790787555,
+      "entered_after": [
+        {
+          "file": 73132,
+          "size": 1867276,
+          "slot_end": 1089,
+          "slot_start": 1089
+        },
+        {
+          "file": 76977,
+          "size": 134387739,
+          "slot_end": 1099,
+          "slot_start": 1089
+        }
+      ],
+      "file": {
+        "file": 77119,
+        "size": 2646717,
+        "slot_end": 1088,
+        "slot_start": 1088
+      },
+      "fully_skipped_before": [
+        {
+          "file": 75807,
+          "size": 6467757,
+          "slot_end": 1088,
+          "slot_start": 1088
+        }
+      ],
+      "left": [
+        {
+          "file": 75807,
+          "size": 6467757,
+          "slot_end": 1088,
+          "slot_start": 1088
+        }
+      ],
+      "next_output": {
+        "file": 77120,
+        "size": 13077798,
+        "slot_end": 1143,
+        "slot_start": 1089
+      },
+      "overlaps": 0,
+      "previous_output": {
+        "file": 77118,
+        "size": 122804046,
+        "slot_end": 1087,
+        "slot_start": 1031
+      },
+      "right": [
+        {
+          "file": 73132,
+          "size": 1867276,
+          "slot_end": 1089,
+          "slot_start": 1089
+        },
+        {
+          "file": 76977,
+          "size": 134387739,
+          "slot_end": 1099,
+          "slot_start": 1089
+        }
+      ]
+    },
+    "79606": {
+      "created_epoch": 1790805736,
+      "entered_after": [
+        {
+          "file": 73132,
+          "size": 1867276,
+          "slot_end": 1089,
+          "slot_start": 1089
+        },
+        {
+          "file": 78462,
+          "size": 134390900,
+          "slot_end": 1099,
+          "slot_start": 1089
+        }
+      ],
+      "file": {
+        "file": 79606,
+        "size": 551420,
+        "slot_end": 1088,
+        "slot_start": 1088
+      },
+      "fully_skipped_before": [],
+      "left": [
+        {
+          "file": 78740,
+          "size": 51018892,
+          "slot_end": 1088,
+          "slot_start": 1085
+        }
+      ],
+      "next_output": {
+        "file": 79607,
+        "size": 122091168,
+        "slot_end": 1141,
+        "slot_start": 1089
+      },
+      "overlaps": 0,
+      "previous_output": null,
+      "right": [
+        {
+          "file": 73132,
+          "size": 1867276,
+          "slot_end": 1089,
+          "slot_start": 1089
+        },
+        {
+          "file": 78462,
+          "size": 134390900,
+          "slot_end": 1099,
+          "slot_start": 1089
+        }
+      ]
+    },
+    "95353": {
+      "created_epoch": 1790905817,
+      "entered_after": [
+        {
+          "file": 90521,
+          "size": 3109364,
+          "slot_end": 499,
+          "slot_start": 499
+        },
+        {
+          "file": 94998,
+          "size": 134405660,
+          "slot_end": 510,
+          "slot_start": 499
+        }
+      ],
+      "file": {
+        "file": 95353,
+        "size": 334315,
+        "slot_end": 498,
+        "slot_start": 498
+      },
+      "fully_skipped_before": [],
+      "left": [
+        {
+          "file": 94759,
+          "size": 11299715,
+          "slot_end": 498,
+          "slot_start": 498
+        }
+      ],
+      "next_output": {
+        "file": 95354,
+        "size": 11570708,
+        "slot_end": 515,
+        "slot_start": 499
+      },
+      "overlaps": 0,
+      "previous_output": null,
+      "right": [
+        {
+          "file": 90521,
+          "size": 3109364,
+          "slot_end": 499,
+          "slot_start": 499
+        },
+        {
+          "file": 94998,
+          "size": 134405660,
+          "slot_end": 510,
+          "slot_start": 499
+        }
+      ]
+    },
+    "96465": {
+      "created_epoch": 1790912127,
+      "entered_after": [
+        {
+          "file": 90521,
+          "size": 3109364,
+          "slot_end": 499,
+          "slot_start": 499
+        },
+        {
+          "file": 96343,
+          "size": 134382255,
+          "slot_end": 510,
+          "slot_start": 499
+        }
+      ],
+      "file": {
+        "file": 96465,
+        "size": 227057,
+        "slot_end": 498,
+        "slot_start": 498
+      },
+      "fully_skipped_before": [],
+      "left": [
+        {
+          "file": 96302,
+          "size": 12502200,
+          "slot_end": 498,
+          "slot_start": 497
+        }
+      ],
+      "next_output": {
+        "file": 96466,
+        "size": 3901810,
+        "slot_end": 515,
+        "slot_start": 499
+      },
+      "overlaps": 0,
+      "previous_output": null,
+      "right": [
+        {
+          "file": 90521,
+          "size": 3109364,
+          "slot_end": 499,
+          "slot_start": 499
+        },
+        {
+          "file": 96343,
+          "size": 134382255,
+          "slot_end": 510,
+          "slot_start": 499
+        }
+      ]
+    }
+  },
+  "host": "10.148.7.45",
+  "later_splits": [
+    {
+      "file": 158375,
+      "previous_output": 158374,
+      "skipped_bytes": 51278768,
+      "skipped_file_count": 123,
+      "threshold_bytes": 16777216
+    },
+    {
+      "file": 141587,
+      "previous_output": 141586,
+      "skipped_bytes": 25208491,
+      "skipped_file_count": 43,
+      "threshold_bytes": 16777216
+    },
+    {
+      "file": 138312,
+      "previous_output": 138311,
+      "skipped_bytes": 20772209,
+      "skipped_file_count": 24,
+      "threshold_bytes": 16777216
+    }
+  ],
+  "port": 10017,
+  "wal_sources": [
+    {
+      "batches": 2095,
+      "bytes": 55560582,
+      "file": "179659.log",
+      "metadata_puts": 2112,
+      "mtime": 1791363027.3212662
+    },
+    {
+      "batches": 2108,
+      "bytes": 55078590,
+      "file": "179714.log",
+      "metadata_puts": 2118,
+      "mtime": 1791363027.3212662
+    },
+    {
+      "batches": 2141,
+      "bytes": 54518949,
+      "file": "179715.log",
+      "metadata_puts": 2151,
+      "mtime": 1791363111.3408515
+    },
+    {
+      "batches": 2173,
+      "bytes": 54860202,
+      "file": "179717.log",
+      "metadata_puts": 2193,
+      "mtime": 1791363111.3408515
+    },
+    {
+      "batches": 2243,
+      "bytes": 55499736,
+      "file": "179718.log",
+      "metadata_puts": 2269,
+      "mtime": 1791363193.3224225
+    },
+    {
+      "batches": 2112,
+      "bytes": 56187216,
+      "file": "179720.log",
+      "metadata_puts": 2133,
+      "mtime": 1791363193.3224225
+    },
+    {
+      "batches": 2347,
+      "bytes": 55601639,
+      "file": "179721.log",
+      "metadata_puts": 2379,
+      "mtime": 1791363275.392994
+    },
+    {
+      "batches": 2137,
+      "bytes": 55242774,
+      "file": "179723.log",
+      "metadata_puts": 2163,
+      "mtime": 1791363275.392994
+    },
+    {
+      "batches": 2141,
+      "bytes": 55204387,
+      "file": "179724.log",
+      "metadata_puts": 2152,
+      "mtime": 1791363358.3735712
+    },
+    {
+      "batches": 2353,
+      "bytes": 55967246,
+      "file": "179785.log",
+      "metadata_puts": 2378,
+      "mtime": 1791363358.3735712
+    },
+    {
+      "batches": 2095,
+      "bytes": 56220370,
+      "file": "179786.log",
+      "metadata_puts": 2106,
+      "mtime": 1791363444.3721693
+    },
+    {
+      "batches": 2194,
+      "bytes": 55239840,
+      "file": "179788.log",
+      "metadata_puts": 2209,
+      "mtime": 1791363444.3721693
+    },
+    {
+      "batches": 2364,
+      "bytes": 56383839,
+      "file": "179789.log",
+      "metadata_puts": 2386,
+      "mtime": 1791363540.3738365
+    },
+    {
+      "batches": 2287,
+      "bytes": 54964904,
+      "file": "179791.log",
+      "metadata_puts": 2314,
+      "mtime": 1791363540.3738365
+    },
+    {
+      "batches": 2406,
+      "bytes": 55208133,
+      "file": "179792.log",
+      "metadata_puts": 2427,
+      "mtime": 1791363624.3964217
+    },
+    {
+      "batches": 2202,
+      "bytes": 55048464,
+      "file": "179794.log",
+      "metadata_puts": 2220,
+      "mtime": 1791363624.3964217
+    }
+  ],
+  "wal_summary": {
+    "all_keys_LK_18_digits": true,
+    "batches": 35398,
+    "bytes_read": 886786871,
+    "chi_squared": 2818.232707924933,
+    "chi_squared_df": 2729,
+    "crc_mismatches": 0,
+    "distinct_slots": 2727,
+    "empty_slots": [
+      1271,
+      2513,
+      2698
+    ],
+    "equal_width_bins": [
+      {
+        "metadata_bytes": 89719178,
+        "slot_end": 272,
+        "slot_start": 0,
+        "unique_keys": 1806
+      },
+      {
+        "metadata_bytes": 87282022,
+        "slot_end": 545,
+        "slot_start": 273,
+        "unique_keys": 1780
+      },
+      {
+        "metadata_bytes": 88944176,
+        "slot_end": 818,
+        "slot_start": 546,
+        "unique_keys": 1815
+      },
+      {
+        "metadata_bytes": 87990024,
+        "slot_end": 1091,
+        "slot_start": 819,
+        "unique_keys": 1758
+      },
+      {
+        "metadata_bytes": 96807778,
+        "slot_end": 1364,
+        "slot_start": 1092,
+        "unique_keys": 1841
+      },
+      {
+        "metadata_bytes": 87253772,
+        "slot_end": 1637,
+        "slot_start": 1365,
+        "unique_keys": 1767
+      },
+      {
+        "metadata_bytes": 86589566,
+        "slot_end": 1910,
+        "slot_start": 1638,
+        "unique_keys": 1750
+      },
+      {
+        "metadata_bytes": 86219074,
+        "slot_end": 2183,
+        "slot_start": 1911,
+        "unique_keys": 1747
+      },
+      {
+        "metadata_bytes": 89230152,
+        "slot_end": 2456,
+        "slot_start": 2184,
+        "unique_keys": 1772
+      },
+      {
+        "metadata_bytes": 84302512,
+        "slot_end": 2729,
+        "slot_start": 2457,
+        "unique_keys": 1819
+      }
+    ],
+    "focused_slots": {
+      "498": {
+        "metadata_bytes": 683534,
+        "puts": 10,
+        "unique_keys": 5
+      },
+      "1088": {
+        "metadata_bytes": 467594,
+        "puts": 10,
+        "unique_keys": 5
+      },
+      "1827": {
+        "metadata_bytes": 744190,
+        "puts": 14,
+        "unique_keys": 7
+      },
+      "2432": {
+        "metadata_bytes": 37064,
+        "puts": 10,
+        "unique_keys": 5
+      }
+    },
+    "max_slot": 2729,
+    "max_unique_per_slot": 18,
+    "mean_unique_per_slot": 6.54029304029304,
+    "metadata_puts": 35710,
+    "min_slot": 0,
+    "puts_with_expiry": 17855,
+    "puts_without_expiry": 17855,
+    "total_metadata_bytes": 884338254,
+    "unique_keys": 17855,
+    "writes_per_key": {
+      "2": 17855
+    }
+  }
+}

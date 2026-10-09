@@ -1,0 +1,389 @@
+{
+  "boundary_samples": [
+    {
+      "created_epoch": 1791162570,
+      "end_slot": 498,
+      "file": 138312,
+      "size": 10831,
+      "start_key_format": "LK:<hex>",
+      "start_slot": 498
+    },
+    {
+      "created_epoch": 1791178542,
+      "end_slot": 498,
+      "file": 141587,
+      "size": 9076,
+      "start_key_format": "LK:<hex>",
+      "start_slot": 498
+    },
+    {
+      "created_epoch": 1791260075,
+      "end_slot": 498,
+      "file": 158375,
+      "size": 3185,
+      "start_key_format": "LK:<hex>",
+      "start_slot": 498
+    },
+    {
+      "created_epoch": 1790873975,
+      "end_slot": 499,
+      "file": 90521,
+      "size": 3109364,
+      "start_key_format": "LK:<hex>",
+      "start_slot": 499
+    },
+    {
+      "created_epoch": 1791257389,
+      "end_slot": 509,
+      "file": 157811,
+      "size": 134465913,
+      "start_key_format": "LK:<hex>",
+      "start_slot": 499
+    },
+    {
+      "created_epoch": 1790766541,
+      "end_slot": 1089,
+      "file": 73132,
+      "size": 1867276,
+      "start_key_format": "LK:<hex>",
+      "start_slot": 1089
+    }
+  ],
+  "client_summary": [
+    {
+      "address": "172.24.65.199",
+      "connections": 16,
+      "last_command": "pexpireat",
+      "name": ""
+    },
+    {
+      "address": "10.149.36.157",
+      "connections": 1,
+      "last_command": "config",
+      "name": "analyzer"
+    },
+    {
+      "address": "127.0.0.1",
+      "connections": 1,
+      "last_command": "client",
+      "name": ""
+    },
+    {
+      "address": "10.70.7.11",
+      "connections": 1,
+      "last_command": "cluster",
+      "name": "redioxy-v1.14.0-36-gf9a08cb/ROUTE_QUERIER@tcbase.lijing.redis.test"
+    },
+    {
+      "address": "10.133.21.151",
+      "connections": 1,
+      "last_command": "info",
+      "name": "kvrocks_exporter"
+    },
+    {
+      "address": "10.133.64.182",
+      "connections": 1,
+      "last_command": "info",
+      "name": "collector"
+    }
+  ],
+  "command_counts_cumulative": {
+    "auth": 353354,
+    "client": 355002,
+    "cluster": 6553655,
+    "clusterx": 417,
+    "command": 29,
+    "compact": 3,
+    "config": 1242280,
+    "del": 1704336,
+    "expire": 9395423,
+    "flushall": 2,
+    "get": 201385855,
+    "hdel": 113,
+    "hello": 2129,
+    "hgetall": 542,
+    "hmset": 9426532,
+    "info": 1245149,
+    "monitor": 2,
+    "pexpireat": 27242935,
+    "ping": 1825308,
+    "readonly": 260,
+    "restore": 48220394,
+    "scan": 4,
+    "script": 28,
+    "set": 36705458,
+    "setex": 209984727,
+    "slowlog": 995129,
+    "strlen": 1,
+    "type": 1
+  },
+  "command_delta": {
+    "counts": {
+      "auth": 15,
+      "client": 17,
+      "cluster": 266,
+      "config": 50,
+      "info": 51,
+      "pexpireat": 1655,
+      "ping": 73,
+      "set": 1655,
+      "slowlog": 45
+    },
+    "end_epoch": 1791362069.921171,
+    "seconds": 60.459956884384155,
+    "start_epoch": 1791362009.461214
+  },
+  "host": "10.148.7.45",
+  "manifest": {
+    "bytes_parsed": 30927093,
+    "file": "MANIFEST-000011",
+    "metadata_L6_files": 1171,
+    "records": 63435,
+    "small_bytes": 220916724,
+    "small_files": 737,
+    "small_files_by_start_slot": {
+      "58": 2,
+      "59": 1,
+      "68": 1,
+      "177": 1,
+      "226": 1,
+      "233": 1,
+      "335": 1,
+      "396": 1,
+      "408": 1,
+      "488": 1,
+      "497": 1,
+      "498": 205,
+      "571": 3,
+      "583": 1,
+      "654": 1,
+      "729": 1,
+      "781": 2,
+      "844": 1,
+      "900": 1,
+      "1020": 1,
+      "1079": 1,
+      "1088": 421,
+      "1137": 3,
+      "1202": 1,
+      "1278": 1,
+      "1286": 1,
+      "1415": 1,
+      "1485": 1,
+      "1546": 1,
+      "1710": 1,
+      "1827": 26,
+      "1828": 1,
+      "2013": 2,
+      "2014": 1,
+      "2123": 1,
+      "2247": 1,
+      "2432": 34,
+      "2543": 1,
+      "2599": 1,
+      "2670": 2,
+      "2724": 1,
+      "3029": 1,
+      "5239": 1,
+      "7480": 1,
+      "9685": 1,
+      "13278": 1,
+      "15455": 1
+    },
+    "small_files_older_12h": 598,
+    "small_files_older_24h": 506,
+    "small_threshold_bytes": 1048576
+  },
+  "observed_on": "2026-10-07",
+  "port": 10017,
+  "request_ids_greater_than_retained_max_id": {
+    "498": 71,
+    "1088": 71
+  },
+  "request_sample": {
+    "business_client_ips": [
+      "172.24.65.199"
+    ],
+    "commands": {
+      "auth": 1,
+      "client": 2,
+      "cluster": 7,
+      "pexpireat": 70,
+      "set": 71,
+      "slowlog": 1
+    },
+    "key_format": "LK:<18 decimal digits>",
+    "monitor_closed": true,
+    "pexpireat_ttl_ms": {
+      "max": 43199742,
+      "min": 43198398
+    },
+    "seconds": 1.9310359954833984,
+    "set_hash_slots": [
+      72,
+      81,
+      96,
+      146,
+      232,
+      237,
+      243,
+      248,
+      264,
+      275,
+      276,
+      361,
+      362,
+      402,
+      425,
+      460,
+      462,
+      526,
+      577,
+      595,
+      634,
+      643,
+      727,
+      729,
+      801,
+      850,
+      1104,
+      1171,
+      1255,
+      1309,
+      1322,
+      1362,
+      1368,
+      1376,
+      1392,
+      1475,
+      1497,
+      1525,
+      1550,
+      1594,
+      1595,
+      1608,
+      1710,
+      1727,
+      1740,
+      1777,
+      1779,
+      1811,
+      1834,
+      1897,
+      1900,
+      1903,
+      2025,
+      2039,
+      2066,
+      2097,
+      2119,
+      2151,
+      2267,
+      2305,
+      2315,
+      2350,
+      2360,
+      2366,
+      2374,
+      2400,
+      2499,
+      2608,
+      2609,
+      2640,
+      2721
+    ],
+    "set_key_count": 71,
+    "set_value_bytes": {
+      "max": 146436,
+      "mean": 21016.140845070422,
+      "median": 16295,
+      "min": 1515
+    },
+    "start_epoch": 1791362170.522022,
+    "unique_set_keys": 71,
+    "wire_bytes": 4249001
+  },
+  "retention_pttl_samples": {
+    "498": [
+      {
+        "age_hours": 64.97,
+        "file": 132149,
+        "first_key_pttl": -2
+      },
+      {
+        "age_hours": 47.01,
+        "file": 144245,
+        "first_key_pttl": -2
+      },
+      {
+        "age_hours": 32.34,
+        "file": 155250,
+        "first_key_pttl": -2
+      },
+      {
+        "age_hours": 17.99,
+        "file": 166442,
+        "first_key_pttl": -2
+      },
+      {
+        "age_hours": 0.15,
+        "file": 179458,
+        "first_key_pttl": 41569644
+      }
+    ],
+    "1088": [
+      {
+        "age_hours": 129.67,
+        "file": 93650,
+        "first_key_pttl": -2
+      },
+      {
+        "age_hours": 97.3,
+        "file": 112371,
+        "first_key_pttl": -2
+      },
+      {
+        "age_hours": 65.39,
+        "file": 131768,
+        "first_key_pttl": -2
+      },
+      {
+        "age_hours": 34.68,
+        "file": 153699,
+        "first_key_pttl": -2
+      },
+      {
+        "age_hours": 0.44,
+        "file": 179274,
+        "first_key_pttl": 41055887
+      }
+    ]
+  },
+  "server_info": "# Server\r\nversion:2.10.1\r\nkvrocks_version:2.10.1\r\nredis_version:4.0.0\r\ngit_sha1:dc4d5303\r\nkvrocks_git_sha1:dc4d5303\r\nredis_mode:cluster\r\nkvrocks_mode:cluster\r\nos:Linux 5.10.109-1.el7.x86_64 x86_64\r\ngcc_version:9.5.0\r\narch_bits:64\r\nprocess_id:7\r\ntcp_port:10017\r\nuptime_in_seconds:1491918\r\nuptime_in_days:17\r\n",
+  "slot_order": [
+    {
+      "files": 212,
+      "increasing_creation_time_pairs": 211,
+      "slot": 498,
+      "total_pairs": 211
+    },
+    {
+      "files": 429,
+      "increasing_creation_time_pairs": 427,
+      "slot": 1088,
+      "total_pairs": 428
+    },
+    {
+      "files": 32,
+      "increasing_creation_time_pairs": 31,
+      "slot": 1827,
+      "total_pairs": 31
+    },
+    {
+      "files": 40,
+      "increasing_creation_time_pairs": 39,
+      "slot": 2432,
+      "total_pairs": 39
+    }
+  ]
+}

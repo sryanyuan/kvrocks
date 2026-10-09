@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="1060" viewBox="0 0 1560 1060" role="img" aria-labelledby="title desc">
+  <title id="title">动态层容量：超额、Score 与 pending 估算</title>
+  <desc id="desc">Base level 为 L2。表格同时给出各层容量目标、自身超额、日志 Score 和按截图容量估算的 pending 贡献。L2 至 L5 自身超额合计约 15.33 GiB，逐层合并工作量合计约 154.66 GiB，接近日志的 154.74 GiB。Score 与 pending 独立计算。</desc>
+  <style>text{font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif;fill:#172b4d}.muted{fill:#62748b}.blue{fill:#2163c4}.orange{fill:#b85b16}.white{fill:white}</style>
+  <rect x="0" y="0" width="1560" height="1060" rx="0" fill="#f2f5fa" />
+  <text x="48" y="60" font-size="34" font-weight="700">动态层容量：超额、Score 与 pending 估算</text>
+  <text x="48" y="102" font-size="23" font-weight="600" class="blue">dynamic level：开启    ·    base level：L2    ·    层级比例：10    ·    L0 → L2 → L3 → L4 → L5 → L6</text>
+  <rect x="48" y="130" width="1464" height="462" rx="12" fill="#ffffff" />
+  <rect x="48" y="130" width="1464" height="56" rx="12" fill="#e5eefc" />
+  <text x="70" y="166" font-size="22" font-weight="600">层级</text>
+  <text x="285" y="166" font-size="22" font-weight="600">实际大小</text>
+  <text x="555" y="166" font-size="22" font-weight="600">Target / 参考值</text>
+  <text x="825" y="166" font-size="22" font-weight="600">自身超额</text>
+  <text x="1100" y="166" font-size="22" font-weight="600">Score¹</text>
+  <text x="1250" y="166" font-size="22" font-weight="600">pending 贡献²</text>
+  <text x="70" y="223" font-size="23" font-weight="400">L0</text>
+  <text x="285" y="223" font-size="23" font-weight="400">212.70 MiB</text>
+  <text x="555" y="223" font-size="23" font-weight="400">256 MiB / 4 文件</text>
+  <text x="825" y="223" font-size="23" font-weight="400">未达到</text>
+  <text x="1100" y="223" font-size="23" font-weight="400">0.5</text>
+  <text x="1250" y="223" font-size="23" font-weight="400">0</text>
+  <line x1="66" y1="243" x2="1494" y2="243" stroke="#e2e8f0" />
+  <text x="70" y="281" font-size="23" font-weight="400">L1</text>
+  <text x="285" y="281" font-size="23" font-weight="400">0</text>
+  <text x="555" y="281" font-size="23" font-weight="400">跳过</text>
+  <text x="825" y="281" font-size="23" font-weight="400">—</text>
+  <text x="1100" y="281" font-size="23" font-weight="400">—</text>
+  <text x="1250" y="281" font-size="23" font-weight="400">—</text>
+  <line x1="66" y1="301" x2="1494" y2="301" stroke="#e2e8f0" />
+  <rect x="56" y="304" width="1448" height="54" rx="6" fill="#eff5ff" />
+  <text x="70" y="339" font-size="23" font-weight="600" class="blue">L2 · base</text>
+  <text x="285" y="339" font-size="23" font-weight="600">295.68 MiB</text>
+  <text x="555" y="339" font-size="23" font-weight="600">256 MiB</text>
+  <text x="825" y="339" font-size="23" font-weight="600" class="orange">39.68 MiB</text>
+  <text x="1100" y="339" font-size="23" font-weight="600">6.3</text>
+  <text x="1250" y="339" font-size="23" font-weight="600" class="orange">0.133 GiB</text>
+  <line x1="66" y1="359" x2="1494" y2="359" stroke="#e2e8f0" />
+  <text x="70" y="397" font-size="23" font-weight="400">L3</text>
+  <text x="285" y="397" font-size="23" font-weight="400">715.83 MiB</text>
+  <text x="555" y="397" font-size="23" font-weight="400">580.32 MiB</text>
+  <text x="825" y="397" font-size="23" font-weight="400" class="orange">135.51 MiB</text>
+  <text x="1100" y="397" font-size="23" font-weight="400">8.6</text>
+  <text x="1250" y="397" font-size="23" font-weight="400" class="orange">1.806 GiB</text>
+  <line x1="66" y1="417" x2="1494" y2="417" stroke="#e2e8f0" />
+  <text x="70" y="455" font-size="23" font-weight="400">L4</text>
+  <text x="285" y="455" font-size="23" font-weight="400">7.05 GiB</text>
+  <text x="555" y="455" font-size="23" font-weight="400">5.6672 GiB</text>
+  <text x="825" y="455" font-size="23" font-weight="400" class="orange">1.3828 GiB</text>
+  <text x="1100" y="455" font-size="23" font-weight="400">11.7</text>
+  <text x="1250" y="455" font-size="23" font-weight="400" class="orange">16.714 GiB</text>
+  <line x1="66" y1="475" x2="1494" y2="475" stroke="#e2e8f0" />
+  <rect x="56" y="478" width="1448" height="54" rx="6" fill="#fff3e5" />
+  <text x="70" y="513" font-size="23" font-weight="600">L5</text>
+  <text x="285" y="513" font-size="23" font-weight="600">70.45 GiB</text>
+  <text x="555" y="513" font-size="23" font-weight="600">56.672 GiB</text>
+  <text x="825" y="513" font-size="23" font-weight="600" class="orange">13.778 GiB</text>
+  <text x="1100" y="513" font-size="23" font-weight="600">12.1</text>
+  <text x="1250" y="513" font-size="23" font-weight="600" class="orange">136.004 GiB</text>
+  <line x1="66" y1="533" x2="1494" y2="533" stroke="#e2e8f0" />
+  <text x="70" y="571" font-size="23" font-weight="400">L6</text>
+  <text x="285" y="571" font-size="23" font-weight="400">566.72 GiB</text>
+  <text x="555" y="571" font-size="23" font-weight="400">≈ 566.72 GiB³</text>
+  <text x="825" y="571" font-size="23" font-weight="400">—</text>
+  <text x="1100" y="571" font-size="23" font-weight="400">0.0</text>
+  <text x="1250" y="571" font-size="23" font-weight="400">—</text>
+  <rect x="48" y="608" width="1464" height="57" rx="12" fill="#172b4d" />
+  <text x="70" y="645" font-size="25" font-weight="600" class="white">自身超额合计 ≈ 15.33 GiB    →    逐层合并估算 ≈ 154.66 GiB    ≈    日志 pending 154.74 GiB</text>
+  <rect x="48" y="685" width="708" height="272" rx="12" fill="#ffffff" />
+  <text x="72" y="723" font-size="25" font-weight="700">¹ Score：用于调度优先级</text>
+  <text x="72" y="760" font-size="21" font-weight="400">本图 L2～L5 使用动态模式的超目标分支：</text>
+  <text x="72" y="796" font-size="24" font-weight="600" class="blue">Score ≈ 未参与合并的补偿大小</text>
+  <text x="72" y="831" font-size="24" font-weight="600" class="blue">             ÷ (target + 上层待下沉量) × 10</text>
+  <text x="72" y="872" font-size="23" font-weight="600">L2：295.68 ÷ (256 + 212.70) × 10 ≈ 6.3</text>
+  <text x="72" y="911" font-size="21" font-weight="400">L2 实际仅超额 15.50%；Score 不是超额倍数。</text>
+  <text x="72" y="939" font-size="20" font-weight="400" class="muted">Score 的 ×10 不用于 pending；其他分支另算。</text>
+  <rect x="780" y="685" width="732" height="272" rx="12" fill="#ffffff" />
+  <text x="804" y="723" font-size="25" font-weight="700">² pending：独立估算合并工作量</text>
+  <text x="804" y="760" font-size="21" font-weight="400">S = 实际大小 + 上层超额；E = max(0, S − target)</text>
+  <text x="804" y="796" font-size="23" font-weight="600" class="blue">本层贡献 ≈ E × (1 + 下一层实际大小 ÷ S)</text>
+  <text x="804" y="831" font-size="21" font-weight="400">E 继续向下传递；各层贡献相加得到总 pending。</text>
+  <text x="804" y="868" font-size="22" font-weight="400">L5：S ≈ 70.45 + 1.554 = 72.004 GiB</text>
+  <text x="804" y="902" font-size="22" font-weight="400">E ≈ 72.004 − 56.672 = 15.332 GiB</text>
+  <text x="804" y="939" font-size="22" font-weight="600" class="orange">15.332 × (1 + 566.72 ÷ 72.004) ≈ 136.00 GiB</text>
+  <text x="48" y="988" font-size="19" font-weight="400" class="muted">² 每行指本层向下一层合并的贡献；超额量经逐层传递及重叠数据放大，不是新增磁盘空间或精确 IO。</text>
+  <text x="48" y="1017" font-size="19" font-weight="400" class="muted">³ L6 是动态容量基准；各层目标按 ÷10 反推，L2 下限为 256 MiB。L0 当前 2 个文件，未达 4 文件触发值。</text>
+  <text x="48" y="1046" font-size="18" font-weight="400" class="muted">按截图舍入值近似复算。来源：temp/db/LOG；RocksDB 9.3.1。154.66 GiB 为复算值，154.74 GiB 为日志值。</text>
+</svg>

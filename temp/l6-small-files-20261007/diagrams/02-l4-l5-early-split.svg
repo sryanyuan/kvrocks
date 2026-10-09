@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1470" viewBox="0 0 1600 1470" role="img" aria-labelledby="title description">
+<title id="title">L4 加 L5 合并如何参考 L6 边界提前切分</title>
+<desc id="description">以 2026 年 10 月 6 日的真实文件编号演示：L5 输出从 slot 498 的 m 跳到 slot 499 的 s，完整跳过 L6 文件 A 并进入 B，跨越三个边界，新计入 A 加 B 的大小超过 16 MiB，在写入 s 前关闭只有 m 的 3185 字节文件。</desc>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#71829b"/></marker>
+  <marker id="blue-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb"/></marker>
+</defs>
+<style>
+text { font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; fill: #172b4d; }
+</style>
+<rect x="0" y="0" width="1600" height="1470" rx="0" fill="#f3f6fb" stroke="none" stroke-width="1.5"/>
+<text x="64" y="68" font-size="37" style="fill:#172b4d" font-weight="750" text-anchor="start">一次提前切分：为什么 1 个 key 也会单独成为 SST？</text>
+<text x="66" y="109" font-size="21" style="fill:#566780" font-weight="400" text-anchor="start">图 2 / 真实样本：10 月 6 日，JOB 42980 · L4 + L5 → 新 L5 · 图中 key 间距不按比例</text>
+<rect x="56" y="145" width="1488" height="360" rx="20" fill="#ffffff" stroke="#dce4ef" stroke-width="1.5"/>
+<circle cx="94" cy="184" r="20" fill="#2563eb" stroke="none" stroke-width="2"/>
+<text x="94" y="191" font-size="21" style="fill:#ffffff" font-weight="700" text-anchor="middle">1</text>
+<text x="129" y="193" font-size="27" style="fill:#172b4d" font-weight="650" text-anchor="start">m 与 s 是本次合并输出的相邻 key，L6 旧文件夹在它们之间</text>
+<text x="95" y="226" font-size="20" style="fill:#566780" font-weight="400" text-anchor="start">只比较 L6 的范围元数据；这一步没有读取 A 的记录。</text>
+<text x="95" y="278" font-size="18" style="fill:#566780" font-weight="400" text-anchor="start">key 顺序</text>
+<line x1="198" y1="271" x2="1482" y2="271" stroke="#b5c1d2" stroke-width="2" marker-end="url(#arrow)"/>
+<circle cx="425" cy="271" r="8" fill="#2563eb" stroke="none" stroke-width="2"/>
+<circle cx="1234" cy="271" r="8" fill="#7550bd" stroke="none" stroke-width="2"/>
+<text x="425" y="249" font-size="21" style="fill:#2563eb" font-weight="650" text-anchor="middle">已写入 m · slot 498</text>
+<text x="1234" y="249" font-size="21" style="fill:#7550bd" font-weight="650" text-anchor="middle">待写入 s · slot 499</text>
+<line x1="425" y1="283" x2="425" y2="400" stroke="#2563eb" stroke-width="1.7" stroke-dasharray="4 5"/>
+<line x1="1234" y1="283" x2="1234" y2="319" stroke="#7550bd" stroke-width="1.7" stroke-dasharray="4 5"/>
+<text x="96" y="366" font-size="26" style="fill:#087f8c" font-weight="700" text-anchor="start">L6</text>
+<rect x="177" y="322" width="169" height="81" rx="10" fill="#edf1f6" stroke="#566780" stroke-width="1.8"/>
+<text x="261.5" y="358.5" font-size="23" style="fill:#566780" font-weight="650" text-anchor="middle">旧范围</text>
+<text x="261.5" y="387.5" font-size="18" style="fill:#566780" font-weight="400" text-anchor="middle">slot 498</text>
+<text x="439" y="364" font-size="21" style="fill:#2563eb" font-weight="500" text-anchor="start">空隙</text>
+<rect x="630" y="322" width="285" height="81" rx="10" fill="#fff1d5" stroke="#b86b08" stroke-width="1.8"/>
+<text x="772.5" y="358.5" font-size="23" style="fill:#b86b08" font-weight="650" text-anchor="middle">A · #90521</text>
+<text x="772.5" y="387.5" font-size="18" style="fill:#b86b08" font-weight="400" text-anchor="middle">slot 499 旧 ID · 2.97 MiB</text>
+<rect x="1040" y="322" width="446" height="81" rx="10" fill="#e2f4f2" stroke="#087f8c" stroke-width="1.8"/>
+<text x="1263.0" y="358.5" font-size="23" style="fill:#087f8c" font-weight="650" text-anchor="middle">B · #157811</text>
+<text x="1263.0" y="387.5" font-size="18" style="fill:#087f8c" font-weight="400" text-anchor="middle">slot 499…509 · 128.24 MiB</text>
+<line x1="630" y1="406" x2="630" y2="424" stroke="#b86b08" stroke-width="2"/>
+<circle cx="630" cy="445" r="18" fill="#b86b08" stroke="none" stroke-width="2"/>
+<text x="630" y="452" font-size="21" style="fill:#ffffff" font-weight="700" text-anchor="middle">1</text>
+<text x="630" y="483" font-size="18" style="fill:#b86b08" font-weight="600" text-anchor="middle">进入 A</text>
+<line x1="915" y1="406" x2="915" y2="424" stroke="#b86b08" stroke-width="2"/>
+<circle cx="915" cy="445" r="18" fill="#b86b08" stroke="none" stroke-width="2"/>
+<text x="915" y="452" font-size="21" style="fill:#ffffff" font-weight="700" text-anchor="middle">2</text>
+<text x="915" y="483" font-size="18" style="fill:#b86b08" font-weight="600" text-anchor="middle">离开 A</text>
+<line x1="1040" y1="406" x2="1040" y2="424" stroke="#087f8c" stroke-width="2"/>
+<circle cx="1040" cy="445" r="18" fill="#087f8c" stroke="none" stroke-width="2"/>
+<text x="1040" y="452" font-size="21" style="fill:#ffffff" font-weight="700" text-anchor="middle">3</text>
+<text x="1040" y="483" font-size="18" style="fill:#087f8c" font-weight="600" text-anchor="middle">进入 B</text>
+<text x="1235" y="450" font-size="24" style="fill:#2563eb" font-weight="700" text-anchor="middle">跨过 3 个边界</text>
+<text x="1235" y="480" font-size="18" style="fill:#566780" font-weight="400" text-anchor="middle">s 落在 B 的 key 范围内</text>
+<rect x="56" y="535" width="1488" height="244" rx="20" fill="#ffffff" stroke="#dce4ef" stroke-width="1.5"/>
+<circle cx="94" cy="574" r="20" fill="#2563eb" stroke="none" stroke-width="2"/>
+<text x="94" y="581" font-size="21" style="fill:#ffffff" font-weight="700" text-anchor="middle">2</text>
+<text x="129" y="583" font-size="27" style="fill:#172b4d" font-weight="650" text-anchor="start">在写入 s 之前检查：边界数量满足，新增覆盖量也超过门槛</text>
+<rect x="94" y="608" width="394" height="108" rx="13" fill="#eef4ff" stroke="none" stroke-width="1.5"/>
+<text x="291" y="644" font-size="22" style="fill:#2563eb" font-weight="600" text-anchor="middle">A 左 → A 右 → B 左</text>
+<text x="291" y="688" font-size="31" style="fill:#2563eb" font-weight="750" text-anchor="middle">3 个边界  ✓</text>
+<rect x="511" y="608" width="991" height="108" rx="13" fill="#eaf6f3" stroke="none" stroke-width="1.5"/>
+<text x="543" y="647" font-size="27" style="fill:#087f8c" font-weight="700" text-anchor="start">本次新增 = size(A) + size(B)</text>
+<text x="543" y="686" font-size="27" style="fill:#087f8c" font-weight="650" text-anchor="start">约 131.2 MiB  ＞  128 MiB ÷ 8 = 16 MiB</text>
+<text x="96" y="752" font-size="20" style="fill:#566780" font-weight="400" text-anchor="start">这里算的是从 m 推进到 s 时新计入的 L6 整个文件大小；此前已计入的文件不重复计算。</text>
+<rect x="56" y="809" width="1488" height="250" rx="20" fill="#ffffff" stroke="#dce4ef" stroke-width="1.5"/>
+<circle cx="94" cy="848" r="20" fill="#2563eb" stroke="none" stroke-width="2"/>
+<text x="94" y="855" font-size="21" style="fill:#ffffff" font-weight="700" text-anchor="middle">3</text>
+<text x="129" y="857" font-size="27" style="fill:#172b4d" font-weight="650" text-anchor="start">先关闭只有 m 的文件，再创建新文件写入 s</text>
+<rect x="94" y="889" width="400" height="99" rx="10" fill="#ffebe2" stroke="#c74b20" stroke-width="1.8"/>
+<text x="294.0" y="934.5" font-size="23" style="fill:#c74b20" font-weight="650" text-anchor="middle">#158375：只有 m</text>
+<text x="294.0" y="963.5" font-size="18" style="fill:#c74b20" font-weight="400" text-anchor="middle">3185 B · 1 条记录 · 新生成在 L5</text>
+<text x="795" y="905" font-size="22" style="fill:#2563eb" font-weight="650" text-anchor="middle">ShouldStopBefore(s) = true</text>
+<line x1="520" y1="939" x2="1060" y2="939" stroke="#2563eb" stroke-width="3.2" marker-end="url(#blue-arrow)"/>
+<text x="795" y="980" font-size="20" style="fill:#2563eb" font-weight="500" text-anchor="middle">关闭当前文件 → 新建文件 → 写入 s</text>
+<rect x="1086" y="889" width="416" height="99" rx="10" fill="#f0eafb" stroke="#7550bd" stroke-width="1.8"/>
+<text x="1294.0" y="934.5" font-size="23" style="fill:#7550bd" font-weight="650" text-anchor="middle">#158376：从 s 开始</text>
+<text x="1294.0" y="963.5" font-size="18" style="fill:#7550bd" font-weight="400" text-anchor="middle">继续写入后续 key</text>
+<text x="96" y="1030" font-size="23" style="fill:#c74b20" font-weight="650" text-anchor="start">关键：这个分支没有要求“当前输出文件必须足够大”，因此 3185 B 也会被关闭。</text>
+<rect x="56" y="1089" width="1488" height="263" rx="20" fill="#ffffff" stroke="#dce4ef" stroke-width="1.5"/>
+<circle cx="94" cy="1128" r="20" fill="#2563eb" stroke="none" stroke-width="2"/>
+<text x="94" y="1135" font-size="21" style="fill:#ffffff" font-weight="700" text-anchor="middle">4</text>
+<text x="129" y="1137" font-size="27" style="fill:#172b4d" font-weight="650" text-anchor="start">收益与代价：未来避开 A 的 IO，同时留下一个小 SST</text>
+<line x1="800" y1="1160" x2="800" y2="1320" stroke="#dce4ef" stroke-width="2"/>
+<text x="108" y="1176" font-size="22" style="fill:#566780" font-weight="600" text-anchor="start">不切分：新 SST 的范围跨过 A</text>
+<text x="841" y="1176" font-size="22" style="fill:#087f8c" font-weight="600" text-anchor="start">切分后：两边的输出都避开 A</text>
+<text x="94" y="1228" font-size="18" style="fill:#566780" font-weight="600" text-anchor="start">L5</text>
+<rect x="155" y="1198" width="574" height="47" rx="10" fill="#f0eafb" stroke="#7550bd" stroke-width="1.8"/>
+<text x="442.0" y="1229.5" font-size="23" style="fill:#7550bd" font-weight="650" text-anchor="middle">m ……………………… s</text>
+<text x="94" y="1293" font-size="18" style="fill:#566780" font-weight="600" text-anchor="start">L6</text>
+<rect x="307" y="1265" width="132" height="48" rx="10" fill="#fff1d5" stroke="#b86b08" stroke-width="1.8"/>
+<text x="373.0" y="1297.0" font-size="23" style="fill:#b86b08" font-weight="650" text-anchor="middle">A</text>
+<rect x="482" y="1265" width="247" height="48" rx="10" fill="#e2f4f2" stroke="#087f8c" stroke-width="1.8"/>
+<text x="605.5" y="1297.0" font-size="23" style="fill:#087f8c" font-weight="650" text-anchor="middle">B</text>
+<text x="840" y="1228" font-size="18" style="fill:#566780" font-weight="600" text-anchor="start">L5</text>
+<rect x="897" y="1198" width="87" height="47" rx="10" fill="#ffebe2" stroke="#c74b20" stroke-width="1.8"/>
+<text x="940.5" y="1229.5" font-size="23" style="fill:#c74b20" font-weight="650" text-anchor="middle">m</text>
+<rect x="1300" y="1198" width="202" height="47" rx="10" fill="#f0eafb" stroke="#7550bd" stroke-width="1.8"/>
+<text x="1401.0" y="1229.5" font-size="23" style="fill:#7550bd" font-weight="650" text-anchor="middle">s ……</text>
+<text x="840" y="1293" font-size="18" style="fill:#566780" font-weight="600" text-anchor="start">L6</text>
+<rect x="1050" y="1265" width="172" height="48" rx="10" fill="#fff1d5" stroke="#b86b08" stroke-width="1.8"/>
+<text x="1136.0" y="1297.0" font-size="23" style="fill:#b86b08" font-weight="650" text-anchor="middle">A</text>
+<rect x="1262" y="1265" width="240" height="48" rx="10" fill="#e2f4f2" stroke="#087f8c" stroke-width="1.8"/>
+<text x="1382.0" y="1297.0" font-size="23" style="fill:#087f8c" font-weight="650" text-anchor="middle">B</text>
+<rect x="56" y="1375" width="1488" height="65" rx="15" fill="#172b4d" stroke="none" stroke-width="1.5"/>
+<text x="800" y="1416" font-size="24" style="fill:#ffffff" font-weight="600" text-anchor="middle">省下的是完整跳过 A 的读取与重写；B 仍会重叠。小文件 m 可直接移入 L6，长期积累。</text>
+</svg>

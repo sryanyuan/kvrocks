@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
+<title id="title">L6 碎片积累、L5 积压与写入降速的时间线</title>
+<desc id="desc">展示 8 月 20 日至 9 月 2 日的 L6 文件数、L5 文件数、重建的 metadata 活跃 SST 容量及每天最大 pending compaction bytes；下方标出手工清理后状态。</desc>
+<style>text { font-family: PingFang SC, Microsoft YaHei, sans-serif; fill: #172b4d; }</style>
+<rect width="1600" height="1100" fill="#f3f6fb"/>
+<text x="55" y="65" font-size="38" style="fill:#172b4d" text-anchor="start" font-weight="700">从 L6 小文件积累，到 L5 容量积压和写入限速</text>
+<text x="55" y="108" font-size="22" style="fill:#566780" text-anchor="start" font-weight="400">日志时间：2025-08-20 至 09-02 · 文件数与容量取日末状态，pending 取每日最大值</text>
+<rect x="50" y="145" width="730" height="350" rx="18" fill="white"/>
+<text x="75" y="186" font-size="26" style="fill:#172b4d" text-anchor="start" font-weight="650">L6 文件数（万）</text>
+<line x1="125" y1="435" x2="735" y2="435" stroke="#ccd5e3" stroke-width="1" stroke-dasharray=""/>
+<text x="113" y="442" font-size="18" style="fill:#566780" text-anchor="end" font-weight="400">0</text>
+<line x1="125" y1="330.0" x2="735" y2="330.0" stroke="#ccd5e3" stroke-width="1" stroke-dasharray=""/>
+<text x="113" y="337.0" font-size="18" style="fill:#566780" text-anchor="end" font-weight="400">30</text>
+<line x1="125" y1="225" x2="735" y2="225" stroke="#ccd5e3" stroke-width="1" stroke-dasharray=""/>
+<text x="113" y="232" font-size="18" style="fill:#566780" text-anchor="end" font-weight="400">60</text>
+<text x="125.0" y="464" font-size="18" style="fill:#566780" text-anchor="middle" font-weight="400">08-20</text>
+<text x="312.6923076923077" y="464" font-size="18" style="fill:#566780" text-anchor="middle" font-weight="400">08-24</text>
+<text x="500.38461538461536" y="464" font-size="18" style="fill:#566780" text-anchor="middle" font-weight="400">08-28</text>
+<text x="735.0" y="464" font-size="18" style="fill:#566780" text-anchor="middle" font-weight="400">09-02</text>
+<polyline points="125.00,384.45 171.92,376.70 218.85,369.34 265.77,362.05 312.69,354.35 359.62,343.95 406.54,331.14 453.46,317.64 500.38,304.15 547.31,291.01 594.23,282.36 641.15,275.30 688.08,267.46 735.00,260.19" fill="none" stroke="#2563eb" stroke-width="3"/>
+<circle cx="125.0" cy="384.4537" r="4" fill="#2563eb"/>
+<circle cx="171.9230769230769" cy="376.70015" r="4" fill="#2563eb"/>
+<circle cx="218.84615384615384" cy="369.33615" r="4" fill="#2563eb"/>
+<circle cx="265.7692307692308" cy="362.0509" r="4" fill="#2563eb"/>
+<circle cx="312.6923076923077" cy="354.35335" r="4" fill="#2563eb"/>
+<circle cx="359.61538461538464" cy="343.95415" r="4" fill="#2563eb"/>
+<circle cx="406.53846153846155" cy="331.1417" r="4" fill="#2563eb"/>
+<circle cx="453.46153846153845" cy="317.63625" r="4" fill="#2563eb"/>
+<circle cx="500.38461538461536" cy="304.14515" r="4" fill="#2563eb"/>
+<circle cx="547.3076923076924" cy="291.00895" r="4" fill="#2563eb"/>
+<circle cx="594.2307692307693" cy="282.36115" r="4" fill="#2563eb"/>
+<circle cx="641.1538461538462" cy="275.3034" r="4" fill="#2563eb"/>
+<circle cx="688.0769230769231" cy="267.4606" r="4" fill="#2563eb"/>
+<circle cx="735.0" cy="260.1946" r="4" fill="#2563eb"/>
+<text x="735.0" y="248.19459999999998" font-size="20" style="fill:#2563eb" text-anchor="end" font-weight="650">49.94</text>
+<rect x="820" y="145" width="730" height="350" rx="18" fill="white"/>
+<text x="845" y="186" font-size="26" style="fill:#172b4d" text-anchor="start" font-weight="650">L5 文件数（万）</text>
+<line x1="895" y1="435" x2="1505" y2="435" stroke="#ccd5e3" stroke-width="1" stroke-dasharray=""/>
+<text x="883" y="442" font-size="18" style="fill:#566780" text-anchor="end" font-weight="400">0</text>
+<line x1="895" y1="330.0" x2="1505" y2="330.0" stroke="#ccd5e3" stroke-width="1" stroke-dasharray=""/>
+<text x="883" y="337.0" font-size="18" style="fill:#566780" text-anchor="end" font-weight="400">3</text>
+<line x1="895" y1="225" x2="1505" y2="225" stroke="#ccd5e3" stroke-width="1" stroke-dasharray=""/>
+<text x="883" y="232" font-size="18" style="fill:#566780" text-anchor="end" font-weight="400">6</text>
+<text x="895.0" y="464" font-size="18" style="fill:#566780" text-anchor="middle" font-weight="400">08-20</text>
+<text x="1082.6923076923076" y="464" font-size="18" style="fill:#566780" text-anchor="middle" font-weight="400">08-24</text>
+<text x="1270.3846153846152" y="464" font-size="18" style="fill:#566780" text-anchor="middle" font-weight="400">08-28</text>
+<text x="1505.0" y="464" font-size="18" style="fill:#566780" text-anchor="middle" font-weight="400">09-02</text>
+<polyline points="895.00,433.03 941.92,432.99 988.85,432.98 1035.77,432.95 1082.69,432.94 1129.62,432.83 1176.54,432.74 1223.46,432.65 1270.38,432.41 1317.31,431.41 1364.23,429.68 1411.15,417.30 1458.08,342.39 1505.00,245.34" fill="none" stroke="#7550bd" stroke-width="3"/>
+<circle cx="895.0" cy="433.026" r="4" fill="#7550bd"/>
+<circle cx="941.9230769230769" cy="432.991" r="4" fill="#7550bd"/>
+<circle cx="988.8461538461538" cy="432.9805" r="4" fill="#7550bd"/>
+<circle cx="1035.7692307692307" cy="432.9455" r="4" fill="#7550bd"/>
+<circle cx="1082.6923076923076" cy="432.942" r="4" fill="#7550bd"/>
+<circle cx="1129.6153846153845" cy="432.8265" r="4" fill="#7550bd"/>
+<circle cx="1176.5384615384614" cy="432.7355" r="4" fill="#7550bd"/>
+<circle cx="1223.4615384615386" cy="432.6515" r="4" fill="#7550bd"/>
+<circle cx="1270.3846153846152" cy="432.41" r="4" fill="#7550bd"/>
+<circle cx="1317.3076923076924" cy="431.409" r="4" fill="#7550bd"/>
+<circle cx="1364.2307692307693" cy="429.6835" r="4" fill="#7550bd"/>
+<circle cx="1411.1538461538462" cy="417.297" r="4" fill="#7550bd"/>
+<circle cx="1458.076923076923" cy="342.3865" r="4" fill="#7550bd"/>
+<circle cx="1505.0" cy="245.3385" r="4" fill="#7550bd"/>
+<text x="1505.0" y="233.3385" font-size="20" style="fill:#7550bd" text-anchor="end" font-weight="650">5.42</text>
+<rect x="50" y="520" width="730" height="350" rx="18" fill="white"/>
+<text x="75" y="561" font-size="26" style="fill:#172b4d" text-anchor="start" font-weight="650">metadata 活跃 SST 容量（GiB）</text>
+<line x1="125" y1="810" x2="735" y2="810" stroke="#ccd5e3" stroke-width="1" stroke-dasharray=""/>
+<text x="113" y="817" font-size="18" style="fill:#566780" text-anchor="end" font-weight="400">0</text>
+<line x1="125" y1="705.0" x2="735" y2="705.0" stroke="#ccd5e3" stroke-width="1" stroke-dasharray=""/>
+<text x="113" y="712.0" font-size="18" style="fill:#566780" text-anchor="end" font-weight="400">350</text>
+<line x1="125" y1="600" x2="735" y2="600" stroke="#ccd5e3" stroke-width="1" stroke-dasharray=""/>
+<text x="113" y="607" font-size="18" style="fill:#566780" text-anchor="end" font-weight="400">700</text>
+<text x="125.0" y="839" font-size="18" style="fill:#566780" text-anchor="middle" font-weight="400">08-20</text>
+<text x="312.6923076923077" y="839" font-size="18" style="fill:#566780" text-anchor="middle" font-weight="400">08-24</text>
+<text x="500.38461538461536" y="839" font-size="18" style="fill:#566780" text-anchor="middle" font-weight="400">08-28</text>
+<text x="735.0" y="839" font-size="18" style="fill:#566780" text-anchor="middle" font-weight="400">09-02</text>
+<polyline points="125.00,758.31 171.92,756.40 218.85,751.54 265.77,747.80 312.69,743.00 359.62,729.41 406.54,718.35 453.46,708.79 500.38,696.23 547.31,681.98 594.23,669.17 641.15,654.92 688.08,638.52 735.00,621.67" fill="none" stroke="#087f8c" stroke-width="3"/>
+<circle cx="125.0" cy="758.3086840806529" r="4" fill="#087f8c"/>
+<circle cx="171.9230769230769" cy="756.3982362278737" r="4" fill="#087f8c"/>
+<circle cx="218.84615384615384" cy="751.5434726779349" r="4" fill="#087f8c"/>
+<circle cx="265.7692307692308" cy="747.8001457273028" r="4" fill="#087f8c"/>
+<circle cx="312.6923076923077" cy="742.9980479747057" r="4" fill="#087f8c"/>
+<circle cx="359.61538461538464" cy="729.4080162897706" r="4" fill="#087f8c"/>
+<circle cx="406.53846153846155" cy="718.3453609177843" r="4" fill="#087f8c"/>
+<circle cx="453.46153846153845" cy="708.7910857329146" r="4" fill="#087f8c"/>
+<circle cx="500.38461538461536" cy="696.2321488860995" r="4" fill="#087f8c"/>
+<circle cx="547.3076923076924" cy="681.9778962029144" r="4" fill="#087f8c"/>
+<circle cx="594.2307692307693" cy="669.1672004160471" r="4" fill="#087f8c"/>
+<circle cx="641.1538461538462" cy="654.919836265035" r="4" fill="#087f8c"/>
+<circle cx="688.0769230769231" cy="638.5220718023368" r="4" fill="#087f8c"/>
+<circle cx="735.0" cy="621.6695912903175" r="4" fill="#087f8c"/>
+<text x="735.0" y="609.6695912903175" font-size="20" style="fill:#087f8c" text-anchor="end" font-weight="650">627.77</text>
+<rect x="820" y="520" width="730" height="350" rx="18" fill="white"/>
+<text x="845" y="561" font-size="26" style="fill:#172b4d" text-anchor="start" font-weight="650">每日最大 pending（GiB）</text>
+<line x1="895" y1="810" x2="1505" y2="810" stroke="#ccd5e3" stroke-width="1" stroke-dasharray=""/>
+<text x="883" y="817" font-size="18" style="fill:#566780" text-anchor="end" font-weight="400">0</text>
+<line x1="895" y1="705.0" x2="1505" y2="705.0" stroke="#ccd5e3" stroke-width="1" stroke-dasharray=""/>
+<text x="883" y="712.0" font-size="18" style="fill:#566780" text-anchor="end" font-weight="400">150</text>
+<line x1="895" y1="600" x2="1505" y2="600" stroke="#ccd5e3" stroke-width="1" stroke-dasharray=""/>
+<text x="883" y="607" font-size="18" style="fill:#566780" text-anchor="end" font-weight="400">300</text>
+<text x="895.0" y="839" font-size="18" style="fill:#566780" text-anchor="middle" font-weight="400">08-20</text>
+<text x="1082.6923076923076" y="839" font-size="18" style="fill:#566780" text-anchor="middle" font-weight="400">08-24</text>
+<text x="1270.3846153846152" y="839" font-size="18" style="fill:#566780" text-anchor="middle" font-weight="400">08-28</text>
+<text x="1505.0" y="839" font-size="18" style="fill:#566780" text-anchor="middle" font-weight="400">09-02</text>
+<polyline points="895.00,804.40 941.92,804.49 988.85,804.64 1035.77,803.94 1082.69,804.37 1129.62,804.14 1176.54,802.10 1223.46,802.05 1270.38,802.52 1317.31,801.93 1364.23,800.37 1411.15,792.15 1458.08,720.51 1505.00,629.56" fill="none" stroke="#c74b20" stroke-width="3"/>
+<circle cx="895.0" cy="804.3987401266583" r="4" fill="#c74b20"/>
+<circle cx="941.9230769230769" cy="804.4873462609015" r="4" fill="#c74b20"/>
+<circle cx="988.8461538461538" cy="804.6378769951873" r="4" fill="#c74b20"/>
+<circle cx="1035.7692307692307" cy="803.9428652836941" r="4" fill="#c74b20"/>
+<circle cx="1082.6923076923076" cy="804.3742832820863" r="4" fill="#c74b20"/>
+<circle cx="1129.6153846153845" cy="804.1383418767713" r="4" fill="#c74b20"/>
+<circle cx="1176.5384615384614" cy="802.1003371221013" r="4" fill="#c74b20"/>
+<circle cx="1223.4615384615386" cy="802.0476249246858" r="4" fill="#c74b20"/>
+<circle cx="1270.3846153846152" cy="802.5165672689676" r="4" fill="#c74b20"/>
+<circle cx="1317.3076923076924" cy="801.9336856519803" r="4" fill="#c74b20"/>
+<circle cx="1364.2307692307693" cy="800.3716793526895" r="4" fill="#c74b20"/>
+<circle cx="1411.1538461538462" cy="792.1547743290663" r="4" fill="#c74b20"/>
+<circle cx="1458.076923076923" cy="720.51272923192" r="4" fill="#c74b20"/>
+<circle cx="1505.0" cy="629.5589515483938" r="4" fill="#c74b20"/>
+<text x="1505.0" y="617.5589515483938" font-size="20" style="fill:#c74b20" text-anchor="end" font-weight="650">257.77</text>
+<line x1="895" y1="765.2" x2="1505" y2="765.2" stroke="#b86b08" stroke-width="1.5" stroke-dasharray="5 5"/>
+<text x="903" y="758.2" font-size="17" style="fill:#b86b08" text-anchor="start" font-weight="400">soft 64</text>
+<line x1="895" y1="630.8" x2="1505" y2="630.8" stroke="#b86b08" stroke-width="1.5" stroke-dasharray="5 5"/>
+<text x="903" y="623.8" font-size="17" style="fill:#b86b08" text-anchor="start" font-weight="400">hard 256</text>
+<text x="60" y="909" font-size="21" style="fill:#566780" text-anchor="start" font-weight="400">容量由 flush / compaction 事件倒推，并与 09-03 06:01 的 645.27 GiB 统计交叉核验；不是整盘 df 用量。</text>
+<rect x="50" y="938" width="1500" height="122" rx="18" fill="#172b4d"/>
+<text x="80" y="980" font-size="27" style="fill:white" text-anchor="start" font-weight="650">09-03 手工清理后：L6 降为 1153 个文件，活跃 SST 约 78.55 GiB，pending = 0。</text>
+<text x="80" y="1024" font-size="21" style="fill:#dae5f5" text-anchor="start" font-weight="400">清理中曾出现 L6 仍有 516,485 个文件而 pending 已为 0：文件数量影响处理成本，但不是 pending 的直接计数。</text>
+</svg>

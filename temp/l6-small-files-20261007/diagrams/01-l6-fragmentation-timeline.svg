@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1410" viewBox="0 0 1600 1410" role="img" aria-labelledby="title description">
+<title id="title">L6 小文件从尾文件到持续积累的演变</title>
+<desc id="description">四个阶段展示正常 L5 到 L6 合并留下尾文件，后续文件布局与递增 key 形成空隙，上层提前切分的小文件直接移入 L6，以及旧文件串累积增强切分条件。各阶段是不同时间的示意，文件宽度不代表大小。</desc>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#71829b"/></marker>
+  <marker id="blue-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb"/></marker>
+</defs>
+<style>
+text { font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; fill: #172b4d; }
+</style>
+<rect x="0" y="0" width="1600" height="1410" rx="0" fill="#f3f6fb" stroke="none" stroke-width="1.5"/>
+<text x="64" y="69" font-size="40" style="fill:#172b4d" font-weight="750" text-anchor="start">L6 如何从少量尾文件，逐步积累成碎片</text>
+<text x="66" y="111" font-size="22" style="fill:#566780" font-weight="400" text-anchor="start">图 1 / 时间向下推进 · 持续写入 LK:递增ID · 文件宽度仅为示意，不代表字节数</text>
+<rect x="56" y="145" width="1488" height="220" rx="20" fill="#ffffff" stroke="#dce4ef" stroke-width="1.5"/>
+<circle cx="94" cy="184" r="20" fill="#2563eb" stroke="none" stroke-width="2"/>
+<text x="94" y="191" font-size="21" style="fill:#ffffff" font-weight="700" text-anchor="middle">1</text>
+<text x="129" y="193" font-size="27" style="fill:#172b4d" font-weight="650" text-anchor="start">正常合并：写满若干 SST，最后留下一个尾文件</text>
+<text x="93" y="250" font-size="24" style="fill:#566780" font-weight="650" text-anchor="start">L5 → L6</text>
+<rect x="220" y="217" width="176" height="78" rx="10" fill="#e2f4f2" stroke="#087f8c" stroke-width="1.8"/>
+<text x="308.0" y="252.0" font-size="23" style="fill:#087f8c" font-weight="650" text-anchor="middle">约 128 MiB</text>
+<text x="308.0" y="281.0" font-size="18" style="fill:#087f8c" font-weight="400" text-anchor="middle">满文件 1</text>
+<rect x="418" y="217" width="176" height="78" rx="10" fill="#e2f4f2" stroke="#087f8c" stroke-width="1.8"/>
+<text x="506.0" y="252.0" font-size="23" style="fill:#087f8c" font-weight="650" text-anchor="middle">约 128 MiB</text>
+<text x="506.0" y="281.0" font-size="18" style="fill:#087f8c" font-weight="400" text-anchor="middle">满文件 2</text>
+<rect x="616" y="217" width="176" height="78" rx="10" fill="#e2f4f2" stroke="#087f8c" stroke-width="1.8"/>
+<text x="704.0" y="252.0" font-size="23" style="fill:#087f8c" font-weight="650" text-anchor="middle">约 128 MiB</text>
+<text x="704.0" y="281.0" font-size="18" style="fill:#087f8c" font-weight="400" text-anchor="middle">满文件 3</text>
+<rect x="814" y="217" width="176" height="78" rx="10" fill="#e2f4f2" stroke="#087f8c" stroke-width="1.8"/>
+<text x="902.0" y="252.0" font-size="23" style="fill:#087f8c" font-weight="650" text-anchor="middle">约 128 MiB</text>
+<text x="902.0" y="281.0" font-size="18" style="fill:#087f8c" font-weight="400" text-anchor="middle">满文件 4</text>
+<rect x="1012" y="217" width="176" height="78" rx="10" fill="#e2f4f2" stroke="#087f8c" stroke-width="1.8"/>
+<text x="1100.0" y="252.0" font-size="23" style="fill:#087f8c" font-weight="650" text-anchor="middle">约 128 MiB</text>
+<text x="1100.0" y="281.0" font-size="18" style="fill:#087f8c" font-weight="400" text-anchor="middle">满文件 5</text>
+<rect x="1222" y="217" width="280" height="78" rx="10" fill="#fff1d5" stroke="#b86b08" stroke-width="1.8"/>
+<text x="1362.0" y="252.0" font-size="23" style="fill:#b86b08" font-weight="650" text-anchor="middle">尾文件 A · 约 3 MiB</text>
+<text x="1362.0" y="281.0" font-size="18" style="fill:#b86b08" font-weight="400" text-anchor="middle">输入结束，未凑满目标大小</text>
+<text x="94" y="336" font-size="21" style="fill:#566780" font-weight="400" text-anchor="start">真实起点：10 月 2 日，#90521 留在 slot 499。前一个满文件当时也覆盖部分 slot 499。</text>
+<line x1="800" y1="373" x2="800" y2="389" stroke="#b5c1d2" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="56" y="395" width="1488" height="270" rx="20" fill="#ffffff" stroke="#dce4ef" stroke-width="1.5"/>
+<circle cx="94" cy="434" r="20" fill="#2563eb" stroke="none" stroke-width="2"/>
+<text x="94" y="441" font-size="21" style="fill:#ffffff" font-weight="700" text-anchor="middle">2</text>
+<text x="129" y="443" font-size="27" style="fill:#172b4d" font-weight="650" text-anchor="start">持续写入：新 ID 向各 slot 尾部追加，文件布局随后发生变化</text>
+<text x="94" y="478" font-size="18" style="fill:#566780" font-weight="400" text-anchor="start">key 顺序</text>
+<line x1="210" y1="471" x2="1477" y2="471" stroke="#b5c1d2" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="462" y="463" font-size="20" style="fill:#566780" font-weight="600" text-anchor="middle">slot 498</text>
+<text x="1180" y="463" font-size="20" style="fill:#566780" font-weight="600" text-anchor="middle">slot 499 → 后续 slot</text>
+<line x1="866" y1="486" x2="866" y2="602" stroke="#cdd6e4" stroke-width="2" stroke-dasharray="5 6"/>
+<text x="93" y="550" font-size="25" style="fill:#087f8c" font-weight="700" text-anchor="start">L6</text>
+<rect x="211" y="514" width="369" height="77" rx="10" fill="#edf1f6" stroke="#566780" stroke-width="1.8"/>
+<text x="395.5" y="548.5" font-size="23" style="fill:#566780" font-weight="650" text-anchor="middle">slot 498 的旧数据</text>
+<text x="395.5" y="577.5" font-size="18" style="fill:#566780" font-weight="400" text-anchor="middle">后续 compaction 已改变边界</text>
+<circle cx="735" cy="540" r="8" fill="#2563eb" stroke="none" stroke-width="2"/>
+<text x="735" y="572" font-size="21" style="fill:#2563eb" font-weight="650" text-anchor="middle">新 key m</text>
+<text x="735" y="600" font-size="17" style="fill:#2563eb" font-weight="400" text-anchor="middle">位于 L6 范围空隙中</text>
+<rect x="901" y="514" width="212" height="77" rx="10" fill="#fff1d5" stroke="#b86b08" stroke-width="1.8"/>
+<text x="1007.0" y="548.5" font-size="23" style="fill:#b86b08" font-weight="650" text-anchor="middle">旧尾文件 A</text>
+<text x="1007.0" y="577.5" font-size="18" style="fill:#b86b08" font-weight="400" text-anchor="middle">slot 499 · 约 3 MiB</text>
+<rect x="1135" y="514" width="367" height="77" rx="10" fill="#e2f4f2" stroke="#087f8c" stroke-width="1.8"/>
+<text x="1318.5" y="548.5" font-size="23" style="fill:#087f8c" font-weight="650" text-anchor="middle">正常大小的文件 B</text>
+<text x="1318.5" y="577.5" font-size="18" style="fill:#087f8c" font-weight="400" text-anchor="middle">从 slot 499 延伸到后续 slot</text>
+<text x="94" y="637" font-size="20" style="fill:#566780" font-weight="400" text-anchor="start">此处是后续时刻的布局；不能与尾文件刚生成时的分布当作同一张快照。</text>
+<line x1="800" y1="673" x2="800" y2="689" stroke="#b5c1d2" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="56" y="695" width="1488" height="237" rx="20" fill="#ffffff" stroke="#dce4ef" stroke-width="1.5"/>
+<circle cx="94" cy="734" r="20" fill="#2563eb" stroke="none" stroke-width="2"/>
+<text x="94" y="741" font-size="21" style="fill:#ffffff" font-weight="700" text-anchor="middle">3</text>
+<text x="129" y="743" font-size="27" style="fill:#172b4d" font-weight="650" text-anchor="start">上层切出少量新 key：小文件先在 L5 生成，再原样进入 L6</text>
+<rect x="94" y="776" width="288" height="80" rx="10" fill="#f0eafb" stroke="#7550bd" stroke-width="1.8"/>
+<text x="238.0" y="812.0" font-size="23" style="fill:#7550bd" font-weight="650" text-anchor="middle">L4 + L5 合并</text>
+<text x="238.0" y="841.0" font-size="18" style="fill:#7550bd" font-weight="400" text-anchor="middle">参考 L6 文件边界</text>
+<line x1="400" y1="815" x2="459" y2="815" stroke="#2563eb" stroke-width="3" marker-end="url(#blue-arrow)"/>
+<rect x="481" y="765" width="330" height="103" rx="10" fill="#ffebe2" stroke="#c74b20" stroke-width="1.8"/>
+<text x="646.0" y="812.5" font-size="23" style="fill:#c74b20" font-weight="650" text-anchor="middle">新 L5 小文件</text>
+<text x="646.0" y="841.5" font-size="18" style="fill:#c74b20" font-weight="400" text-anchor="middle">早期样本 #95353 · 约 326 KiB</text>
+<line x1="835" y1="815" x2="1082" y2="815" stroke="#2563eb" stroke-width="3" marker-end="url(#blue-arrow)"/>
+<text x="958" y="793" font-size="20" style="fill:#2563eb" font-weight="600" text-anchor="middle">与 L6 无重叠</text>
+<text x="958" y="845" font-size="20" style="fill:#2563eb" font-weight="500" text-anchor="middle">trivial move</text>
+<rect x="1103" y="776" width="399" height="80" rx="10" fill="#e2f4f2" stroke="#087f8c" stroke-width="1.8"/>
+<text x="1302.5" y="812.0" font-size="23" style="fill:#087f8c" font-weight="650" text-anchor="middle">原样进入 L6</text>
+<text x="1302.5" y="841.0" font-size="18" style="fill:#087f8c" font-weight="400" text-anchor="middle">只更新层级，不重写 SST</text>
+<text x="94" y="903" font-size="20" style="fill:#566780" font-weight="400" text-anchor="start">在下一条 key 前关闭当前 L5 文件，即使只写了少量数据也允许切分。图 2 展开这一步。</text>
+<line x1="800" y1="940" x2="800" y2="956" stroke="#b5c1d2" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="56" y="962" width="1488" height="324" rx="20" fill="#ffffff" stroke="#dce4ef" stroke-width="1.5"/>
+<circle cx="94" cy="1001" r="20" fill="#2563eb" stroke="none" stroke-width="2"/>
+<text x="94" y="1008" font-size="21" style="fill:#ffffff" font-weight="700" text-anchor="middle">4</text>
+<text x="129" y="1010" font-size="27" style="fill:#172b4d" font-weight="650" text-anchor="start">反复发生：同一 slot 的旧文件串越来越长，增强下一轮切分</text>
+<text x="93" y="1055" font-size="25" style="fill:#087f8c" font-weight="700" text-anchor="start">L6</text>
+<text x="472" y="1050" font-size="22" style="fill:#566780" font-weight="600" text-anchor="middle">slot 498：按 ID 排序的旧文件串</text>
+<text x="1253" y="1050" font-size="22" style="fill:#566780" font-weight="600" text-anchor="middle">slot 499</text>
+<rect x="173" y="1080" width="56" height="64" rx="6" fill="#ffebe2" stroke="#d58b70" stroke-width="1.5"/>
+<text x="201.0" y="1119" font-size="18" style="fill:#c74b20" font-weight="500" text-anchor="middle">旧</text>
+<rect x="236" y="1080" width="29" height="64" rx="6" fill="#ffebe2" stroke="#d58b70" stroke-width="1.5"/>
+<rect x="272" y="1080" width="47" height="64" rx="6" fill="#ffebe2" stroke="#d58b70" stroke-width="1.5"/>
+<text x="295.5" y="1119" font-size="18" style="fill:#c74b20" font-weight="500" text-anchor="middle">旧</text>
+<rect x="326" y="1080" width="32" height="64" rx="6" fill="#ffebe2" stroke="#d58b70" stroke-width="1.5"/>
+<rect x="365" y="1080" width="25" height="64" rx="6" fill="#ffebe2" stroke="#d58b70" stroke-width="1.5"/>
+<rect x="397" y="1080" width="54" height="64" rx="6" fill="#ffebe2" stroke="#d58b70" stroke-width="1.5"/>
+<text x="424.0" y="1119" font-size="18" style="fill:#c74b20" font-weight="500" text-anchor="middle">旧</text>
+<rect x="458" y="1080" width="31" height="64" rx="6" fill="#ffebe2" stroke="#d58b70" stroke-width="1.5"/>
+<rect x="496" y="1080" width="38" height="64" rx="6" fill="#ffebe2" stroke="#d58b70" stroke-width="1.5"/>
+<rect x="541" y="1080" width="26" height="64" rx="6" fill="#ffebe2" stroke="#d58b70" stroke-width="1.5"/>
+<rect x="574" y="1080" width="42" height="64" rx="6" fill="#ffebe2" stroke="#d58b70" stroke-width="1.5"/>
+<rect x="623" y="1080" width="28" height="64" rx="6" fill="#ffebe2" stroke="#d58b70" stroke-width="1.5"/>
+<rect x="658" y="1080" width="45" height="64" rx="6" fill="#ffebe2" stroke="#d58b70" stroke-width="1.5"/>
+<text x="680.5" y="1119" font-size="18" style="fill:#c74b20" font-weight="500" text-anchor="middle">旧</text>
+<rect x="710" y="1080" width="30" height="64" rx="6" fill="#ffebe2" stroke="#d58b70" stroke-width="1.5"/>
+<rect x="747" y="1080" width="25" height="64" rx="6" fill="#ffebe2" stroke="#d58b70" stroke-width="1.5"/>
+<text x="791" y="1120" font-size="30" style="fill:#c74b20" font-weight="650" text-anchor="start">…</text>
+<rect x="905" y="1080" width="169" height="64" rx="10" fill="#ffebe2" stroke="#c74b20" stroke-width="1.8"/>
+<text x="989.5" y="1120.0" font-size="23" style="fill:#c74b20" font-weight="650" text-anchor="middle">又一个小 SST</text>
+<line x1="885" y1="1112" x2="842" y2="1112" stroke="#2563eb" stroke-width="2.5" marker-end="url(#blue-arrow)"/>
+<rect x="1139" y="1080" width="114" height="64" rx="10" fill="#fff1d5" stroke="#b86b08" stroke-width="1.8"/>
+<text x="1196.0" y="1120.0" font-size="23" style="fill:#b86b08" font-weight="650" text-anchor="middle">A</text>
+<rect x="1280" y="1080" width="222" height="64" rx="10" fill="#e2f4f2" stroke="#087f8c" stroke-width="1.8"/>
+<text x="1391.0" y="1120.0" font-size="23" style="fill:#087f8c" font-weight="650" text-anchor="middle">B · 约 128 MiB</text>
+<rect x="94" y="1172" width="1408" height="83" rx="12" fill="#eef4ff" stroke="none" stroke-width="1.5"/>
+<text x="119" y="1206" font-size="23" style="fill:#2563eb" font-weight="650" text-anchor="start">已验证样本：进入新数据前，能跳过 123 个旧文件，合计 48.9 MiB ＞ 16 MiB。</text>
+<text x="119" y="1237" font-size="21" style="fill:#566780" font-weight="400" text-anchor="start">新数据前后都容易被切开；移入 L6 后，又成为下一轮可跳过的旧文件之一。</text>
+<rect x="56" y="1310" width="1488" height="65" rx="15" fill="#172b4d" stroke="none" stroke-width="1.5"/>
+<text x="800" y="1351" font-size="25" style="fill:#ffffff" font-weight="600" text-anchor="middle">起点只需少量尾文件；大量碎片是历史边界、递增写入与切分反馈共同积累的结果。</text>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1010" viewBox="0 0 1600 1010" role="img" aria-labelledby="title desc">
+<title id="title">请求较均匀，小文件却集中在两个 slot</title><desc id="desc">左图为十个等宽槽位区间的不同 key 数，右图为 L6 小文件按起始 slot 分组的数量；来自不同时间跨度，不能据此计算写放大。</desc>
+<style>text {font-family: PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif; fill: #172b4d;}</style>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10Z" fill="#2563eb"/></marker></defs>
+<rect width="1600" height="1010" fill="#f3f6fb"/>
+<text x="60" y="70" font-size="38" style="fill:#172b4d" font-weight="700" text-anchor="start">请求较均匀，L6 小文件却集中在两个 slot</text>
+<text x="60" y="113" font-size="22" style="fill:#566780" font-weight="400" text-anchor="start">请求来自约十分钟 WAL 样本 · 小文件定义：SST &lt; 1 MiB</text>
+<rect x="50" y="150" width="745" height="690" rx="12" fill="#fff" stroke="none"/>
+<rect x="815" y="150" width="735" height="690" rx="12" fill="#fff" stroke="none"/>
+<text x="80" y="194" font-size="27" style="fill:#172b4d" font-weight="650" text-anchor="start">请求分布：17,855 个不同 key</text>
+<text x="80" y="230" font-size="20" style="fill:#566780" font-weight="400" text-anchor="start">每组 273 个 slot；横轴为不同 key 数</text>
+<text x="205" y="292" font-size="18" style="fill:#566780" font-weight="400" text-anchor="end">0–272</text>
+<rect x="225" y="270" width="383.77500000000003" height="28" rx="4" fill="#cbdffd" stroke="none"/>
+<text x="618.7750000000001" y="292" font-size="18" style="fill:#172b4d" font-weight="600" text-anchor="start">1806</text>
+<text x="205" y="340" font-size="18" style="fill:#566780" font-weight="400" text-anchor="end">273–545</text>
+<rect x="225" y="318" width="378.25" height="28" rx="4" fill="#cbdffd" stroke="none"/>
+<text x="613.25" y="340" font-size="18" style="fill:#172b4d" font-weight="600" text-anchor="start">1780</text>
+<text x="205" y="388" font-size="18" style="fill:#566780" font-weight="400" text-anchor="end">546–818</text>
+<rect x="225" y="366" width="385.6875" height="28" rx="4" fill="#cbdffd" stroke="none"/>
+<text x="620.6875" y="388" font-size="18" style="fill:#172b4d" font-weight="600" text-anchor="start">1815</text>
+<text x="205" y="436" font-size="18" style="fill:#566780" font-weight="400" text-anchor="end">819–1091</text>
+<rect x="225" y="414" width="373.575" height="28" rx="4" fill="#cbdffd" stroke="none"/>
+<text x="608.575" y="436" font-size="18" style="fill:#172b4d" font-weight="600" text-anchor="start">1758</text>
+<text x="205" y="484" font-size="18" style="fill:#566780" font-weight="400" text-anchor="end">1092–1364</text>
+<rect x="225" y="462" width="391.2125" height="28" rx="4" fill="#cbdffd" stroke="none"/>
+<text x="626.2125" y="484" font-size="18" style="fill:#172b4d" font-weight="600" text-anchor="start">1841</text>
+<text x="205" y="532" font-size="18" style="fill:#566780" font-weight="400" text-anchor="end">1365–1637</text>
+<rect x="225" y="510" width="375.48749999999995" height="28" rx="4" fill="#cbdffd" stroke="none"/>
+<text x="610.4875" y="532" font-size="18" style="fill:#172b4d" font-weight="600" text-anchor="start">1767</text>
+<text x="205" y="580" font-size="18" style="fill:#566780" font-weight="400" text-anchor="end">1638–1910</text>
+<rect x="225" y="558" width="371.875" height="28" rx="4" fill="#cbdffd" stroke="none"/>
+<text x="606.875" y="580" font-size="18" style="fill:#172b4d" font-weight="600" text-anchor="start">1750</text>
+<text x="205" y="628" font-size="18" style="fill:#566780" font-weight="400" text-anchor="end">1911–2183</text>
+<rect x="225" y="606" width="371.2375" height="28" rx="4" fill="#cbdffd" stroke="none"/>
+<text x="606.2375" y="628" font-size="18" style="fill:#172b4d" font-weight="600" text-anchor="start">1747</text>
+<text x="205" y="676" font-size="18" style="fill:#566780" font-weight="400" text-anchor="end">2184–2456</text>
+<rect x="225" y="654" width="376.55" height="28" rx="4" fill="#cbdffd" stroke="none"/>
+<text x="611.55" y="676" font-size="18" style="fill:#172b4d" font-weight="600" text-anchor="start">1772</text>
+<text x="205" y="724" font-size="18" style="fill:#566780" font-weight="400" text-anchor="end">2457–2729</text>
+<rect x="225" y="702" width="386.53749999999997" height="28" rx="4" fill="#cbdffd" stroke="none"/>
+<text x="621.5374999999999" y="724" font-size="18" style="fill:#172b4d" font-weight="600" text-anchor="start">1819</text>
+<text x="80" y="799" font-size="21" style="fill:#2563eb" font-weight="600" text-anchor="start">每组 1747–1841 个，接近平均值 1785.5</text>
+<text x="845" y="194" font-size="27" style="fill:#172b4d" font-weight="650" text-anchor="start">小文件分布：737 个 SST</text>
+<text x="845" y="230" font-size="20" style="fill:#566780" font-weight="400" text-anchor="start">按 SST 起始 slot 分组；横轴为文件数</text>
+<text x="970" y="302" font-size="20" style="fill:#566780" font-weight="400" text-anchor="end">slot 1088</text>
+<rect x="990" y="278" width="411.64444444444445" height="32" rx="4" fill="#f1a783" stroke="none"/>
+<text x="1413.6444444444444" y="303" font-size="21" style="fill:#172b4d" font-weight="650" text-anchor="start">421</text>
+<text x="970" y="376" font-size="20" style="fill:#566780" font-weight="400" text-anchor="end">slot 498</text>
+<rect x="990" y="352" width="200.44444444444443" height="32" rx="4" fill="#f1a783" stroke="none"/>
+<text x="1202.4444444444443" y="377" font-size="21" style="fill:#172b4d" font-weight="650" text-anchor="start">205</text>
+<text x="970" y="450" font-size="20" style="fill:#566780" font-weight="400" text-anchor="end">slot 2432</text>
+<rect x="990" y="426" width="33.24444444444445" height="32" rx="4" fill="#cdd6e4" stroke="none"/>
+<text x="1035.2444444444445" y="451" font-size="21" style="fill:#172b4d" font-weight="650" text-anchor="start">34</text>
+<text x="970" y="524" font-size="20" style="fill:#566780" font-weight="400" text-anchor="end">slot 1827</text>
+<rect x="990" y="500" width="25.42222222222222" height="32" rx="4" fill="#cdd6e4" stroke="none"/>
+<text x="1027.4222222222222" y="525" font-size="21" style="fill:#172b4d" font-weight="650" text-anchor="start">26</text>
+<text x="970" y="598" font-size="20" style="fill:#566780" font-weight="400" text-anchor="end">其他</text>
+<rect x="990" y="574" width="49.86666666666667" height="32" rx="4" fill="#cdd6e4" stroke="none"/>
+<text x="1051.8666666666666" y="599" font-size="21" style="fill:#172b4d" font-weight="650" text-anchor="start">51</text>
+<rect x="847" y="671" width="668" height="122" rx="12" fill="#fff1e8" stroke="none"/>
+<text x="872" y="709" font-size="25" style="fill:#b44c20" font-weight="650" text-anchor="start">slot 498 + 1088：626 / 737 = 84.9%</text>
+<text x="872" y="749" font-size="21" style="fill:#566780" font-weight="400" text-anchor="start">请求样本中，这两个 slot 各只有 5 个不同 key</text>
+<text x="872" y="780" font-size="20" style="fill:#566780" font-weight="400" text-anchor="start">各 slot 平均为 6.54 个，未呈现请求数量热点</text>
+<rect x="50" y="864" width="1500" height="100" rx="12" fill="#172b4d" stroke="none"/>
+<text x="80" y="904" font-size="27" style="fill:#fff" font-weight="650" text-anchor="start">请求分散到很多 slot，碎片却反复在特定文件边界形成。</text>
+<text x="80" y="939" font-size="21" style="fill:#dae5f5" font-weight="400" text-anchor="start">请求采样与存量文件的时间跨度不同；该对比不代表所有历史时段的分布，也不是写放大测量。</text>
+</svg>

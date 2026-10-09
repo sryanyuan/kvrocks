@@ -1,0 +1,2786 @@
+[
+  {
+    "time": "2025/09/03-06:01:23.106845",
+    "source": [
+      "LOG",
+      152889
+    ],
+    "cfs": {
+      "default": {
+        "levels": {},
+        "details": [
+          {
+            "text": "Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              152919
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              152920
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 0",
+            "source": [
+              "LOG",
+              152921
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0",
+            "source": [
+              "LOG",
+              152922
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): DataBlock(84554,3.14 GB,78.486%) FilterBlock(195944,66.71 MB,1.62875%) FilterMetaBlock(35553,11.64 MB,0.284278%) IndexBlock(234503,740.09 MB,18.0687%) Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              152924
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "levels": {
+          "0": {
+            "files": 0,
+            "compacting": 0,
+            "size": 0.0,
+            "unit": "KB",
+            "score": 0.0,
+            "source": [
+              "LOG",
+              152931
+            ],
+            "raw": "L0      0/0    0.00 KB   0.0      0.0     0.0      0.0   14020.5  14020.5       0.0   1.0      0.0    796.7  18020.49          16732.20    136587    0.132       0      0       0.0       0.0"
+          },
+          "2": {
+            "files": 8,
+            "compacting": 3,
+            "size": 707.49,
+            "unit": "MB",
+            "score": 15.9,
+            "source": [
+              "LOG",
+              152932
+            ],
+            "raw": "L2      8/3   707.49 MB  15.9   2223.7  1415.6    808.2    2223.8   1415.6       0.0   1.6   1150.0   1150.1   1980.01           3555.09      4511    0.439    111M    11K       0.0       0.0"
+          },
+          "3": {
+            "files": 10,
+            "compacting": 5,
+            "size": 683.9,
+            "unit": "MB",
+            "score": 0.9,
+            "source": [
+              "LOG",
+              152933
+            ],
+            "raw": "L3     10/5   683.90 MB   0.9  22317.1 13992.2   8324.9   22316.6  13991.7       0.0   1.6   1109.7   1109.7  20593.60          35007.29     52825    0.390   1207M   101K       0.0       0.0"
+          },
+          "4": {
+            "files": 173,
+            "compacting": 0,
+            "size": 7.01,
+            "unit": "GB",
+            "score": 11.3,
+            "source": [
+              "LOG",
+              152934
+            ],
+            "raw": "L4    173/0    7.01 GB  11.3  32094.8 14011.4  18083.4   32088.8  14005.5       4.6   2.3    575.1    575.0  57150.48          54559.24    138126    0.414   1696M    14K       0.0       0.0"
+          },
+          "5": {
+            "files": 59226,
+            "compacting": 3,
+            "size": 70.47,
+            "unit": "GB",
+            "score": 12.0,
+            "source": [
+              "LOG",
+              152935
+            ],
+            "raw": "L5  59226/3   70.47 GB  12.0  72613.9 13978.1  58635.7   72363.9  13728.2      27.1   5.2    568.0    566.0 130911.59         124414.58    146745    0.892   3934M  3452K       0.0       0.0"
+          },
+          "6": {
+            "files": 509543,
+            "compacting": 0,
+            "size": 566.42,
+            "unit": "GB",
+            "score": 0.0,
+            "source": [
+              "LOG",
+              152936
+            ],
+            "raw": "L6 509543/0   566.42 GB   0.0  64376.9 13108.9  51268.1   51257.9    -10.1     576.6   3.9    646.4    514.6 101988.38          93157.65    338991    0.301   3532M   721M       0.0       0.0"
+          }
+        },
+        "details": [
+          {
+            "text": "Cumulative compaction: 194271.61 GB write, 14.38 MB/s write, 193626.34 GB read, 14.33 MB/s read, 330644.6 seconds",
+            "source": [
+              "LOG",
+              152954
+            ]
+          },
+          {
+            "text": "Interval compaction: 194271.61 GB write, 14.38 MB/s write, 193626.34 GB read, 14.33 MB/s read, 330644.6 seconds",
+            "source": [
+              "LOG",
+              152955
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 175204850744",
+            "source": [
+              "LOG",
+              152956
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 206, memtable-limit-stops: 158, pending-compaction-bytes-delays: 59635, pending-compaction-bytes-stops: 166, total-delays: 59841, total-stops: 324",
+            "source": [
+              "LOG",
+              152957
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): DataBlock(84554,3.14 GB,78.486%) FilterBlock(195944,66.71 MB,1.62875%) FilterMetaBlock(35553,11.64 MB,0.284278%) IndexBlock(234503,740.09 MB,18.0687%) Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              152960
+            ]
+          }
+        ]
+      },
+      "zset_score": {
+        "levels": {},
+        "details": [
+          {
+            "text": "Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              153144
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              153145
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 0",
+            "source": [
+              "LOG",
+              153146
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0",
+            "source": [
+              "LOG",
+              153147
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): DataBlock(84554,3.14 GB,78.486%) FilterBlock(195944,66.71 MB,1.62875%) FilterMetaBlock(35553,11.64 MB,0.284278%) IndexBlock(234503,740.09 MB,18.0687%) Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              153149
+            ]
+          }
+        ]
+      },
+      "pubsub": {
+        "levels": {},
+        "details": [
+          {
+            "text": "Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              153171
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              153172
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 0",
+            "source": [
+              "LOG",
+              153173
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0",
+            "source": [
+              "LOG",
+              153174
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              153176
+            ]
+          }
+        ]
+      },
+      "propagate": {
+        "levels": {},
+        "details": [
+          {
+            "text": "Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              153198
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              153199
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 0",
+            "source": [
+              "LOG",
+              153200
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0",
+            "source": [
+              "LOG",
+              153201
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              153203
+            ]
+          }
+        ]
+      },
+      "stream": {
+        "levels": {},
+        "details": [
+          {
+            "text": "Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              153225
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              153226
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 0",
+            "source": [
+              "LOG",
+              153227
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0",
+            "source": [
+              "LOG",
+              153228
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): DataBlock(84554,3.14 GB,78.486%) FilterBlock(195944,66.71 MB,1.62875%) FilterMetaBlock(35553,11.64 MB,0.284278%) IndexBlock(234503,740.09 MB,18.0687%) Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              153230
+            ]
+          }
+        ]
+      },
+      "search": {
+        "levels": {},
+        "details": [
+          {
+            "text": "Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              153252
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              153253
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 0",
+            "source": [
+              "LOG",
+              153254
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0",
+            "source": [
+              "LOG",
+              153255
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              153257
+            ]
+          }
+        ]
+      }
+    },
+    "db": [
+      {
+        "text": "Uptime(secs): 13837210.7 total, 13837210.7 interval",
+        "source": [
+          "LOG",
+          152892
+        ]
+      },
+      {
+        "text": "Cumulative stall: 00:36:7.918 H:M:S, 0.0 percent",
+        "source": [
+          "LOG",
+          152895
+        ]
+      },
+      {
+        "text": "Interval writes: 765M writes, 765M keys, 764M commit groups, 1.0 writes per commit group, ingest: 14349234.20 MB, 1.04 MB/s",
+        "source": [
+          "LOG",
+          152896
+        ]
+      },
+      {
+        "text": "Interval stall: 00:36:7.918 H:M:S, 0.0 percent",
+        "source": [
+          "LOG",
+          152898
+        ]
+      }
+    ]
+  },
+  {
+    "time": "2025/09/03-06:01:53.179406",
+    "source": [
+      "LOG",
+      154597
+    ],
+    "cfs": {
+      "default": {
+        "levels": {},
+        "details": [
+          {
+            "text": "Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              154627
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              154628
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 0",
+            "source": [
+              "LOG",
+              154629
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0",
+            "source": [
+              "LOG",
+              154630
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): DataBlock(84554,3.14 GB,78.486%) FilterBlock(195944,66.71 MB,1.62875%) FilterMetaBlock(35553,11.64 MB,0.284278%) IndexBlock(234503,740.09 MB,18.0687%) Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              154632
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "levels": {
+          "0": {
+            "files": 0,
+            "compacting": 0,
+            "size": 0.0,
+            "unit": "KB",
+            "score": 0.0,
+            "source": [
+              "LOG",
+              154639
+            ],
+            "raw": "L0      0/0    0.00 KB   0.0      0.0     0.0      0.0   14020.5  14020.5       0.0   1.0      0.0    796.7  18020.49          16732.20    136587    0.132       0      0       0.0       0.0"
+          },
+          "2": {
+            "files": 4,
+            "compacting": 0,
+            "size": 305.56,
+            "unit": "MB",
+            "score": 11.9,
+            "source": [
+              "LOG",
+              154640
+            ],
+            "raw": "L2      4/0   305.56 MB  11.9   2223.7  1415.6    808.2    2223.8   1415.6       0.0   1.6   1150.0   1150.1   1980.01           3555.09      4511    0.439    111M    11K       0.0       0.0"
+          },
+          "3": {
+            "files": 8,
+            "compacting": 0,
+            "size": 708.92,
+            "unit": "MB",
+            "score": 11.3,
+            "source": [
+              "LOG",
+              154641
+            ],
+            "raw": "L3      8/0   708.92 MB  11.3  22317.8 13992.6   8325.2   22317.3  13992.1       0.0   1.6   1109.7   1109.6  20594.87          35008.50     52828    0.390   1207M   101K       0.0       0.0"
+          },
+          "4": {
+            "files": 303,
+            "compacting": 6,
+            "size": 7.38,
+            "unit": "GB",
+            "score": 12.6,
+            "source": [
+              "LOG",
+              154642
+            ],
+            "raw": "L4    303/6    7.38 GB  12.6  32096.6 14011.8  18084.8   32090.6  14005.8       4.6   2.3    575.1    575.0  57154.10          54562.53    138131    0.414   1696M    14K       0.0       0.0"
+          },
+          "5": {
+            "files": 59224,
+            "compacting": 0,
+            "size": 70.47,
+            "unit": "GB",
+            "score": 12.0,
+            "source": [
+              "LOG",
+              154643
+            ],
+            "raw": "L5  59224/0   70.47 GB  12.0  72613.9 13978.1  58635.7   72363.9  13728.2      27.1   5.2    568.0    566.0 130911.59         124414.58    146745    0.892   3934M  3452K       0.0       0.0"
+          },
+          "6": {
+            "files": 509554,
+            "compacting": 0,
+            "size": 566.42,
+            "unit": "GB",
+            "score": 0.0,
+            "source": [
+              "LOG",
+              154644
+            ],
+            "raw": "L6 509554/0   566.42 GB   0.0  64376.9 13108.9  51268.1   51257.9    -10.1     576.6   3.9    646.4    514.6 101988.38          93157.65    338991    0.301   3532M   721M       0.0       0.0"
+          }
+        },
+        "details": [
+          {
+            "text": "Cumulative compaction: 194274.09 GB write, 14.38 MB/s write, 193628.82 GB read, 14.33 MB/s read, 330649.4 seconds",
+            "source": [
+              "LOG",
+              154662
+            ]
+          },
+          {
+            "text": "Interval compaction: 2.48 GB write, 84.47 MB/s write, 2.48 GB read, 84.47 MB/s read, 4.9 seconds",
+            "source": [
+              "LOG",
+              154663
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 172188374322",
+            "source": [
+              "LOG",
+              154664
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 206, memtable-limit-stops: 158, pending-compaction-bytes-delays: 59646, pending-compaction-bytes-stops: 166, total-delays: 59852, total-stops: 324",
+            "source": [
+              "LOG",
+              154665
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): DataBlock(84554,3.14 GB,78.486%) FilterBlock(195944,66.71 MB,1.62875%) FilterMetaBlock(35553,11.64 MB,0.284278%) IndexBlock(234503,740.09 MB,18.0687%) Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              154668
+            ]
+          }
+        ]
+      },
+      "zset_score": {
+        "levels": {},
+        "details": [
+          {
+            "text": "Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              154852
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              154853
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 0",
+            "source": [
+              "LOG",
+              154854
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0",
+            "source": [
+              "LOG",
+              154855
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): DataBlock(84554,3.14 GB,78.486%) FilterBlock(195944,66.71 MB,1.62875%) FilterMetaBlock(35553,11.64 MB,0.284278%) IndexBlock(234503,740.09 MB,18.0687%) Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              154857
+            ]
+          }
+        ]
+      },
+      "pubsub": {
+        "levels": {},
+        "details": [
+          {
+            "text": "Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              154879
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              154880
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 0",
+            "source": [
+              "LOG",
+              154881
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0",
+            "source": [
+              "LOG",
+              154882
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              154884
+            ]
+          }
+        ]
+      },
+      "propagate": {
+        "levels": {},
+        "details": [
+          {
+            "text": "Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              154906
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              154907
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 0",
+            "source": [
+              "LOG",
+              154908
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0",
+            "source": [
+              "LOG",
+              154909
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              154911
+            ]
+          }
+        ]
+      },
+      "stream": {
+        "levels": {},
+        "details": [
+          {
+            "text": "Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              154933
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              154934
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 0",
+            "source": [
+              "LOG",
+              154935
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0",
+            "source": [
+              "LOG",
+              154936
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): DataBlock(84554,3.14 GB,78.486%) FilterBlock(195944,66.71 MB,1.62875%) FilterMetaBlock(35553,11.64 MB,0.284278%) IndexBlock(234503,740.09 MB,18.0687%) Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              154938
+            ]
+          }
+        ]
+      },
+      "search": {
+        "levels": {},
+        "details": [
+          {
+            "text": "Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              154960
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              154961
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 0",
+            "source": [
+              "LOG",
+              154962
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0",
+            "source": [
+              "LOG",
+              154963
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              154965
+            ]
+          }
+        ]
+      }
+    },
+    "db": [
+      {
+        "text": "Uptime(secs): 13837240.7 total, 30.1 interval",
+        "source": [
+          "LOG",
+          154600
+        ]
+      },
+      {
+        "text": "Cumulative stall: 00:36:7.918 H:M:S, 0.0 percent",
+        "source": [
+          "LOG",
+          154603
+        ]
+      },
+      {
+        "text": "Interval writes: 2763 writes, 2763 keys, 2552 commit groups, 1.1 writes per commit group, ingest: 61.19 MB, 2.03 MB/s",
+        "source": [
+          "LOG",
+          154604
+        ]
+      },
+      {
+        "text": "Interval stall: 00:00:0.000 H:M:S, 0.0 percent",
+        "source": [
+          "LOG",
+          154606
+        ]
+      }
+    ]
+  },
+  {
+    "time": "2025/09/03-06:02:23.250083",
+    "source": [
+      "LOG",
+      155852
+    ],
+    "cfs": {
+      "default": {
+        "levels": {},
+        "details": [
+          {
+            "text": "Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              155882
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              155883
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 0",
+            "source": [
+              "LOG",
+              155884
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0",
+            "source": [
+              "LOG",
+              155885
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): DataBlock(84554,3.14 GB,78.486%) FilterBlock(195944,66.71 MB,1.62875%) FilterMetaBlock(35553,11.64 MB,0.284278%) IndexBlock(234503,740.09 MB,18.0687%) Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              155887
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "levels": {
+          "0": {
+            "files": 1,
+            "compacting": 0,
+            "size": 105.48,
+            "unit": "MB",
+            "score": 0.2,
+            "source": [
+              "LOG",
+              155894
+            ],
+            "raw": "L0      1/0   105.48 MB   0.2      0.0     0.0      0.0   14020.6  14020.6       0.0   1.0      0.0    796.7  18020.62          16732.32    136588    0.132       0      0       0.0       0.0"
+          },
+          "2": {
+            "files": 4,
+            "compacting": 0,
+            "size": 305.56,
+            "unit": "MB",
+            "score": 8.5,
+            "source": [
+              "LOG",
+              155895
+            ],
+            "raw": "L2      4/0   305.56 MB   8.5   2223.7  1415.6    808.2    2223.8   1415.6       0.0   1.6   1150.0   1150.1   1980.01           3555.09      4511    0.439    111M    11K       0.0       0.0"
+          },
+          "3": {
+            "files": 8,
+            "compacting": 0,
+            "size": 708.92,
+            "unit": "MB",
+            "score": 9.6,
+            "source": [
+              "LOG",
+              155896
+            ],
+            "raw": "L3      8/0   708.92 MB   9.6  22317.8 13992.6   8325.2   22317.3  13992.1       0.0   1.6   1109.7   1109.6  20594.87          35008.50     52828    0.390   1207M   101K       0.0       0.0"
+          },
+          "4": {
+            "files": 273,
+            "compacting": 6,
+            "size": 7.37,
+            "unit": "GB",
+            "score": 12.4,
+            "source": [
+              "LOG",
+              155897
+            ],
+            "raw": "L4    273/6    7.37 GB  12.4  32096.6 14011.8  18084.8   32090.6  14005.8       4.6   2.3    575.1    575.0  57154.10          54562.53    138131    0.414   1696M    14K       0.0       0.0"
+          },
+          "5": {
+            "files": 59254,
+            "compacting": 0,
+            "size": 70.48,
+            "unit": "GB",
+            "score": 12.0,
+            "source": [
+              "LOG",
+              155898
+            ],
+            "raw": "L5  59254/0   70.48 GB  12.0  72613.9 13978.1  58635.7   72363.9  13728.2      27.1   5.2    568.0    566.0 130911.59         124414.58    146745    0.892   3934M  3452K       0.0       0.0"
+          },
+          "6": {
+            "files": 509554,
+            "compacting": 0,
+            "size": 566.42,
+            "unit": "GB",
+            "score": 0.0,
+            "source": [
+              "LOG",
+              155899
+            ],
+            "raw": "L6 509554/0   566.42 GB   0.0  64376.9 13108.9  51268.1   51257.9    -10.1     576.6   3.9    646.4    514.6 101988.38          93157.65    338991    0.301   3532M   721M       0.0       0.0"
+          }
+        },
+        "details": [
+          {
+            "text": "Cumulative compaction: 194274.19 GB write, 14.38 MB/s write, 193628.82 GB read, 14.33 MB/s read, 330649.6 seconds",
+            "source": [
+              "LOG",
+              155917
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.10 GB write, 3.51 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.1 seconds",
+            "source": [
+              "LOG",
+              155918
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 172123569798",
+            "source": [
+              "LOG",
+              155919
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 206, memtable-limit-stops: 158, pending-compaction-bytes-delays: 59657, pending-compaction-bytes-stops: 166, total-delays: 59863, total-stops: 324",
+            "source": [
+              "LOG",
+              155920
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): DataBlock(84554,3.14 GB,78.486%) FilterBlock(195944,66.71 MB,1.62875%) FilterMetaBlock(35553,11.64 MB,0.284278%) IndexBlock(234503,740.09 MB,18.0687%) Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              155923
+            ]
+          }
+        ]
+      },
+      "zset_score": {
+        "levels": {},
+        "details": [
+          {
+            "text": "Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              156107
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              156108
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 0",
+            "source": [
+              "LOG",
+              156109
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0",
+            "source": [
+              "LOG",
+              156110
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): DataBlock(84554,3.14 GB,78.486%) FilterBlock(195944,66.71 MB,1.62875%) FilterMetaBlock(35553,11.64 MB,0.284278%) IndexBlock(234503,740.09 MB,18.0687%) Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              156112
+            ]
+          }
+        ]
+      },
+      "pubsub": {
+        "levels": {},
+        "details": [
+          {
+            "text": "Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              156134
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              156135
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 0",
+            "source": [
+              "LOG",
+              156136
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0",
+            "source": [
+              "LOG",
+              156137
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              156139
+            ]
+          }
+        ]
+      },
+      "propagate": {
+        "levels": {},
+        "details": [
+          {
+            "text": "Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              156161
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              156162
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 0",
+            "source": [
+              "LOG",
+              156163
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0",
+            "source": [
+              "LOG",
+              156164
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              156166
+            ]
+          }
+        ]
+      },
+      "stream": {
+        "levels": {},
+        "details": [
+          {
+            "text": "Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              156188
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              156189
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 0",
+            "source": [
+              "LOG",
+              156190
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0",
+            "source": [
+              "LOG",
+              156191
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): DataBlock(84554,3.14 GB,78.486%) FilterBlock(195944,66.71 MB,1.62875%) FilterMetaBlock(35553,11.64 MB,0.284278%) IndexBlock(234503,740.09 MB,18.0687%) Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              156193
+            ]
+          }
+        ]
+      },
+      "search": {
+        "levels": {},
+        "details": [
+          {
+            "text": "Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              156215
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              156216
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 0",
+            "source": [
+              "LOG",
+              156217
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0",
+            "source": [
+              "LOG",
+              156218
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              156220
+            ]
+          }
+        ]
+      }
+    },
+    "db": [
+      {
+        "text": "Uptime(secs): 13837270.8 total, 30.1 interval",
+        "source": [
+          "LOG",
+          155855
+        ]
+      },
+      {
+        "text": "Cumulative stall: 00:36:7.918 H:M:S, 0.0 percent",
+        "source": [
+          "LOG",
+          155858
+        ]
+      },
+      {
+        "text": "Interval writes: 2549 writes, 2549 keys, 2381 commit groups, 1.1 writes per commit group, ingest: 56.58 MB, 1.88 MB/s",
+        "source": [
+          "LOG",
+          155859
+        ]
+      },
+      {
+        "text": "Interval stall: 00:00:0.000 H:M:S, 0.0 percent",
+        "source": [
+          "LOG",
+          155861
+        ]
+      }
+    ]
+  },
+  {
+    "time": "2025/09/03-06:02:53.319580",
+    "source": [
+      "LOG",
+      157085
+    ],
+    "cfs": {
+      "metadata": {
+        "levels": {
+          "0": {
+            "files": 1,
+            "compacting": 0,
+            "size": 105.48,
+            "unit": "MB",
+            "score": 0.2,
+            "source": [
+              "LOG",
+              157100
+            ],
+            "raw": "L0      1/0   105.48 MB   0.2      0.0     0.0      0.0   14020.6  14020.6       0.0   1.0      0.0    796.7  18020.62          16732.32    136588    0.132       0      0       0.0       0.0"
+          },
+          "2": {
+            "files": 4,
+            "compacting": 0,
+            "size": 305.56,
+            "unit": "MB",
+            "score": 8.5,
+            "source": [
+              "LOG",
+              157101
+            ],
+            "raw": "L2      4/0   305.56 MB   8.5   2223.7  1415.6    808.2    2223.8   1415.6       0.0   1.6   1150.0   1150.1   1980.01           3555.09      4511    0.439    111M    11K       0.0       0.0"
+          },
+          "3": {
+            "files": 8,
+            "compacting": 0,
+            "size": 708.92,
+            "unit": "MB",
+            "score": 9.6,
+            "source": [
+              "LOG",
+              157102
+            ],
+            "raw": "L3      8/0   708.92 MB   9.6  22317.8 13992.6   8325.2   22317.3  13992.1       0.0   1.6   1109.7   1109.6  20594.87          35008.50     52828    0.390   1207M   101K       0.0       0.0"
+          },
+          "4": {
+            "files": 243,
+            "compacting": 6,
+            "size": 7.36,
+            "unit": "GB",
+            "score": 12.4,
+            "source": [
+              "LOG",
+              157103
+            ],
+            "raw": "L4    243/6    7.36 GB  12.4  32096.6 14011.8  18084.8   32090.6  14005.8       4.6   2.3    575.1    575.0  57154.10          54562.53    138131    0.414   1696M    14K       0.0       0.0"
+          },
+          "5": {
+            "files": 59284,
+            "compacting": 0,
+            "size": 70.49,
+            "unit": "GB",
+            "score": 12.0,
+            "source": [
+              "LOG",
+              157104
+            ],
+            "raw": "L5  59284/0   70.49 GB  12.0  72613.9 13978.1  58635.7   72363.9  13728.2      27.1   5.2    568.0    566.0 130911.59         124414.58    146745    0.892   3934M  3452K       0.0       0.0"
+          },
+          "6": {
+            "files": 509554,
+            "compacting": 0,
+            "size": 566.42,
+            "unit": "GB",
+            "score": 0.0,
+            "source": [
+              "LOG",
+              157105
+            ],
+            "raw": "L6 509554/0   566.42 GB   0.0  64376.9 13108.9  51268.1   51257.9    -10.1     576.6   3.9    646.4    514.6 101988.38          93157.65    338991    0.301   3532M   721M       0.0       0.0"
+          }
+        },
+        "details": [
+          {
+            "text": "Cumulative compaction: 194274.19 GB write, 14.38 MB/s write, 193628.82 GB read, 14.33 MB/s read, 330649.6 seconds",
+            "source": [
+              "LOG",
+              157123
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              157124
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 172051592118",
+            "source": [
+              "LOG",
+              157125
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 206, memtable-limit-stops: 158, pending-compaction-bytes-delays: 59668, pending-compaction-bytes-stops: 166, total-delays: 59874, total-stops: 324",
+            "source": [
+              "LOG",
+              157126
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): DataBlock(84554,3.14 GB,78.486%) FilterBlock(195944,66.71 MB,1.62875%) FilterMetaBlock(35553,11.64 MB,0.284278%) IndexBlock(234503,740.09 MB,18.0687%) Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              157129
+            ]
+          }
+        ]
+      }
+    },
+    "db": [
+      {
+        "text": "Uptime(secs): 13837300.9 total, 30.1 interval",
+        "source": [
+          "LOG",
+          157088
+        ]
+      },
+      {
+        "text": "Cumulative stall: 00:36:7.918 H:M:S, 0.0 percent",
+        "source": [
+          "LOG",
+          157091
+        ]
+      },
+      {
+        "text": "Interval writes: 2919 writes, 2919 keys, 2702 commit groups, 1.1 writes per commit group, ingest: 64.83 MB, 2.16 MB/s",
+        "source": [
+          "LOG",
+          157092
+        ]
+      },
+      {
+        "text": "Interval stall: 00:00:0.000 H:M:S, 0.0 percent",
+        "source": [
+          "LOG",
+          157094
+        ]
+      }
+    ]
+  },
+  {
+    "time": "2025/09/03-06:03:23.389442",
+    "source": [
+      "LOG",
+      158174
+    ],
+    "cfs": {
+      "metadata": {
+        "levels": {
+          "0": {
+            "files": 2,
+            "compacting": 0,
+            "size": 209.78,
+            "unit": "MB",
+            "score": 0.5,
+            "source": [
+              "LOG",
+              158189
+            ],
+            "raw": "L0      2/0   209.78 MB   0.5      0.0     0.0      0.0   14020.7  14020.7       0.0   1.0      0.0    796.7  18020.75          16732.44    136589    0.132       0      0       0.0       0.0"
+          },
+          "2": {
+            "files": 4,
+            "compacting": 0,
+            "size": 305.56,
+            "unit": "MB",
+            "score": 6.6,
+            "source": [
+              "LOG",
+              158190
+            ],
+            "raw": "L2      4/0   305.56 MB   6.6   2223.7  1415.6    808.2    2223.8   1415.6       0.0   1.6   1150.0   1150.1   1980.01           3555.09      4511    0.439    111M    11K       0.0       0.0"
+          },
+          "3": {
+            "files": 8,
+            "compacting": 0,
+            "size": 708.92,
+            "unit": "MB",
+            "score": 8.4,
+            "source": [
+              "LOG",
+              158191
+            ],
+            "raw": "L3      8/0   708.92 MB   8.4  22317.8 13992.6   8325.2   22317.3  13992.1       0.0   1.6   1109.7   1109.6  20594.87          35008.50     52828    0.390   1207M   101K       0.0       0.0"
+          },
+          "4": {
+            "files": 213,
+            "compacting": 6,
+            "size": 7.35,
+            "unit": "GB",
+            "score": 12.2,
+            "source": [
+              "LOG",
+              158192
+            ],
+            "raw": "L4    213/6    7.35 GB  12.2  32096.6 14011.8  18084.8   32090.6  14005.8       4.6   2.3    575.1    575.0  57154.10          54562.53    138131    0.414   1696M    14K       0.0       0.0"
+          },
+          "5": {
+            "files": 59314,
+            "compacting": 0,
+            "size": 70.5,
+            "unit": "GB",
+            "score": 12.0,
+            "source": [
+              "LOG",
+              158193
+            ],
+            "raw": "L5  59314/0   70.50 GB  12.0  72613.9 13978.1  58635.7   72363.9  13728.2      27.2   5.2    568.0    566.0 130911.59         124414.58    146745    0.892   3934M  3452K       0.0       0.0"
+          },
+          "6": {
+            "files": 509554,
+            "compacting": 0,
+            "size": 566.42,
+            "unit": "GB",
+            "score": 0.0,
+            "source": [
+              "LOG",
+              158194
+            ],
+            "raw": "L6 509554/0   566.42 GB   0.0  64376.9 13108.9  51268.1   51257.9    -10.1     576.6   3.9    646.4    514.6 101988.38          93157.65    338991    0.301   3532M   721M       0.0       0.0"
+          }
+        },
+        "details": [
+          {
+            "text": "Cumulative compaction: 194274.29 GB write, 14.38 MB/s write, 193628.82 GB read, 14.33 MB/s read, 330649.7 seconds",
+            "source": [
+              "LOG",
+              158212
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.10 GB write, 3.47 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.1 seconds",
+            "source": [
+              "LOG",
+              158213
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 171970245076",
+            "source": [
+              "LOG",
+              158214
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 206, memtable-limit-stops: 158, pending-compaction-bytes-delays: 59679, pending-compaction-bytes-stops: 166, total-delays: 59885, total-stops: 324",
+            "source": [
+              "LOG",
+              158215
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): DataBlock(84554,3.14 GB,78.486%) FilterBlock(195944,66.71 MB,1.62875%) FilterMetaBlock(35553,11.64 MB,0.284278%) IndexBlock(234503,740.09 MB,18.0687%) Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              158218
+            ]
+          }
+        ]
+      }
+    },
+    "db": [
+      {
+        "text": "Uptime(secs): 13837330.9 total, 30.1 interval",
+        "source": [
+          "LOG",
+          158177
+        ]
+      },
+      {
+        "text": "Cumulative stall: 00:36:7.918 H:M:S, 0.0 percent",
+        "source": [
+          "LOG",
+          158180
+        ]
+      },
+      {
+        "text": "Interval writes: 2506 writes, 2506 keys, 2297 commit groups, 1.1 writes per commit group, ingest: 57.65 MB, 1.92 MB/s",
+        "source": [
+          "LOG",
+          158181
+        ]
+      },
+      {
+        "text": "Interval stall: 00:00:0.000 H:M:S, 0.0 percent",
+        "source": [
+          "LOG",
+          158183
+        ]
+      }
+    ]
+  },
+  {
+    "time": "2025/09/03-06:03:53.459043",
+    "source": [
+      "LOG",
+      159320
+    ],
+    "cfs": {
+      "metadata": {
+        "levels": {
+          "0": {
+            "files": 2,
+            "compacting": 0,
+            "size": 209.78,
+            "unit": "MB",
+            "score": 0.5,
+            "source": [
+              "LOG",
+              159335
+            ],
+            "raw": "L0      2/0   209.78 MB   0.5      0.0     0.0      0.0   14020.8  14020.8       0.0   1.0      0.0    796.7  18020.88          16732.57    136590    0.132       0      0       0.0       0.0"
+          },
+          "2": {
+            "files": 4,
+            "compacting": 0,
+            "size": 305.56,
+            "unit": "MB",
+            "score": 6.6,
+            "source": [
+              "LOG",
+              159336
+            ],
+            "raw": "L2      4/0   305.56 MB   6.6   2223.7  1415.6    808.2    2223.8   1415.6       0.0   1.6   1150.0   1150.1   1980.01           3555.09      4511    0.439    111M    11K       0.0       0.0"
+          },
+          "3": {
+            "files": 8,
+            "compacting": 0,
+            "size": 708.92,
+            "unit": "MB",
+            "score": 8.4,
+            "source": [
+              "LOG",
+              159337
+            ],
+            "raw": "L3      8/0   708.92 MB   8.4  22317.8 13992.6   8325.2   22317.3  13992.1       0.0   1.6   1109.7   1109.6  20594.87          35008.50     52828    0.390   1207M   101K       0.0       0.0"
+          },
+          "4": {
+            "files": 183,
+            "compacting": 1,
+            "size": 7.34,
+            "unit": "GB",
+            "score": 11.9,
+            "source": [
+              "LOG",
+              159338
+            ],
+            "raw": "L4    183/1    7.34 GB  11.9  32096.6 14011.8  18084.8   32090.6  14005.8       4.6   2.3    575.1    575.0  57154.10          54562.53    138131    0.414   1696M    14K       0.0       0.0"
+          },
+          "5": {
+            "files": 59342,
+            "compacting": 13,
+            "size": 70.51,
+            "unit": "GB",
+            "score": 12.0,
+            "source": [
+              "LOG",
+              159339
+            ],
+            "raw": "L5  59342/13  70.51 GB  12.0  72614.3 13978.3  58636.0   72364.4  13728.3      27.2   5.2    568.0    566.0 130912.49         124415.45    146748    0.892   3934M  3452K       0.0       0.0"
+          },
+          "6": {
+            "files": 509554,
+            "compacting": 0,
+            "size": 566.42,
+            "unit": "GB",
+            "score": 0.0,
+            "source": [
+              "LOG",
+              159340
+            ],
+            "raw": "L6 509554/0   566.42 GB   0.0  64376.9 13108.9  51268.1   51257.9    -10.1     576.6   3.9    646.4    514.6 101988.38          93157.65    338991    0.301   3532M   721M       0.0       0.0"
+          }
+        },
+        "details": [
+          {
+            "text": "Cumulative compaction: 194274.84 GB write, 14.38 MB/s write, 193629.28 GB read, 14.33 MB/s read, 330650.7 seconds",
+            "source": [
+              "LOG",
+              159358
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.54 GB write, 18.41 MB/s write, 0.45 GB read, 15.48 MB/s read, 1.0 seconds",
+            "source": [
+              "LOG",
+              159359
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 171826271764",
+            "source": [
+              "LOG",
+              159360
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 206, memtable-limit-stops: 158, pending-compaction-bytes-delays: 59691, pending-compaction-bytes-stops: 166, total-delays: 59897, total-stops: 324",
+            "source": [
+              "LOG",
+              159361
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): DataBlock(84554,3.14 GB,78.486%) FilterBlock(195944,66.71 MB,1.62875%) FilterMetaBlock(35553,11.64 MB,0.284278%) IndexBlock(234503,740.09 MB,18.0687%) Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              159364
+            ]
+          }
+        ]
+      }
+    },
+    "db": [
+      {
+        "text": "Uptime(secs): 13837361.0 total, 30.1 interval",
+        "source": [
+          "LOG",
+          159323
+        ]
+      },
+      {
+        "text": "Cumulative stall: 00:36:7.918 H:M:S, 0.0 percent",
+        "source": [
+          "LOG",
+          159326
+        ]
+      },
+      {
+        "text": "Interval writes: 2663 writes, 2663 keys, 2435 commit groups, 1.1 writes per commit group, ingest: 58.30 MB, 1.94 MB/s",
+        "source": [
+          "LOG",
+          159327
+        ]
+      },
+      {
+        "text": "Interval stall: 00:00:0.000 H:M:S, 0.0 percent",
+        "source": [
+          "LOG",
+          159329
+        ]
+      }
+    ]
+  },
+  {
+    "time": "2025/09/03-06:04:23.679838",
+    "source": [
+      "LOG",
+      160414
+    ],
+    "cfs": {
+      "metadata": {
+        "levels": {
+          "0": {
+            "files": 3,
+            "compacting": 0,
+            "size": 314.44,
+            "unit": "MB",
+            "score": 10.3,
+            "source": [
+              "LOG",
+              160429
+            ],
+            "raw": "L0      3/0   314.44 MB  10.3      0.0     0.0      0.0   14020.8  14020.8       0.0   1.0      0.0    796.7  18020.88          16732.57    136590    0.132       0      0       0.0       0.0"
+          },
+          "2": {
+            "files": 4,
+            "compacting": 0,
+            "size": 305.56,
+            "unit": "MB",
+            "score": 5.4,
+            "source": [
+              "LOG",
+              160430
+            ],
+            "raw": "L2      4/0   305.56 MB   5.4   2223.7  1415.6    808.2    2223.8   1415.6       0.0   1.6   1150.0   1150.1   1980.01           3555.09      4511    0.439    111M    11K       0.0       0.0"
+          },
+          "3": {
+            "files": 8,
+            "compacting": 0,
+            "size": 708.92,
+            "unit": "MB",
+            "score": 7.5,
+            "source": [
+              "LOG",
+              160431
+            ],
+            "raw": "L3      8/0   708.92 MB   7.5  22317.8 13992.6   8325.2   22317.3  13992.1       0.0   1.6   1109.7   1109.6  20594.87          35008.50     52828    0.390   1207M   101K       0.0       0.0"
+          },
+          "4": {
+            "files": 182,
+            "compacting": 0,
+            "size": 7.22,
+            "unit": "GB",
+            "score": 11.7,
+            "source": [
+              "LOG",
+              160432
+            ],
+            "raw": "L4    182/0    7.22 GB  11.7  32096.6 14011.8  18084.8   32090.6  14005.8       4.6   2.3    575.1    575.0  57154.10          54562.53    138131    0.414   1696M    14K       0.0       0.0"
+          },
+          "5": {
+            "files": 59329,
+            "compacting": 6,
+            "size": 70.58,
+            "unit": "GB",
+            "score": 12.0,
+            "source": [
+              "LOG",
+              160433
+            ],
+            "raw": "L5  59329/6   70.58 GB  12.0  72614.3 13978.3  58636.0   72364.4  13728.3      27.2   5.2    568.0    566.0 130912.49         124415.45    146748    0.892   3934M  3452K       0.0       0.0"
+          },
+          "6": {
+            "files": 509583,
+            "compacting": 0,
+            "size": 566.46,
+            "unit": "GB",
+            "score": 0.0,
+            "source": [
+              "LOG",
+              160434
+            ],
+            "raw": "L6 509583/0   566.46 GB   0.0  64376.9 13108.9  51268.1   51257.9    -10.1     576.6   3.9    646.4    514.6 101988.38          93157.65    338991    0.301   3532M   721M       0.0       0.0"
+          }
+        },
+        "details": [
+          {
+            "text": "Cumulative compaction: 194274.84 GB write, 14.38 MB/s write, 193629.28 GB read, 14.33 MB/s read, 330650.7 seconds",
+            "source": [
+              "LOG",
+              160452
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              160453
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 178658476655",
+            "source": [
+              "LOG",
+              160454
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 206, memtable-limit-stops: 158, pending-compaction-bytes-delays: 59702, pending-compaction-bytes-stops: 166, total-delays: 59908, total-stops: 324",
+            "source": [
+              "LOG",
+              160455
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): DataBlock(84672,3.15 GB,78.6325%) FilterBlock(196016,66.71 MB,1.62863%) FilterMetaBlock(35647,11.66 MB,0.284714%) IndexBlock(234722,740.31 MB,18.0739%) Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              160458
+            ]
+          }
+        ]
+      }
+    },
+    "db": [
+      {
+        "text": "Uptime(secs): 13837391.2 total, 30.2 interval",
+        "source": [
+          "LOG",
+          160417
+        ]
+      },
+      {
+        "text": "Cumulative stall: 00:36:7.918 H:M:S, 0.0 percent",
+        "source": [
+          "LOG",
+          160420
+        ]
+      },
+      {
+        "text": "Interval writes: 2776 writes, 2776 keys, 2535 commit groups, 1.1 writes per commit group, ingest: 63.28 MB, 2.09 MB/s",
+        "source": [
+          "LOG",
+          160421
+        ]
+      },
+      {
+        "text": "Interval stall: 00:00:0.000 H:M:S, 0.0 percent",
+        "source": [
+          "LOG",
+          160423
+        ]
+      }
+    ]
+  },
+  {
+    "time": "2025/09/03-06:04:53.786257",
+    "source": [
+      "LOG",
+      161527
+    ],
+    "cfs": {
+      "metadata": {
+        "levels": {
+          "0": {
+            "files": 0,
+            "compacting": 0,
+            "size": 0.0,
+            "unit": "KB",
+            "score": 0.0,
+            "source": [
+              "LOG",
+              161545
+            ],
+            "raw": "L0      0/0    0.00 KB   0.0      0.0     0.0      0.0   14020.9  14020.9       0.0   1.0      0.0    796.7  18021.01          16732.69    136591    0.132       0      0       0.0       0.0"
+          },
+          "2": {
+            "files": 7,
+            "compacting": 4,
+            "size": 724.02,
+            "unit": "MB",
+            "score": 11.5,
+            "source": [
+              "LOG",
+              161546
+            ],
+            "raw": "L2      7/4   724.02 MB  11.5   2224.4  1416.0    808.5    2224.5   1416.0       0.0   1.6   1150.1   1150.1   1980.57           3556.17      4512    0.439    111M    11K       0.0       0.0"
+          },
+          "3": {
+            "files": 8,
+            "compacting": 3,
+            "size": 708.92,
+            "unit": "MB",
+            "score": 0.8,
+            "source": [
+              "LOG",
+              161547
+            ],
+            "raw": "L3      8/3   708.92 MB   0.8  22317.8 13992.6   8325.2   22317.3  13992.1       0.0   1.6   1109.7   1109.6  20594.87          35008.50     52828    0.390   1207M   101K       0.0       0.0"
+          },
+          "4": {
+            "files": 182,
+            "compacting": 0,
+            "size": 7.22,
+            "unit": "GB",
+            "score": 11.6,
+            "source": [
+              "LOG",
+              161548
+            ],
+            "raw": "L4    182/0    7.22 GB  11.6  32096.6 14011.8  18084.8   32090.6  14005.8       4.6   2.3    575.1    575.0  57154.10          54562.53    138131    0.414   1696M    14K       0.0       0.0"
+          },
+          "5": {
+            "files": 59300,
+            "compacting": 3,
+            "size": 70.57,
+            "unit": "GB",
+            "score": 12.0,
+            "source": [
+              "LOG",
+              161549
+            ],
+            "raw": "L5  59300/3   70.57 GB  12.0  72614.3 13978.3  58636.0   72364.4  13728.3      27.2   5.2    568.0    566.0 130912.49         124415.45    146748    0.892   3934M  3452K       0.0       0.0"
+          },
+          "6": {
+            "files": 509612,
+            "compacting": 0,
+            "size": 566.47,
+            "unit": "GB",
+            "score": 0.0,
+            "source": [
+              "LOG",
+              161550
+            ],
+            "raw": "L6 509612/0   566.47 GB   0.0  64376.9 13108.9  51268.1   51257.9    -10.1     576.6   3.9    646.4    514.6 101988.38          93157.65    338991    0.301   3532M   721M       0.0       0.0"
+          }
+        },
+        "details": [
+          {
+            "text": "Cumulative compaction: 194275.64 GB write, 14.38 MB/s write, 193629.98 GB read, 14.33 MB/s read, 330651.4 seconds",
+            "source": [
+              "LOG",
+              161568
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.81 GB write, 27.50 MB/s write, 0.71 GB read, 24.05 MB/s read, 0.7 seconds",
+            "source": [
+              "LOG",
+              161569
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 180176991276",
+            "source": [
+              "LOG",
+              161570
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 206, memtable-limit-stops: 158, pending-compaction-bytes-delays: 59713, pending-compaction-bytes-stops: 166, total-delays: 59919, total-stops: 324",
+            "source": [
+              "LOG",
+              161571
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): DataBlock(84672,3.15 GB,78.6325%) FilterBlock(196016,66.71 MB,1.62863%) FilterMetaBlock(35647,11.66 MB,0.284714%) IndexBlock(234722,740.31 MB,18.0739%) Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              161574
+            ]
+          }
+        ]
+      }
+    },
+    "db": [
+      {
+        "text": "Uptime(secs): 13837421.3 total, 30.1 interval",
+        "source": [
+          "LOG",
+          161533
+        ]
+      },
+      {
+        "text": "Cumulative stall: 00:36:7.918 H:M:S, 0.0 percent",
+        "source": [
+          "LOG",
+          161536
+        ]
+      },
+      {
+        "text": "Interval writes: 2606 writes, 2606 keys, 2401 commit groups, 1.1 writes per commit group, ingest: 57.54 MB, 1.91 MB/s",
+        "source": [
+          "LOG",
+          161537
+        ]
+      },
+      {
+        "text": "Interval stall: 00:00:0.000 H:M:S, 0.0 percent",
+        "source": [
+          "LOG",
+          161539
+        ]
+      }
+    ]
+  },
+  {
+    "time": "2025/09/03-06:05:23.861718",
+    "source": [
+      "LOG",
+      162800
+    ],
+    "cfs": {
+      "metadata": {
+        "levels": {
+          "0": {
+            "files": 0,
+            "compacting": 0,
+            "size": 0.0,
+            "unit": "KB",
+            "score": 0.0,
+            "source": [
+              "LOG",
+              162815
+            ],
+            "raw": "L0      0/0    0.00 KB   0.0      0.0     0.0      0.0   14020.9  14020.9       0.0   1.0      0.0    796.7  18021.01          16732.69    136591    0.132       0      0       0.0       0.0"
+          },
+          "2": {
+            "files": 3,
+            "compacting": 0,
+            "size": 295.68,
+            "unit": "MB",
+            "score": 11.5,
+            "source": [
+              "LOG",
+              162816
+            ],
+            "raw": "L2      3/0   295.68 MB  11.5   2224.4  1416.0    808.5    2224.5   1416.0       0.0   1.6   1150.1   1150.1   1980.57           3556.17      4512    0.439    111M    11K       0.0       0.0"
+          },
+          "3": {
+            "files": 7,
+            "compacting": 0,
+            "size": 715.83,
+            "unit": "MB",
+            "score": 11.5,
+            "source": [
+              "LOG",
+              162817
+            ],
+            "raw": "L3      7/0   715.83 MB  11.5  22318.4 13993.0   8325.5   22318.0  13992.5       0.0   1.6   1109.6   1109.6  20596.11          35009.69     52831    0.390   1207M   101K       0.0       0.0"
+          },
+          "4": {
+            "files": 205,
+            "compacting": 6,
+            "size": 7.63,
+            "unit": "GB",
+            "score": 13.1,
+            "source": [
+              "LOG",
+              162818
+            ],
+            "raw": "L4    205/6    7.63 GB  13.1  32098.4 14012.2  18086.2   32092.4  14006.2       4.6   2.3    575.1    574.9  57157.62          54565.77    138135    0.414   1696M    14K       0.0       0.0"
+          },
+          "5": {
+            "files": 59301,
+            "compacting": 0,
+            "size": 70.53,
+            "unit": "GB",
+            "score": 12.0,
+            "source": [
+              "LOG",
+              162819
+            ],
+            "raw": "L5  59301/0   70.53 GB  12.0  72614.3 13978.3  58636.0   72364.4  13728.3      27.2   5.2    568.0    566.0 130912.49         124415.45    146748    0.892   3934M  3452K       0.0       0.0"
+          },
+          "6": {
+            "files": 509623,
+            "compacting": 0,
+            "size": 566.51,
+            "unit": "GB",
+            "score": 0.0,
+            "source": [
+              "LOG",
+              162820
+            ],
+            "raw": "L6 509623/0   566.51 GB   0.0  64376.9 13108.9  51268.1   51257.9    -10.1     576.7   3.9    646.4    514.6 101988.38          93157.65    338991    0.301   3532M   721M       0.0       0.0"
+          }
+        },
+        "details": [
+          {
+            "text": "Cumulative compaction: 194278.14 GB write, 14.38 MB/s write, 193632.48 GB read, 14.33 MB/s read, 330656.2 seconds",
+            "source": [
+              "LOG",
+              162838
+            ]
+          },
+          {
+            "text": "Interval compaction: 2.50 GB write, 85.08 MB/s write, 2.50 GB read, 85.08 MB/s read, 4.8 seconds",
+            "source": [
+              "LOG",
+              162839
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 176487274743",
+            "source": [
+              "LOG",
+              162840
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 206, memtable-limit-stops: 158, pending-compaction-bytes-delays: 59724, pending-compaction-bytes-stops: 166, total-delays: 59930, total-stops: 324",
+            "source": [
+              "LOG",
+              162841
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): DataBlock(84672,3.15 GB,78.6325%) FilterBlock(196016,66.71 MB,1.62863%) FilterMetaBlock(35647,11.66 MB,0.284714%) IndexBlock(234722,740.31 MB,18.0739%) Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              162844
+            ]
+          }
+        ]
+      }
+    },
+    "db": [
+      {
+        "text": "Uptime(secs): 13837451.4 total, 30.1 interval",
+        "source": [
+          "LOG",
+          162803
+        ]
+      },
+      {
+        "text": "Cumulative stall: 00:36:7.918 H:M:S, 0.0 percent",
+        "source": [
+          "LOG",
+          162806
+        ]
+      },
+      {
+        "text": "Interval writes: 2754 writes, 2754 keys, 2517 commit groups, 1.1 writes per commit group, ingest: 63.10 MB, 2.10 MB/s",
+        "source": [
+          "LOG",
+          162807
+        ]
+      },
+      {
+        "text": "Interval stall: 00:00:0.000 H:M:S, 0.0 percent",
+        "source": [
+          "LOG",
+          162809
+        ]
+      }
+    ]
+  },
+  {
+    "time": "2025/09/03-06:05:53.933448",
+    "source": [
+      "LOG",
+      164151
+    ],
+    "cfs": {
+      "metadata": {
+        "levels": {
+          "0": {
+            "files": 1,
+            "compacting": 0,
+            "size": 106.44,
+            "unit": "MB",
+            "score": 0.2,
+            "source": [
+              "LOG",
+              164166
+            ],
+            "raw": "L0      1/0   106.44 MB   0.2      0.0     0.0      0.0   14021.0  14021.0       0.0   1.0      0.0    796.7  18021.14          16732.81    136592    0.132       0      0       0.0       0.0"
+          },
+          "2": {
+            "files": 3,
+            "compacting": 0,
+            "size": 295.68,
+            "unit": "MB",
+            "score": 8.2,
+            "source": [
+              "LOG",
+              164167
+            ],
+            "raw": "L2      3/0   295.68 MB   8.2   2224.4  1416.0    808.5    2224.5   1416.0       0.0   1.6   1150.1   1150.1   1980.57           3556.17      4512    0.439    111M    11K       0.0       0.0"
+          },
+          "3": {
+            "files": 7,
+            "compacting": 0,
+            "size": 715.83,
+            "unit": "MB",
+            "score": 9.9,
+            "source": [
+              "LOG",
+              164168
+            ],
+            "raw": "L3      7/0   715.83 MB   9.9  22318.4 13993.0   8325.5   22318.0  13992.5       0.0   1.6   1109.6   1109.6  20596.11          35009.69     52831    0.390   1207M   101K       0.0       0.0"
+          },
+          "4": {
+            "files": 175,
+            "compacting": 0,
+            "size": 7.05,
+            "unit": "GB",
+            "score": 11.9,
+            "source": [
+              "LOG",
+              164169
+            ],
+            "raw": "L4    175/0    7.05 GB  11.9  32098.4 14012.2  18086.2   32092.4  14006.2       4.6   2.3    575.1    574.9  57157.62          54565.77    138135    0.414   1696M    14K       0.0       0.0"
+          },
+          "5": {
+            "files": 59390,
+            "compacting": 6,
+            "size": 70.92,
+            "unit": "GB",
+            "score": 12.1,
+            "source": [
+              "LOG",
+              164170
+            ],
+            "raw": "L5  59390/6   70.92 GB  12.1  72616.2 13978.8  58637.4   72366.1  13728.7      27.2   5.2    568.0    566.0 130916.32         124419.10    146756    0.892   3935M  3454K       0.0       0.0"
+          },
+          "6": {
+            "files": 509623,
+            "compacting": 4,
+            "size": 566.51,
+            "unit": "GB",
+            "score": 0.0,
+            "source": [
+              "LOG",
+              164171
+            ],
+            "raw": "L6 509623/4   566.51 GB   0.0  64377.3 13109.0  51268.2   51258.1    -10.1     576.7   3.9    646.4    514.6 101989.73          93158.09    338993    0.301   3532M   721M       0.0       0.0"
+          }
+        },
+        "details": [
+          {
+            "text": "Cumulative compaction: 194280.17 GB write, 14.38 MB/s write, 193634.75 GB read, 14.33 MB/s read, 330661.5 seconds",
+            "source": [
+              "LOG",
+              164189
+            ]
+          },
+          {
+            "text": "Interval compaction: 2.03 GB write, 69.05 MB/s write, 2.27 GB read, 77.29 MB/s read, 5.3 seconds",
+            "source": [
+              "LOG",
+              164190
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 170063448922",
+            "source": [
+              "LOG",
+              164191
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 206, memtable-limit-stops: 158, pending-compaction-bytes-delays: 59735, pending-compaction-bytes-stops: 166, total-delays: 59941, total-stops: 324",
+            "source": [
+              "LOG",
+              164192
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): DataBlock(84672,3.15 GB,78.6325%) FilterBlock(196016,66.71 MB,1.62863%) FilterMetaBlock(35647,11.66 MB,0.284714%) IndexBlock(234722,740.31 MB,18.0739%) Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              164195
+            ]
+          }
+        ]
+      }
+    },
+    "db": [
+      {
+        "text": "Uptime(secs): 13837481.5 total, 30.1 interval",
+        "source": [
+          "LOG",
+          164154
+        ]
+      },
+      {
+        "text": "Cumulative stall: 00:36:7.918 H:M:S, 0.0 percent",
+        "source": [
+          "LOG",
+          164157
+        ]
+      },
+      {
+        "text": "Interval writes: 2534 writes, 2534 keys, 2314 commit groups, 1.1 writes per commit group, ingest: 59.37 MB, 1.97 MB/s",
+        "source": [
+          "LOG",
+          164158
+        ]
+      },
+      {
+        "text": "Interval stall: 00:00:0.000 H:M:S, 0.0 percent",
+        "source": [
+          "LOG",
+          164160
+        ]
+      }
+    ]
+  },
+  {
+    "time": "2025/09/03-06:06:24.129570",
+    "source": [
+      "LOG",
+      165248
+    ],
+    "cfs": {
+      "default": {
+        "levels": {},
+        "details": [
+          {
+            "text": "Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              165278
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              165279
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 0",
+            "source": [
+              "LOG",
+              165280
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0",
+            "source": [
+              "LOG",
+              165281
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): DataBlock(84672,3.15 GB,78.6325%) FilterBlock(196016,66.71 MB,1.62863%) FilterMetaBlock(35647,11.66 MB,0.284714%) IndexBlock(234722,740.31 MB,18.0739%) Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              165283
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "levels": {
+          "0": {
+            "files": 1,
+            "compacting": 0,
+            "size": 106.44,
+            "unit": "MB",
+            "score": 0.2,
+            "source": [
+              "LOG",
+              165290
+            ],
+            "raw": "L0      1/0   106.44 MB   0.2      0.0     0.0      0.0   14021.0  14021.0       0.0   1.0      0.0    796.7  18021.14          16732.81    136592    0.132       0      0       0.0       0.0"
+          },
+          "2": {
+            "files": 3,
+            "compacting": 0,
+            "size": 295.68,
+            "unit": "MB",
+            "score": 8.2,
+            "source": [
+              "LOG",
+              165291
+            ],
+            "raw": "L2      3/0   295.68 MB   8.2   2224.4  1416.0    808.5    2224.5   1416.0       0.0   1.6   1150.1   1150.1   1980.57           3556.17      4512    0.439    111M    11K       0.0       0.0"
+          },
+          "3": {
+            "files": 7,
+            "compacting": 0,
+            "size": 715.83,
+            "unit": "MB",
+            "score": 9.9,
+            "source": [
+              "LOG",
+              165292
+            ],
+            "raw": "L3      7/0   715.83 MB   9.9  22318.4 13993.0   8325.5   22318.0  13992.5       0.0   1.6   1109.6   1109.6  20596.11          35009.69     52831    0.390   1207M   101K       0.0       0.0"
+          },
+          "4": {
+            "files": 175,
+            "compacting": 0,
+            "size": 7.05,
+            "unit": "GB",
+            "score": 11.9,
+            "source": [
+              "LOG",
+              165293
+            ],
+            "raw": "L4    175/0    7.05 GB  11.9  32098.4 14012.2  18086.2   32092.4  14006.2       4.6   2.3    575.1    574.9  57157.62          54565.77    138135    0.414   1696M    14K       0.0       0.0"
+          },
+          "5": {
+            "files": 59360,
+            "compacting": 5,
+            "size": 70.55,
+            "unit": "GB",
+            "score": 12.1,
+            "source": [
+              "LOG",
+              165294
+            ],
+            "raw": "L5  59360/5   70.55 GB  12.1  72616.2 13978.8  58637.4   72366.1  13728.7      27.2   5.2    568.0    566.0 130916.32         124419.10    146756    0.892   3935M  3454K       0.0       0.0"
+          },
+          "6": {
+            "files": 509649,
+            "compacting": 0,
+            "size": 566.63,
+            "unit": "GB",
+            "score": 0.0,
+            "source": [
+              "LOG",
+              165295
+            ],
+            "raw": "L6 509649/0   566.63 GB   0.0  64377.5 13109.2  51268.3   51258.2    -10.1     576.7   3.9    646.4    514.6 101990.52          93158.40    338995    0.301   3532M   721M       0.0       0.0"
+          }
+        },
+        "details": [
+          {
+            "text": "Cumulative compaction: 194280.30 GB write, 14.38 MB/s write, 193634.98 GB read, 14.33 MB/s read, 330662.3 seconds",
+            "source": [
+              "LOG",
+              165313
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.13 GB write, 4.52 MB/s write, 0.23 GB read, 7.84 MB/s read, 0.8 seconds",
+            "source": [
+              "LOG",
+              165314
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 166998320081",
+            "source": [
+              "LOG",
+              165315
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 206, memtable-limit-stops: 158, pending-compaction-bytes-delays: 59746, pending-compaction-bytes-stops: 166, total-delays: 59952, total-stops: 324",
+            "source": [
+              "LOG",
+              165316
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): DataBlock(84672,3.15 GB,78.6325%) FilterBlock(196016,66.71 MB,1.62863%) FilterMetaBlock(35647,11.66 MB,0.284714%) IndexBlock(234722,740.31 MB,18.0739%) Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              165319
+            ]
+          }
+        ]
+      },
+      "zset_score": {
+        "levels": {},
+        "details": [
+          {
+            "text": "Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              165503
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              165504
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 0",
+            "source": [
+              "LOG",
+              165505
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0",
+            "source": [
+              "LOG",
+              165506
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): DataBlock(84672,3.15 GB,78.6325%) FilterBlock(196016,66.71 MB,1.62863%) FilterMetaBlock(35647,11.66 MB,0.284714%) IndexBlock(234722,740.31 MB,18.0739%) Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              165508
+            ]
+          }
+        ]
+      },
+      "pubsub": {
+        "levels": {},
+        "details": [
+          {
+            "text": "Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              165530
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              165531
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 0",
+            "source": [
+              "LOG",
+              165532
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0",
+            "source": [
+              "LOG",
+              165533
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              165535
+            ]
+          }
+        ]
+      },
+      "propagate": {
+        "levels": {},
+        "details": [
+          {
+            "text": "Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              165557
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              165558
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 0",
+            "source": [
+              "LOG",
+              165559
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0",
+            "source": [
+              "LOG",
+              165560
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              165562
+            ]
+          }
+        ]
+      },
+      "stream": {
+        "levels": {},
+        "details": [
+          {
+            "text": "Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              165584
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              165585
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 0",
+            "source": [
+              "LOG",
+              165586
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0",
+            "source": [
+              "LOG",
+              165587
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): DataBlock(84672,3.15 GB,78.6325%) FilterBlock(196016,66.71 MB,1.62863%) FilterMetaBlock(35647,11.66 MB,0.284714%) IndexBlock(234722,740.31 MB,18.0739%) Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              165589
+            ]
+          }
+        ]
+      },
+      "search": {
+        "levels": {},
+        "details": [
+          {
+            "text": "Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              165611
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds",
+            "source": [
+              "LOG",
+              165612
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 0",
+            "source": [
+              "LOG",
+              165613
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0",
+            "source": [
+              "LOG",
+              165614
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              165616
+            ]
+          }
+        ]
+      }
+    },
+    "db": [
+      {
+        "text": "Uptime(secs): 13837511.7 total, 30.2 interval",
+        "source": [
+          "LOG",
+          165251
+        ]
+      },
+      {
+        "text": "Cumulative stall: 00:36:7.918 H:M:S, 0.0 percent",
+        "source": [
+          "LOG",
+          165254
+        ]
+      },
+      {
+        "text": "Interval writes: 2642 writes, 2642 keys, 2425 commit groups, 1.1 writes per commit group, ingest: 61.36 MB, 2.03 MB/s",
+        "source": [
+          "LOG",
+          165255
+        ]
+      },
+      {
+        "text": "Interval stall: 00:00:0.000 H:M:S, 0.0 percent",
+        "source": [
+          "LOG",
+          165257
+        ]
+      }
+    ]
+  },
+  {
+    "time": "2025/09/03-06:06:54.583873",
+    "source": [
+      "LOG",
+      166501
+    ],
+    "cfs": {
+      "metadata": {
+        "levels": {
+          "0": {
+            "files": 2,
+            "compacting": 0,
+            "size": 212.7,
+            "unit": "MB",
+            "score": 0.5,
+            "source": [
+              "LOG",
+              166516
+            ],
+            "raw": "L0      2/0   212.70 MB   0.5      0.0     0.0      0.0   14021.1  14021.1       0.0   1.0      0.0    796.7  18021.26          16732.93    136593    0.132       0      0       0.0       0.0"
+          },
+          "2": {
+            "files": 3,
+            "compacting": 0,
+            "size": 295.68,
+            "unit": "MB",
+            "score": 6.3,
+            "source": [
+              "LOG",
+              166517
+            ],
+            "raw": "L2      3/0   295.68 MB   6.3   2224.4  1416.0    808.5    2224.5   1416.0       0.0   1.6   1150.1   1150.1   1980.57           3556.17      4512    0.439    111M    11K       0.0       0.0"
+          },
+          "3": {
+            "files": 7,
+            "compacting": 0,
+            "size": 715.83,
+            "unit": "MB",
+            "score": 8.6,
+            "source": [
+              "LOG",
+              166518
+            ],
+            "raw": "L3      7/0   715.83 MB   8.6  22318.4 13993.0   8325.5   22318.0  13992.5       0.0   1.6   1109.6   1109.6  20596.11          35009.69     52831    0.390   1207M   101K       0.0       0.0"
+          },
+          "4": {
+            "files": 175,
+            "compacting": 0,
+            "size": 7.05,
+            "unit": "GB",
+            "score": 11.7,
+            "source": [
+              "LOG",
+              166519
+            ],
+            "raw": "L4    175/0    7.05 GB  11.7  32098.4 14012.2  18086.2   32092.4  14006.2       4.6   2.3    575.1    574.9  57157.62          54565.77    138135    0.414   1696M    14K       0.0       0.0"
+          },
+          "5": {
+            "files": 59330,
+            "compacting": 5,
+            "size": 70.45,
+            "unit": "GB",
+            "score": 12.1,
+            "source": [
+              "LOG",
+              166520
+            ],
+            "raw": "L5  59330/5   70.45 GB  12.1  72616.2 13978.8  58637.4   72366.1  13728.7      27.2   5.2    568.0    566.0 130916.32         124419.10    146756    0.892   3935M  3454K       0.0       0.0"
+          },
+          "6": {
+            "files": 509679,
+            "compacting": 0,
+            "size": 566.72,
+            "unit": "GB",
+            "score": 0.0,
+            "source": [
+              "LOG",
+              166521
+            ],
+            "raw": "L6 509679/0   566.72 GB   0.0  64377.5 13109.2  51268.3   51258.2    -10.1     576.8   3.9    646.4    514.6 101990.52          93158.40    338995    0.301   3532M   721M       0.0       0.0"
+          }
+        },
+        "details": [
+          {
+            "text": "Cumulative compaction: 194280.41 GB write, 14.38 MB/s write, 193634.98 GB read, 14.33 MB/s read, 330662.4 seconds",
+            "source": [
+              "LOG",
+              166539
+            ]
+          },
+          {
+            "text": "Interval compaction: 0.10 GB write, 3.49 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.1 seconds",
+            "source": [
+              "LOG",
+              166540
+            ]
+          },
+          {
+            "text": "Estimated pending compaction bytes: 166145746120",
+            "source": [
+              "LOG",
+              166541
+            ]
+          },
+          {
+            "text": "Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 206, memtable-limit-stops: 158, pending-compaction-bytes-delays: 59757, pending-compaction-bytes-stops: 166, total-delays: 59963, total-stops: 324",
+            "source": [
+              "LOG",
+              166542
+            ]
+          },
+          {
+            "text": "Block cache entry stats(count,size,portion): DataBlock(84672,3.15 GB,78.6325%) FilterBlock(196016,66.71 MB,1.62863%) FilterMetaBlock(35647,11.66 MB,0.284714%) IndexBlock(234722,740.31 MB,18.0739%) Misc(1,0.00 KB,0%)",
+            "source": [
+              "LOG",
+              166545
+            ]
+          }
+        ]
+      }
+    },
+    "db": [
+      {
+        "text": "Uptime(secs): 13837542.1 total, 30.5 interval",
+        "source": [
+          "LOG",
+          166504
+        ]
+      },
+      {
+        "text": "Cumulative stall: 00:36:7.918 H:M:S, 0.0 percent",
+        "source": [
+          "LOG",
+          166507
+        ]
+      },
+      {
+        "text": "Interval writes: 2622 writes, 2622 keys, 2392 commit groups, 1.1 writes per commit group, ingest: 59.33 MB, 1.95 MB/s",
+        "source": [
+          "LOG",
+          166508
+        ]
+      },
+      {
+        "text": "Interval stall: 00:00:0.000 H:M:S, 0.0 percent",
+        "source": [
+          "LOG",
+          166510
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,609 @@
+{
+  "daily_metadata_L6": [
+    [
+      "2026/09/29",
+      "2026/09/29-23:58:17.890534",
+      "L6    292/0   30.47 GB   0.0   2119.1   381.4   1737.7    1768.1     30.5       0.0   4.6    402.2    335.6   5394.72           5267.51      3347    1.612   1499M   249M       0.0       0.0"
+    ],
+    [
+      "2026/09/30",
+      "2026/09/30-23:59:39.977473",
+      "L6    344/0   30.79 GB   0.0   2496.4   444.4   2052.0    2082.7     30.7       0.1   4.7    434.5    362.5   5883.21           5734.28      4062    1.448   1520M   253M       0.0       0.0"
+    ],
+    [
+      "2026/10/01",
+      "2026/10/01-23:59:35.587132",
+      "L6    401/0   30.32 GB   0.0   2841.7   503.9   2337.8    2367.9     30.0       0.3   4.7    459.7    383.0   6330.04           6161.26      4836    1.309   1539M   256M       0.0       0.0"
+    ],
+    [
+      "2026/10/02",
+      "2026/10/02-23:58:04.875486",
+      "L6    461/0   29.35 GB   0.0   3171.1   562.1   2609.0    2637.8     28.8       0.5   4.7    480.8    399.9   6753.88           6566.20      5680    1.189   1557M   259M       0.0       0.0"
+    ],
+    [
+      "2026/10/03",
+      "2026/10/03-23:58:54.673929",
+      "L6    528/0   28.57 GB   0.0   3483.8   617.8   2866.0    2893.8     27.9       0.7   4.7    498.4    414.0   7157.33           6951.72      6503    1.101   1573M   262M       0.0       0.0"
+    ],
+    [
+      "2026/10/04",
+      "2026/10/04-23:59:55.137543",
+      "L6    625/0   29.12 GB   0.0   3790.4   672.7   3117.6    3145.8     28.2       1.0   4.7    513.9    426.5   7553.22           7329.87      7356    1.027   1589M   265M       0.0       0.0"
+    ],
+    [
+      "2026/10/05",
+      "2026/10/05-23:58:56.215031",
+      "L6    875/0   33.38 GB   0.0   4142.9   736.0   3406.9    3439.0     32.1       1.3   4.7    529.5    439.6   8011.59           7767.75      8419    0.952   1607M   268M       0.0       0.0"
+    ],
+    [
+      "2026/10/06",
+      "2026/10/06-23:59:58.140600",
+      "L6   1030/0   32.89 GB   0.0   4498.7   800.3   3698.4    3729.7     31.3       1.6   4.7    543.8    450.9   8470.62           8206.52      9604    0.882   1626M   272M       0.0       0.0"
+    ],
+    [
+      "2026/10/07",
+      "2026/10/07-15:13:53.879778",
+      "L6   1155/0   30.19 GB   0.0   4713.5   838.6   3874.9    3903.2     28.3       1.9   4.7    551.8    456.9   8747.02           8470.85     10283    0.851   1637M   274M       0.0       0.0"
+    ]
+  ],
+  "db_path": "/data3/docker/volumes/10.148.7.45_10017/db/",
+  "host": "10.148.7.45",
+  "log_snapshot": "2026/10/07-15:13:53.879778",
+  "manifest": {
+    "bytes_parsed": 30809864,
+    "crc_checked": false,
+    "name": "MANIFEST-000011",
+    "records": 63202
+  },
+  "metadata_L6": {
+    "bytes": 32416679708,
+    "count": 1155,
+    "lt16KiB": 5,
+    "lt16MiB": 863,
+    "lt1MiB": 718,
+    "median": 452666,
+    "min": 3185
+  },
+  "metadata_L6_small_bytes": 214035328,
+  "options": [
+    "[DBOptions]",
+    "max_subcompactions=2",
+    "[CFOptions \"default\"]",
+    "target_file_size_base=134217728",
+    "compression_per_level=kNoCompression:kNoCompression:kNoCompression:kNoCompression:kNoCompression:kNoCompression:kNoCompression",
+    "target_file_size_multiplier=1",
+    "max_compaction_bytes=3355443200",
+    "ttl=2592000",
+    "periodic_compaction_seconds=2592000",
+    "disable_auto_compactions=false",
+    "compaction_pri=kMinOverlappingRatio",
+    "sst_partitioner_factory=nullptr",
+    "level_compaction_dynamic_level_bytes=true",
+    "[CFOptions \"metadata\"]",
+    "target_file_size_base=134217728",
+    "compression_per_level=kNoCompression:kNoCompression:kNoCompression:kNoCompression:kNoCompression:kNoCompression:kNoCompression",
+    "target_file_size_multiplier=1",
+    "max_compaction_bytes=3355443200",
+    "ttl=2592000",
+    "periodic_compaction_seconds=2592000",
+    "disable_auto_compactions=false",
+    "compaction_pri=kMinOverlappingRatio",
+    "sst_partitioner_factory=nullptr",
+    "level_compaction_dynamic_level_bytes=true",
+    "[CFOptions \"zset_score\"]",
+    "target_file_size_base=134217728",
+    "compression_per_level=kNoCompression:kNoCompression:kNoCompression:kNoCompression:kNoCompression:kNoCompression:kNoCompression",
+    "target_file_size_multiplier=1",
+    "max_compaction_bytes=3355443200",
+    "ttl=2592000",
+    "periodic_compaction_seconds=2592000",
+    "disable_auto_compactions=false",
+    "compaction_pri=kMinOverlappingRatio",
+    "sst_partitioner_factory=nullptr",
+    "level_compaction_dynamic_level_bytes=true",
+    "[CFOptions \"pubsub\"]",
+    "target_file_size_base=134217728",
+    "compression_per_level=kNoCompression:kNoCompression:kNoCompression:kNoCompression:kNoCompression:kNoCompression:kNoCompression",
+    "target_file_size_multiplier=1",
+    "max_compaction_bytes=3355443200",
+    "ttl=2592000",
+    "periodic_compaction_seconds=2592000",
+    "disable_auto_compactions=false",
+    "compaction_pri=kMinOverlappingRatio",
+    "sst_partitioner_factory=nullptr",
+    "level_compaction_dynamic_level_bytes=true",
+    "[CFOptions \"propagate\"]",
+    "target_file_size_base=134217728",
+    "compression_per_level=kNoCompression:kNoCompression:kNoCompression:kNoCompression:kNoCompression:kNoCompression:kNoCompression",
+    "target_file_size_multiplier=1",
+    "max_compaction_bytes=3355443200",
+    "ttl=2592000",
+    "periodic_compaction_seconds=2592000",
+    "disable_auto_compactions=false",
+    "compaction_pri=kMinOverlappingRatio",
+    "sst_partitioner_factory=nullptr",
+    "level_compaction_dynamic_level_bytes=true",
+    "[CFOptions \"stream\"]",
+    "target_file_size_base=134217728",
+    "compression_per_level=kNoCompression:kNoCompression:kNoCompression:kNoCompression:kNoCompression:kNoCompression:kNoCompression",
+    "target_file_size_multiplier=1",
+    "max_compaction_bytes=3355443200",
+    "ttl=2592000",
+    "periodic_compaction_seconds=2592000",
+    "disable_auto_compactions=false",
+    "compaction_pri=kMinOverlappingRatio",
+    "sst_partitioner_factory=nullptr",
+    "level_compaction_dynamic_level_bytes=true",
+    "[CFOptions \"search\"]",
+    "target_file_size_base=134217728",
+    "compression_per_level=kNoCompression:kNoCompression:kNoCompression:kNoCompression:kNoCompression:kNoCompression:kNoCompression",
+    "target_file_size_multiplier=1",
+    "max_compaction_bytes=3355443200",
+    "ttl=2592000",
+    "periodic_compaction_seconds=2592000",
+    "disable_auto_compactions=false",
+    "compaction_pri=kMinOverlappingRatio",
+    "sst_partitioner_factory=nullptr",
+    "level_compaction_dynamic_level_bytes=true"
+  ],
+  "options_file": "OPTIONS-058548",
+  "rocksdb_version": "9.3.1",
+  "samples": [
+    {
+      "birth_job": {
+        "end": {
+          "compaction_time_cpu_micros": 1567758,
+          "compaction_time_micros": 1645144,
+          "event": "compaction_finished",
+          "job": 37904,
+          "lsm_state": [
+            0,
+            0,
+            0,
+            3,
+            3,
+            88,
+            705
+          ],
+          "num_input_records": 62378,
+          "num_output_files": 28,
+          "num_output_records": 62378,
+          "num_single_delete_fallthrough": 0,
+          "num_single_delete_mismatches": 0,
+          "num_subcompactions": 1,
+          "output_compression": "NoCompression",
+          "output_level": 5,
+          "time_micros": 1791162571108888,
+          "total_output_size": 1220089379
+        },
+        "outputs": [
+          138295,
+          138296,
+          138297,
+          138298,
+          138299,
+          138300,
+          138301,
+          138302,
+          138303,
+          138304,
+          138305,
+          138306,
+          138307,
+          138308,
+          138309,
+          138310,
+          138311,
+          138312,
+          138313,
+          138314,
+          138315,
+          138316,
+          138317,
+          138318,
+          138319,
+          138320,
+          138321,
+          138322
+        ],
+        "source": [
+          "LOG.old.1791241429871841",
+          1224357
+        ],
+        "start": {
+          "compaction_reason": "LevelMaxLevelSize",
+          "event": "compaction_started",
+          "files_L4": [
+            138284
+          ],
+          "files_L5": [
+            138247,
+            138248,
+            138249,
+            138250,
+            138251,
+            138252,
+            138253,
+            138255,
+            138256,
+            138235,
+            138236,
+            138237,
+            138238,
+            138239,
+            138240,
+            138241,
+            138243,
+            138244,
+            138245,
+            138025,
+            138026,
+            138027,
+            138028,
+            138029,
+            138030
+          ],
+          "input_data_size": 1220085877,
+          "job": 37904,
+          "oldest_snapshot_seqno": -1,
+          "score": 10.3856,
+          "time_micros": 1791162569458716
+        },
+        "time": "2026/10/05-09:09:29.458726"
+      },
+      "cut_after": {
+        "L6_overlap_count": 0,
+        "crossed_boundaries": 3,
+        "entered_L6_files": [
+          [
+            90521,
+            3109364
+          ],
+          [
+            136712,
+            134380088
+          ]
+        ],
+        "new_grandparent_bytes": 137489452,
+        "next_output": 138313,
+        "threshold_bytes": 16777216
+      },
+      "file": {
+        "cf_name": "metadata",
+        "creation_time": 1791144246,
+        "deleted_keys": "0",
+        "file_creation_time": 1791162570,
+        "file_number": 138312,
+        "file_size": 10831,
+        "job": 37904,
+        "level": 6,
+        "num_deletions": 0,
+        "num_entries": 3,
+        "source": [
+          "LOG.old.1791241429871841",
+          1224393
+        ],
+        "time": "2026/10/05-09:09:30.407050",
+        "total_keys": "3"
+      },
+      "moves": [
+        [
+          "2026/10/05-09:09:31.245095",
+          6,
+          "LOG.old.1791241429871841",
+          1224443
+        ]
+      ]
+    },
+    {
+      "birth_job": {
+        "end": {
+          "compaction_time_cpu_micros": 1441099,
+          "compaction_time_micros": 1515817,
+          "event": "compaction_finished",
+          "job": 38748,
+          "lsm_state": [
+            0,
+            0,
+            0,
+            1,
+            2,
+            87,
+            735
+          ],
+          "num_input_records": 48908,
+          "num_output_files": 31,
+          "num_output_records": 48908,
+          "num_single_delete_fallthrough": 0,
+          "num_single_delete_mismatches": 0,
+          "num_subcompactions": 1,
+          "output_compression": "NoCompression",
+          "output_level": 5,
+          "time_micros": 1791178542933140,
+          "total_output_size": 1109416130
+        },
+        "outputs": [
+          141570,
+          141571,
+          141572,
+          141573,
+          141574,
+          141575,
+          141576,
+          141577,
+          141578,
+          141579,
+          141580,
+          141581,
+          141582,
+          141583,
+          141584,
+          141585,
+          141586,
+          141587,
+          141588,
+          141589,
+          141590,
+          141591,
+          141592,
+          141593,
+          141594,
+          141595,
+          141596,
+          141597,
+          141598,
+          141599,
+          141600
+        ],
+        "source": [
+          "LOG.old.1791241429871841",
+          1365751
+        ],
+        "start": {
+          "compaction_reason": "LevelMaxLevelSize",
+          "event": "compaction_started",
+          "files_L4": [
+            141447
+          ],
+          "files_L5": [
+            141404,
+            141405,
+            141406,
+            141407,
+            141408,
+            141409,
+            141410,
+            141411,
+            141412,
+            141413,
+            141414,
+            141415,
+            141416,
+            141417,
+            141418,
+            141419,
+            141420,
+            141422,
+            141423,
+            141424,
+            141425,
+            141426,
+            141125,
+            141126,
+            141127,
+            141130
+          ],
+          "input_data_size": 1109408565,
+          "job": 38748,
+          "oldest_snapshot_seqno": -1,
+          "score": 10.9579,
+          "time_micros": 1791178541412366
+        },
+        "time": "2026/10/05-13:35:41.412376"
+      },
+      "cut_after": {
+        "L6_overlap_count": 0,
+        "crossed_boundaries": 3,
+        "entered_L6_files": [
+          [
+            90521,
+            3109364
+          ],
+          [
+            140088,
+            134387140
+          ]
+        ],
+        "new_grandparent_bytes": 137496504,
+        "next_output": 141588,
+        "threshold_bytes": 16777216
+      },
+      "file": {
+        "cf_name": "metadata",
+        "creation_time": 1791163410,
+        "deleted_keys": "0",
+        "file_creation_time": 1791178542,
+        "file_number": 141587,
+        "file_size": 9076,
+        "job": 38748,
+        "level": 6,
+        "num_deletions": 0,
+        "num_entries": 3,
+        "source": [
+          "LOG.old.1791241429871841",
+          1365787
+        ],
+        "time": "2026/10/05-13:35:42.195458",
+        "total_keys": "3"
+      },
+      "moves": [
+        [
+          "2026/10/05-13:35:43.059553",
+          6,
+          "LOG.old.1791241429871841",
+          1365844
+        ]
+      ]
+    },
+    {
+      "birth_job": {
+        "end": {
+          "compaction_time_cpu_micros": 1351190,
+          "compaction_time_micros": 1419831,
+          "event": "compaction_finished",
+          "job": 42980,
+          "lsm_state": [
+            0,
+            0,
+            0,
+            3,
+            3,
+            101,
+            922
+          ],
+          "num_input_records": 50529,
+          "num_output_files": 29,
+          "num_output_records": 50529,
+          "num_single_delete_fallthrough": 0,
+          "num_single_delete_mismatches": 0,
+          "num_subcompactions": 1,
+          "output_compression": "NoCompression",
+          "output_level": 5,
+          "time_micros": 1791260076151749,
+          "total_output_size": 1030927467
+        },
+        "outputs": [
+          158352,
+          158353,
+          158354,
+          158355,
+          158356,
+          158357,
+          158358,
+          158359,
+          158360,
+          158361,
+          158362,
+          158363,
+          158364,
+          158365,
+          158366,
+          158367,
+          158368,
+          158369,
+          158370,
+          158371,
+          158372,
+          158373,
+          158374,
+          158375,
+          158376,
+          158377,
+          158378,
+          158379,
+          158380
+        ],
+        "source": [
+          "LOG",
+          167122
+        ],
+        "start": {
+          "compaction_reason": "LevelMaxLevelSize",
+          "event": "compaction_started",
+          "files_L4": [
+            158348
+          ],
+          "files_L5": [
+            158305,
+            158306,
+            158307,
+            158308,
+            158309,
+            158310,
+            158313,
+            158314,
+            158315,
+            158317,
+            158318,
+            158319,
+            158320,
+            158321,
+            158322,
+            158323,
+            158324,
+            158325,
+            158286,
+            158288,
+            158289,
+            158290,
+            158291,
+            158292
+          ],
+          "input_data_size": 1030921430,
+          "job": 42980,
+          "oldest_snapshot_seqno": -1,
+          "score": 13.4546,
+          "time_micros": 1791260074727200
+        },
+        "time": "2026/10/06-12:14:34.727210"
+      },
+      "cut_after": {
+        "L6_overlap_count": 0,
+        "crossed_boundaries": 3,
+        "entered_L6_files": [
+          [
+            90521,
+            3109364
+          ],
+          [
+            157811,
+            134465913
+          ]
+        ],
+        "new_grandparent_bytes": 137575277,
+        "next_output": 158376,
+        "threshold_bytes": 16777216
+      },
+      "file": {
+        "cf_name": "metadata",
+        "creation_time": 1791246285,
+        "deleted_keys": "0",
+        "file_creation_time": 1791260075,
+        "file_number": 158375,
+        "file_size": 3185,
+        "job": 42980,
+        "level": 6,
+        "num_deletions": 0,
+        "num_entries": 1,
+        "source": [
+          "LOG",
+          167170
+        ],
+        "time": "2026/10/06-12:14:35.782578",
+        "total_keys": "1"
+      },
+      "moves": [
+        [
+          "2026/10/06-12:14:36.270290",
+          6,
+          "LOG",
+          167212
+        ]
+      ]
+    }
+  ],
+  "small_birth_levels": {
+    "4": 1,
+    "5": 688,
+    "6": 29
+  },
+  "small_threshold_bytes": 1048576,
+  "source_logs": [
+    "LOG.old.1789870091254261",
+    "LOG.old.1790790947818659",
+    "LOG.old.1791021971379807",
+    "LOG.old.1791241429871841",
+    "LOG"
+  ],
+  "L5_small_files_born_in_jobs_without_record_drops": 613
+}

@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1340" height="1040" viewBox="0 0 1340 1040" role="img" aria-labelledby="title desc">
+  <title id="title">Kvrocks &#x96C6;&#x7FA4;&#x6A21;&#x5F0F; Key &#x7F16;&#x7801;</title>
+  <desc id="desc">&#x5143;&#x6570;&#x636E; key &#x4F9D;&#x6B21;&#x5305;&#x542B;&#x4E00;&#x5B57;&#x8282; namespace &#x957F;&#x5EA6;&#x3001;namespace&#x3001;&#x4E24;&#x5B57;&#x8282; slot&#x3001;&#x7528;&#x6237; key&#x3002;&#x5B50;&#x9879; key &#x5728; slot &#x540E;&#x589E;&#x52A0;&#x56DB;&#x5B57;&#x8282;&#x7528;&#x6237; key &#x957F;&#x5EA6;&#xFF0C;&#x5728;&#x7528;&#x6237; key &#x540E;&#x589E;&#x52A0;&#x516B;&#x5B57;&#x8282; version &#x4E0E; subkey&#x3002;&#x793A;&#x4F8B; user:{42} &#x7684; slot &#x4E3A; 8000&#x3002;</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0 0 L8 4 L0 8" fill="none" stroke="#64748b" stroke-width="1.3"/>
+    </marker>
+  </defs>
+  <style>
+text { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #172b46; }
+.heading { font-size: 32px; font-weight: 600; }
+.section { font-size: 23px; font-weight: 600; }
+.body { font-size: 18px; }
+.small { font-size: 16px; fill: #52647a; }
+.field { font-size: 19px; font-weight: 600; }
+.mono { font-family: 'SFMono-Regular', Menlo, Consolas, monospace; font-size: 18px; }
+</style>
+  <rect width="1340" height="1040" fill="#ffffff"/>
+  <text x="60" y="67" class="heading">Kvrocks &#xB7; &#x96C6;&#x7FA4;&#x6A21;&#x5F0F; Key &#x7F16;&#x7801;</text>
+  <text x="60" y="102" class="body">RocksDB &#x4E2D;&#x7684;&#x5E94;&#x7528;&#x5C42; key  &#xB7;  cluster-enabled = yes  &#xB7;  &#x591A;&#x5B57;&#x8282;&#x6574;&#x6570;&#x91C7;&#x7528;&#x5927;&#x7AEF;&#x5E8F;&#xFF08;Big-endian&#xFF09;</text>
+  <text x="60" y="142" class="small">&#x5B57;&#x8282;&#x6D41;&#x65B9;&#x5411;</text>
+  <path d="M172 136 L1272 136" stroke="#c2ccd8" stroke-width="1.4" fill="none" marker-end="url(#arrow)"/>
+  <text x="60" y="189" class="section">01  &#x5143;&#x6570;&#x636E; key</text>
+  <text x="1278" y="189" class="small" text-anchor="end">Metadata &#x5217;&#x65CF;  /  &#x603B;&#x957F;&#x5EA6; = N + K + 3 &#x5B57;&#x8282;</text>
+  <rect x="62" y="209" width="110" height="86" rx="8" fill="#edf1f6"/>
+  <text x="117.0" y="240" class="field" text-anchor="middle">NS &#x957F;&#x5EA6;</text>
+  <text x="117.0" y="271" class="body" text-anchor="middle">1 B</text>
+  <rect x="176" y="209" width="184" height="86" rx="8" fill="#edf1f6"/>
+  <text x="268.0" y="240" class="field" text-anchor="middle">namespace</text>
+  <text x="268.0" y="271" class="body" text-anchor="middle">N B</text>
+  <rect x="364" y="209" width="120" height="86" rx="8" fill="#fff0d6"/>
+  <text x="424.0" y="240" class="field" text-anchor="middle">slot ID</text>
+  <text x="424.0" y="271" class="body" text-anchor="middle">2 B</text>
+  <rect x="488" y="209" width="790" height="86" rx="8" fill="#e5f0ff"/>
+  <text x="883.0" y="240" class="field" text-anchor="middle">&#x7528;&#x6237; key</text>
+  <text x="883.0" y="271" class="body" text-anchor="middle">K B &#xB7; &#x5B8C;&#x6574;&#x539F;&#x59CB; key</text>
+  <path d="M62 307 v9 H484 v-9" fill="none" stroke="#7b8a9d" stroke-width="1.3"/>
+  <text x="273" y="341" class="small" text-anchor="middle">&#x5171;&#x540C;&#x524D;&#x7F00;&#xFF1A;namespace + slot</text>
+  <text x="511" y="337" class="body">&#x8FD9;&#x91CC;&#x6CA1;&#x6709;&#x7528;&#x6237; key &#x957F;&#x5EA6;&#x3001;version &#x6216; subkey&#x3002;</text>
+  <text x="60" y="374" class="small">&#x5BF9;&#x5E94; value&#xFF1A;String &#x5B58;&#x5143;&#x6570;&#x636E;&#x5934; + &#x5B57;&#x7B26;&#x4E32;&#x5185;&#x5BB9;&#xFF1B;Hash &#x7B49;&#x96C6;&#x5408;&#x7C7B;&#x578B;&#x5B58;&#x7C7B;&#x578B;&#x3001;&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x3001;version&#x3001;&#x6570;&#x91CF;&#x7B49;&#x5143;&#x6570;&#x636E;&#x3002;</text>
+  <path d="M60 398 L1280 398" stroke="#c2ccd8" stroke-width="1.4" fill="none"/>
+  <text x="60" y="441" class="section">02  &#x5B50;&#x9879; key&#xFF08;InternalKey&#xFF09;</text>
+  <text x="1280" y="441" class="small" text-anchor="end">Hash / Set / List &#x7B49;  /  &#x603B;&#x957F;&#x5EA6; = N + K + S + 15 &#x5B57;&#x8282;</text>
+  <rect x="62" y="461" width="110" height="86" rx="8" fill="#edf1f6"/>
+  <text x="117.0" y="492" class="field" text-anchor="middle">NS &#x957F;&#x5EA6;</text>
+  <text x="117.0" y="523" class="body" text-anchor="middle">1 B</text>
+  <rect x="176" y="461" width="184" height="86" rx="8" fill="#edf1f6"/>
+  <text x="268.0" y="492" class="field" text-anchor="middle">namespace</text>
+  <text x="268.0" y="523" class="body" text-anchor="middle">N B</text>
+  <rect x="364" y="461" width="120" height="86" rx="8" fill="#fff0d6"/>
+  <text x="424.0" y="492" class="field" text-anchor="middle">slot ID</text>
+  <text x="424.0" y="523" class="body" text-anchor="middle">2 B</text>
+  <rect x="488" y="461" width="144" height="86" rx="8" fill="#e5f0ff"/>
+  <text x="560.0" y="492" class="field" text-anchor="middle">&#x7528;&#x6237; key &#x957F;&#x5EA6;</text>
+  <text x="560.0" y="523" class="body" text-anchor="middle">4 B</text>
+  <rect x="636" y="461" width="222" height="86" rx="8" fill="#e5f0ff"/>
+  <text x="747.0" y="492" class="field" text-anchor="middle">&#x7528;&#x6237; key</text>
+  <text x="747.0" y="523" class="body" text-anchor="middle">K B</text>
+  <rect x="862" y="461" width="136" height="86" rx="8" fill="#efe9fc"/>
+  <text x="930.0" y="492" class="field" text-anchor="middle">version</text>
+  <text x="930.0" y="523" class="body" text-anchor="middle">8 B</text>
+  <rect x="1002" y="461" width="176" height="86" rx="8" fill="#e3f4eb"/>
+  <text x="1090.0" y="492" class="field" text-anchor="middle">subkey</text>
+  <text x="1090.0" y="523" class="body" text-anchor="middle">S B</text>
+  <text x="60" y="582" class="body">version&#xFF1A;&#x4E0E;&#x5143;&#x6570;&#x636E;&#x4E2D;&#x7684;&#x7248;&#x672C;&#x4E00;&#x81F4;&#xFF0C;&#x7528;&#x4E8E;&#x9694;&#x79BB;&#x4E0D;&#x540C;&#x4EE3;&#x7684;&#x5B50;&#x9879;&#x3002;</text>
+  <text x="60" y="613" class="body">subkey&#xFF1A;Hash &#x2192; field&#xFF1B;Set &#x2192; member&#xFF1B;List &#x2192; &#x7F16;&#x7801;&#x540E;&#x7684;&#x5143;&#x7D20;&#x7D22;&#x5F15;&#x3002;subkey &#x5360;&#x636E;&#x5269;&#x4F59;&#x5B57;&#x8282;&#x3002;</text>
+  <path d="M60 638 L1280 638" stroke="#c2ccd8" stroke-width="1.4" fill="none"/>
+  <text x="60" y="683" class="section">03  &#x7F16;&#x7801;&#x5B9E;&#x4F8B;</text>
+  <text x="302" y="683" class="mono">HSET user:{42} name Alice</text>
+  <text x="60" y="719" class="body">namespace = "__namespace"&#xFF08;11 B&#xFF09;     hash tag = "42"     slot = CRC16("42") % 16384 = 8000 = 0x1F40</text>
+  <text x="60" y="756" class="small">&#x5143;&#x6570;&#x636E; key &#xB7; 23 B</text>
+  <rect x="62" y="771" width="110" height="78" rx="8" fill="#edf1f6"/>
+  <text x="117.0" y="802" class="small" text-anchor="middle">NS &#x957F;&#x5EA6;</text>
+  <text x="117.0" y="833" class="mono" text-anchor="middle">0B</text>
+  <rect x="176" y="771" width="184" height="78" rx="8" fill="#edf1f6"/>
+  <text x="268.0" y="802" class="small" text-anchor="middle">namespace</text>
+  <text x="268.0" y="833" class="mono" text-anchor="middle">__namespace</text>
+  <rect x="364" y="771" width="120" height="78" rx="8" fill="#fff0d6"/>
+  <text x="424.0" y="802" class="small" text-anchor="middle">slot ID</text>
+  <text x="424.0" y="833" class="mono" text-anchor="middle">1F 40</text>
+  <rect x="488" y="771" width="790" height="78" rx="8" fill="#e5f0ff"/>
+  <text x="883.0" y="802" class="small" text-anchor="middle">&#x7528;&#x6237; key &#xB7; 9 B</text>
+  <text x="883.0" y="833" class="mono" text-anchor="middle">user:{42}</text>
+  <text x="60" y="883" class="small">Hash &#x5B50;&#x9879; key &#xB7; 39 B</text>
+  <text x="1280" y="883" class="small" text-anchor="end">&#x5BF9;&#x5E94; value = Alice</text>
+  <rect x="62" y="898" width="110" height="78" rx="8" fill="#edf1f6"/>
+  <text x="117.0" y="929" class="small" text-anchor="middle">NS &#x957F;&#x5EA6;</text>
+  <text x="117.0" y="960" class="mono" text-anchor="middle">0B</text>
+  <rect x="176" y="898" width="184" height="78" rx="8" fill="#edf1f6"/>
+  <text x="268.0" y="929" class="small" text-anchor="middle">namespace</text>
+  <text x="268.0" y="960" class="mono" text-anchor="middle">__namespace</text>
+  <rect x="364" y="898" width="120" height="78" rx="8" fill="#fff0d6"/>
+  <text x="424.0" y="929" class="small" text-anchor="middle">slot ID</text>
+  <text x="424.0" y="960" class="mono" text-anchor="middle">1F 40</text>
+  <rect x="488" y="898" width="144" height="78" rx="8" fill="#e5f0ff"/>
+  <text x="560.0" y="929" class="small" text-anchor="middle">&#x7528;&#x6237; key &#x957F;&#x5EA6;</text>
+  <text x="560.0" y="960" class="mono" text-anchor="middle">00 00 00 09</text>
+  <rect x="636" y="898" width="222" height="78" rx="8" fill="#e5f0ff"/>
+  <text x="747.0" y="929" class="small" text-anchor="middle">&#x7528;&#x6237; key</text>
+  <text x="747.0" y="960" class="mono" text-anchor="middle">user:{42}</text>
+  <rect x="862" y="898" width="136" height="78" rx="8" fill="#efe9fc"/>
+  <text x="930.0" y="929" class="small" text-anchor="middle">version</text>
+  <text x="930.0" y="960" class="mono" text-anchor="middle">V&#xFF08;8 B&#xFF09;</text>
+  <rect x="1002" y="898" width="176" height="78" rx="8" fill="#e3f4eb"/>
+  <text x="1090.0" y="929" class="small" text-anchor="middle">subkey</text>
+  <text x="1090.0" y="960" class="mono" text-anchor="middle">name</text>
+  <text x="60" y="1006" class="small">&#x5341;&#x516D;&#x8FDB;&#x5236;&#x6570;&#x503C;&#x4E0E;&#x539F;&#x59CB;&#x6587;&#x672C;&#x6DF7;&#x5408;&#x5C55;&#x793A;&#xFF1B;V &#x8868;&#x793A;&#x5B9E;&#x9645; version&#x3002;&#x5B57;&#x6BB5;&#x5BBD;&#x5EA6;&#x4E0D;&#x6309;&#x5B57;&#x8282;&#x6BD4;&#x4F8B;&#x7ED8;&#x5236;&#x3002;</text>
+  <text x="60" y="1030" class="small">&#x5B9E;&#x73B0;&#x4F9D;&#x636E;&#xFF1A;src/storage/redis_metadata.cc &#xB7; ComposeNamespaceKey / InternalKey::Encode&#xFF1B;src/cluster/redis_slot.cc</text>
+</svg>

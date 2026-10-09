@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1230" viewBox="0 0 1600 1230" role="img" aria-labelledby="title desc">
+<title id="title">递增 key 与统一 TTL 下，周期合并如何回收 L6 小文件</title><desc id="desc">示意同一 slot 的不同时间批次按递增 ID 排序，相同 TTL 使旧批次先整体过期；L6 周期合并执行 Kvrocks 过期过滤，全部记录被过滤后旧 SST 从活跃版本移除。</desc>
+<style>text {font-family: PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif; fill: #172b4d;}</style>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10Z" fill="#2563eb"/></marker></defs>
+<rect width="1600" height="1230" fill="#f3f6fb"/>
+<text x="60" y="67" font-size="35" style="fill:#172b4d" font-weight="700" text-anchor="start">递增 key + 相同 TTL：让旧碎片有机会整文件退出 L6</text>
+<text x="60" y="109" font-size="22" style="fill:#566780" font-weight="400" text-anchor="start">periodic compaction 提供重写机会，Kvrocks compaction filter 判断每条记录是否过期</text>
+<rect x="50" y="145" width="1500" height="293" rx="12" fill="#fff" stroke="none"/>
+<text x="83" y="190" font-size="27" style="fill:#172b4d" font-weight="650" text-anchor="start">1  同一 slot 内：较早写入的 ID 在左，较晚写入的 ID 在右</text>
+<text x="83" y="226" font-size="21" style="fill:#566780" font-weight="400" text-anchor="start">示例假设：持续写新 key，统一 TTL = 12 h，无续期；每个小 SST 来自一个较短的写入时间段。</text>
+<rect x="100" y="258" width="390" height="95" rx="12" fill="#e2f4f2" stroke="#087f8c"/>
+<text x="295" y="297" font-size="25" style="fill:#087f8c" font-weight="650" text-anchor="middle">批次 A · 较旧 ID</text>
+<text x="295" y="334" font-size="22" style="fill:#087f8c" font-weight="400" text-anchor="middle">00:00–00:10 写入</text>
+<rect x="605" y="258" width="390" height="95" rx="12" fill="#e2f4f2" stroke="#087f8c"/>
+<text x="800" y="297" font-size="25" style="fill:#087f8c" font-weight="650" text-anchor="middle">批次 B</text>
+<text x="800" y="334" font-size="22" style="fill:#087f8c" font-weight="400" text-anchor="middle">01:00–01:10 写入</text>
+<rect x="1110" y="258" width="390" height="95" rx="12" fill="#e2f4f2" stroke="#087f8c"/>
+<text x="1305" y="297" font-size="25" style="fill:#087f8c" font-weight="650" text-anchor="middle">批次 C · 较新 ID</text>
+<text x="1305" y="334" font-size="22" style="fill:#087f8c" font-weight="400" text-anchor="middle">02:00–02:10 写入</text>
+<path d="M508 303 L584 303" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M1013 303 L1089 303" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="100" y="401" font-size="24" style="fill:#2563eb" font-weight="600" text-anchor="start">各批次到期区间也按相同顺序后移 12 h：A → B → C</text>
+<rect x="50" y="465" width="1500" height="238" rx="12" fill="#fff" stroke="none"/>
+<text x="83" y="510" font-size="27" style="fill:#172b4d" font-weight="650" text-anchor="start">2  观察到 13:30：A、B 的记录已全部过期，C 的记录仍有效</text>
+<rect x="100" y="542" width="390" height="96" rx="12" fill="#edf1f6" stroke="#566780"/>
+<text x="295" y="579" font-size="24" style="fill:#566780" font-weight="650" text-anchor="middle">批次 A：已全部过期</text>
+<text x="295" y="617" font-size="22" style="fill:#566780" font-weight="400" text-anchor="middle">到期 12:00–12:10</text>
+<rect x="605" y="542" width="390" height="96" rx="12" fill="#edf1f6" stroke="#566780"/>
+<text x="800" y="579" font-size="24" style="fill:#566780" font-weight="650" text-anchor="middle">批次 B：已全部过期</text>
+<text x="800" y="617" font-size="22" style="fill:#566780" font-weight="400" text-anchor="middle">到期 13:00–13:10</text>
+<rect x="1110" y="542" width="390" height="96" rx="12" fill="#e2f4f2" stroke="#087f8c"/>
+<text x="1305" y="579" font-size="24" style="fill:#087f8c" font-weight="650" text-anchor="middle">批次 C：仍有效</text>
+<text x="1305" y="617" font-size="22" style="fill:#087f8c" font-weight="400" text-anchor="middle">到期 14:00–14:10</text>
+<text x="100" y="677" font-size="23" style="fill:#b44c20" font-weight="600" text-anchor="start">业务不可读 ≠ SST 已回收：如果只发生 trivial move，旧文件里的记录不会被过滤。</text>
+<rect x="50" y="730" width="1500" height="310" rx="12" fill="#fff" stroke="none"/>
+<text x="83" y="775" font-size="27" style="fill:#172b4d" font-weight="650" text-anchor="start">3  旧文件符合周期合并条件，并获得后台调度后：实际重写、逐条过滤</text>
+<rect x="100" y="811" width="430" height="112" rx="12" fill="#f0eafb" stroke="#7550bd"/>
+<text x="315" y="854" font-size="26" style="fill:#7550bd" font-weight="650" text-anchor="middle">L6 → L6 周期合并</text>
+<text x="315" y="892" font-size="20" style="fill:#7550bd" font-weight="400" text-anchor="middle">按文件年龄选取；不是按 key TTL 定时</text>
+<path d="M552 867 L638 867" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="659" y="811" width="421" height="112" rx="12" fill="#eef4ff" stroke="#2563eb"/>
+<text x="869" y="854" font-size="25" style="fill:#2563eb" font-weight="650" text-anchor="middle">MetadataFilter 检查过期</text>
+<text x="869" y="892" font-size="23" style="fill:#2563eb" font-weight="400" text-anchor="middle">A、B 全部记录被过滤</text>
+<path d="M1101 867 L1185 867" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1205" y="811" width="295" height="112" rx="12" fill="#e2f4f2" stroke="#087f8c"/>
+<text x="1352" y="854" font-size="25" style="fill:#087f8c" font-weight="650" text-anchor="middle">旧小 SST 被移除</text>
+<text x="1352" y="892" font-size="22" style="fill:#087f8c" font-weight="400" text-anchor="middle">无需凑成 128 MiB</text>
+<text x="100" y="973" font-size="24" style="fill:#172b4d" font-weight="600" text-anchor="start">即使一次只处理一个旧 SST，只要内容全部过期，也能通过清空它来减少文件数量。</text>
+<text x="100" y="1011" font-size="21" style="fill:#566780" font-weight="400" text-anchor="start">上面的 13:30 仅是到期关系示例；实际重写时刻由文件年龄、周期配置和后台调度共同决定。</text>
+<rect x="50" y="1066" width="1500" height="118" rx="12" fill="#172b4d" stroke="none"/>
+<text x="80" y="1108" font-size="28" style="fill:#fff" font-weight="650" text-anchor="start">规避长期积累：仍可能生成小文件，但旧批次能持续退出 L6。</text>
+<text x="80" y="1152" font-size="22" style="fill:#dae5f5" font-weight="400" text-anchor="start">适用前提：新旧数据较少混写、过期时间相近且不反复续期、周期合理、后台回收能力足够。</text>
+</svg>
