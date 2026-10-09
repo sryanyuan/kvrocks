@@ -1,0 +1,14 @@
+temp/kvrocks-small-files-case.md
+  h_3026253dd3ae38 209-238
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "acbf413b29ae11f26ddd64209c971e8ee06b85a1",
+  "prompts": {},
+  "humans": {
+    "h_3026253dd3ae38": {
+      "author": "sryan <sryan@sryandeMacBook-Air.local>"
+    }
+  }
+}
