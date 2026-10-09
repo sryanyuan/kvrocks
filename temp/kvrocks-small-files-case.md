@@ -1,5 +1,3 @@
-## 遇到了疑难杂症
-
 我们公司使用kvrocks来替换大内存的redis集群，起到了良好的效果，成本节约很可观，长期使用过程中也比较稳定，带来了良好的收益。但是在这个过程中，也遇到了一些问题，其中大部分都可以通过调整集群分片数量等手段解决，但是下面这个案例，还是算是一个“疑难杂症”的。
 
 一个应用使用的kvrocks集群，其实还是比较适合持久化场景的，它会源源不断的写入string类型数据，并且都有同样的TTL。写入量比较恒定，所以理论上磁盘占用也会是比较稳定的，于是在初期上线的很长一段时间内，没人关注到它到底有没有异常，在业务使用角度来看，也很稳定没什么异常，直到有一天问题突然爆发。
@@ -208,4 +206,33 @@ Moving #... 日志
     → trivial_move 事件
 ```
 
-为什么trivial move的成本会越来越高呢？
+为什么trivial move的成本会越来越高呢？我们继续来看看中间有什么步骤会因为文件数量过多而耗时升高。核心原因在生成新的Version。Version表示一个列族元数据的一个快照，包含着每层文件信息，索引，key的范围等等。在进行一个简单的trivial move的时候，需要生成一个新的Version来描述新的层级结构。新的Version的产生也有不少工作需要完成：
+
+| RocksDB 9.3.1 中的步骤 | 与文件数量的关系 |
+|---|---|
+| `VersionBuilder::SaveSSTFilesTo` | 遍历已有文件，与新增文件合并，排除删除项，生成新版本各层的文件列表；排序对象是新增文件，并非重新排序全部旧文件 |
+| `DoGenerateLevelFilesBrief` | 逐文件生成范围条目，分配内存并复制 smallest/largest key |
+| `GenerateFileLocationIndex` | 遍历所有层的文件，建立“文件编号 → 层级、位置”的索引 |
+| 层容量和 compaction 相关计算 | 遍历文件累计大小、计算相邻层重叠等；例如 L5 的重叠优先级计算也需要参考 L6 |
+
+所以我们可以看到，里面有遍历所有文件的过程，假设L6文件高达50多万，那么会造成比较大的压力。在Version释放的时候，同样的需要进行遍历减少引用计数。
+
+当compaction的成本越来越高，会降低compaction的效率。当compaction追不上的时候，会导致整体的estimated pending compaction bytes指标增高，进而导致写降速。
+
+## 如何规避这个问题
+
+由于kvrocks提供的compaction checker无法解决此问题，我们需要主动的将一些需要compaction的文件强制进行compaction，于是我们引入了rocksdb自带的periodic compaction，也提交了PR来支持此配置项的配置。该配置会强制的检测SST的创建时间，满足条件的文件会强制进行compaction，针对此业务场景非常的合适。
+
+| 配置 | 作用 |
+|---|---|
+| `rocksdb.periodic_compaction_seconds` | 按文件年龄触发周期合并，让长期未重写的 SST 有机会重新经过 compaction filter |
+| `rocksdb.ttl` | RocksDB 的文件年龄相关 compaction 配置，不是业务 key 的 TTL |
+| `rocksdb.daily_offpeak_time_utc` | 为周期合并提供 UTC 低峰时间窗口，允许部分即将到期的文件提前参与调度 |
+
+![递增 key 和统一 TTL 下周期合并的回收过程](l6-small-files-20261007/diagrams/04-periodic-compaction-ttl.svg)
+
+在我们这个场景，我们把对应的配置项调整为12小时后，文件数量保持稳定，集群不再出现写降速，解决了这个问题
+
+## 总结
+
+我们的这个场景是一个比较极端的场景，在kvrocks的编码规则下，出现了这个问题，另一方面也让这个问题处理分析比较棘手。希望大家不会再遇到我们踩的坑，让kvrocks持续稳定的为上层应用提供服务。
