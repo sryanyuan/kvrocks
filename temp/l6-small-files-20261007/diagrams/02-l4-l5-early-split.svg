@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1470" viewBox="0 0 1600 1470" role="img" aria-labelledby="title description">
 <title id="title">L4 加 L5 合并如何参考 L6 边界提前切分</title>
-<desc id="description">以 2026 年 10 月 6 日的真实文件编号演示：L5 输出从 slot 498 的 m 跳到 slot 499 的 s，完整跳过 L6 文件 A 并进入 B，跨越三个边界，新计入 A 加 B 的大小超过 16 MiB，在写入 s 前关闭只有 m 的 3185 字节文件。</desc>
+<desc id="description">以真实文件编号演示：L5 输出从 slot 498 的 m 跳到 slot 499 的 s，完整跳过 L6 文件 A 并进入 B，跨越三个边界，新计入 A 加 B 的大小超过 16 MiB，在写入 s 前关闭只有 m 的 3185 字节文件。</desc>
 <defs>
   <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#71829b"/></marker>
   <marker id="blue-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb"/></marker>
@@ -10,7 +10,7 @@ text { font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-s
 </style>
 <rect x="0" y="0" width="1600" height="1470" rx="0" fill="#f3f6fb" stroke="none" stroke-width="1.5"/>
 <text x="64" y="68" font-size="37" style="fill:#172b4d" font-weight="750" text-anchor="start">一次提前切分：为什么 1 个 key 也会单独成为 SST？</text>
-<text x="66" y="109" font-size="21" style="fill:#566780" font-weight="400" text-anchor="start">图 2 / 真实样本：10 月 6 日，JOB 42980 · L4 + L5 → 新 L5 · 图中 key 间距不按比例</text>
+<text x="66" y="109" font-size="21" style="fill:#566780" font-weight="400" text-anchor="start">图 2 / 真实样本：JOB 42980 · L4 + L5 → 新 L5 · 图中 key 间距不按比例</text>
 <rect x="56" y="145" width="1488" height="360" rx="20" fill="#ffffff" stroke="#dce4ef" stroke-width="1.5"/>
 <circle cx="94" cy="184" r="20" fill="#2563eb" stroke="none" stroke-width="2"/>
 <text x="94" y="191" font-size="21" style="fill:#ffffff" font-weight="700" text-anchor="middle">1</text>
