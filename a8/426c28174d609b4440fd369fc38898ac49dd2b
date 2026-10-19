@@ -1,0 +1,43 @@
+Dockerfile.base
+  s_bc67bfb82cb80d::t_7efca1f39e5a32 44,59
+  s_bc67bfb82cb80d::t_ada525a172d975 18
+  s_bc67bfb82cb80d::t_e842199aea1a7d 38-39,43,51,55-58,60-62,70
+  s_bc67bfb82cb80d::t_e756784dc76975 1-17,20-37,40-42,45-50,52-54,65-69,71-72
+  s_bc67bfb82cb80d::t_ec21dafd022c8b 19
+  s_bc67bfb82cb80d::t_c9f72750da1f14 63-64
+build-jean.md
+  s_bc67bfb82cb80d::t_04cb86e83d4639 170-179,181-184
+  s_bc67bfb82cb80d::t_d79c50c311d4f2 59,185
+  s_bc67bfb82cb80d::t_de0d15a70e4397 61-62,167-169
+  s_bc67bfb82cb80d::t_111b310019fc06 180
+  s_bc67bfb82cb80d::t_ec21dafd022c8b 155-164,166,186
+  s_bc67bfb82cb80d::t_ada525a172d975 3,5,13-14,16,48-49,51-57,119,122,129,136,145,149,165
+  s_bc67bfb82cb80d::t_8ee18867f4db9e 46
+  s_bc67bfb82cb80d::t_c9fd8719568c7c 50
+  s_bc67bfb82cb80d::t_c1e8cd364a7575 23-45,47,216
+  s_bc67bfb82cb80d::t_e756784dc76975 1-2,4,6-12,15,17-22,120-121,123-128,130-135,137-144,146-148,150-154,187-215,217-221
+  s_bc67bfb82cb80d::t_6feab5e64600d4 58,60,63-118
+Dockerfile.jean
+  s_bc67bfb82cb80d::t_c1e8cd364a7575 71-72,74-77,79-81,85,90
+  s_bc67bfb82cb80d::t_e756784dc76975 1-17,19-31,41-44,54-70,73,78,82-84,86,89
+  s_bc67bfb82cb80d::t_7efca1f39e5a32 40
+  s_bc67bfb82cb80d::t_8ee18867f4db9e 87-88
+  s_bc67bfb82cb80d::t_626a4d98dbf2eb 36-39,45-52
+  s_bc67bfb82cb80d::t_e842199aea1a7d 18,32-35,53
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "a8426c28174d609b4440fd369fc38898ac49dd2b",
+  "prompts": {},
+  "sessions": {
+    "s_bc67bfb82cb80d": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a152f6-f201-7930-b4ba-a17e1a961b9a",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "rongliang.gan <rongliang.gan@ly.com>"
+    }
+  }
+}
