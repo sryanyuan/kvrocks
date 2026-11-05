@@ -1,0 +1,21 @@
+src/types/redis_hash.cc
+  s_3b585dea169c80::t_c96f7081c9232a 159-161
+  s_3b585dea169c80::t_d098d272f1f516 322,1002
+  s_3b585dea169c80::t_73db497613395a 162-179,321,323,326,1001,1003,1007
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7550c1178ce38c46df0394202324cbf446a32452",
+  "prompts": {},
+  "sessions": {
+    "s_3b585dea169c80": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1a9d0-29e5-7bb1-8211-6c30d253b187",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "sryan yuan <sryan@qq.com>"
+    }
+  }
+}
