@@ -1,0 +1,23 @@
+Dockerfile.jean
+  s_b738f842282715::t_8776e763f3aec8 90-92
+build-jean.md
+  s_b738f842282715::t_8776e763f3aec8 23,32,42,45,47-51,160,198,201,206-209,214
+kvrocksbuild.sh
+  s_b738f842282715::t_b7dca97e167a17 23,30,39-46,55,61,65,68,84,89,91,98-100,124-127,141
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "3c00517698bf8f08510ea2c0422590ab775aace6",
+  "prompts": {},
+  "sessions": {
+    "s_b738f842282715": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a15784-cffa-72d1-b768-4c021c2a412a",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "rongliang.gan <rongliang.gan@ly.com>"
+    }
+  }
+}

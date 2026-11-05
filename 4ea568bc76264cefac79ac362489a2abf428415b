@@ -1,0 +1,23 @@
+build-jean.md
+  s_bc67bfb82cb80d::t_bff79c0134d37a 13,23,33,47,156-157,216
+Dockerfile.jean
+  s_bc67bfb82cb80d::t_bff79c0134d37a 78
+kvrocksbuild.sh
+  s_bc67bfb82cb80d::t_d4e7fc4749ed8d 1-121
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "4ea568bc76264cefac79ac362489a2abf428415b",
+  "prompts": {},
+  "sessions": {
+    "s_bc67bfb82cb80d": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a152f6-f201-7930-b4ba-a17e1a961b9a",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "rongliang.gan <rongliang.gan@ly.com>"
+    }
+  }
+}
