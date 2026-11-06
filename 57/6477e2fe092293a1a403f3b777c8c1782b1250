@@ -1,0 +1,32 @@
+src/types/redis_hash.cc
+  s_2d1b40281b8e15::t_b6a123f2f7f545 51-55,131-132,141-143,164,169,182,330-331,456,502,668-669,1000,1008-1009,1012-1020,1022-1045,1120-1121,1218-1219,1251-1252,1302
+  s_55331c9034e727::t_3ac40d73ac4186 1001,1005-1007,1010-1011
+tests/cppunit/types/hash_test.cc
+  s_2d1b40281b8e15::t_b6a123f2f7f545 331-365,965,968-969,971-972,989-1022
+  s_2d1b40281b8e15::t_3139ba72f02d4b 964,966-967,970
+  s_2d1b40281b8e15::t_67fcae70825442 1023
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "576477e2fe092293a1a403f3b777c8c1782b1250",
+  "prompts": {},
+  "sessions": {
+    "s_2d1b40281b8e15": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1a9cb-d948-7c33-bc63-56921c922275",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "sryan yuan <sryan@qq.com>"
+    },
+    "s_55331c9034e727": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1af7b-c432-7160-b352-b2803ca1b306",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "sryan yuan <sryan@qq.com>"
+    }
+  }
+}
